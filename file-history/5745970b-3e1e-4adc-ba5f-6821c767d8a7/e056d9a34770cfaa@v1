@@ -1,0 +1,27 @@
+'use client'
+
+import { Checkbox, IconButton } from "@material-tailwind/react"
+import { LargeNumberLike } from "crypto"
+
+interface TodoProps {
+    id: number;
+    value: string;
+    completed: boolean;
+}
+
+export default function Todo({ id, value, completed }: TodoProps) {
+    return (
+        <div className="flex items-center w-full gap-3">
+            <Checkbox checked={completed} />
+
+            <p className={`flex-1 ${completed ? "line-through" : ""}`}>{value}</p>
+
+            <IconButton variant="text">
+                <i className="fas fa-pen" />              
+            </IconButton>
+            <IconButton value="text">
+                <i className="fas fa-trash" />              
+            </IconButton>
+        </div>
+    )
+}

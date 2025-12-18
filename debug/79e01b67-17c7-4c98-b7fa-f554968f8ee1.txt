@@ -1,0 +1,2516 @@
+[DEBUG] Watching for changes in setting files C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json...
+[DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+[DEBUG] Applying permission update: Adding 7 allow rule(s) to destination 'localSettings': ["Bash(npm install)","Bash(dir:*)","Bash(npm run build)","Bash(netstat:*)","Bash(findstr:*)","Bash(set NODE_ENV=development)","Bash(electron .)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for bash (C:\Program Files\Git\bin\bash.exe)
+[DEBUG] Looking for shell config file: C:\Users\jaewoong\.bashrc
+[DEBUG] Shell config file not found: C:\Users\jaewoong\.bashrc, creating snapshot with Claude Code defaults only
+[DEBUG] Snapshots directory: C:\Users\jaewoong\.claude\shell-snapshots
+[DEBUG] Creating snapshot at: C:\Users\jaewoong\.claude\shell-snapshots\snapshot-bash-1761111009674-d9scns.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111009694
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111009694 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\jaewoong\.claude\skills, project=C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\jaewoong\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111009945
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111009945 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (345 bytes)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111010092
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111010092 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111010101
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111010101 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111010164
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40053 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111010164 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at iM (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at IncomingMessage.emit (node:events:530:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at A81.request (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async rLA (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:280:34283)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111010497
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40132 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111010497 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015115
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015115 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] MCP server "ClaudeTalkToFigma": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015205
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015205 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015317
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015317 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015325
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015325 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015331
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015331 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111015360
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40719 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111015360 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+[ERROR] MCP server "ClaudeTalkToFigma" Server stderr: Resolving dependencies
+error: moving "@modelcontextprotocol/sdk" to cache dir failed
+EPERM: Operation not permitted (NtSetInformationFile())
+  From: .9fffb97ff75ffebf-00000001.sdk
+    To: @modelcontextprotocol/sdk@1.20.1@@@1
+Resolved, downloaded and extracted [182]
+error: InstallFailed extracting tarball from @modelcontextprotocol/sdk
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111016860
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40719 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111016860 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] MCP server "ide": Successfully connected to ws-ide server in 108ms
+[DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"1.0.117"}}
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111019335
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40719 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111019335 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] MCP server "ClaudeTalkToFigma": Connection failed after 8307ms: MCP error -32000: Connection closed
+[ERROR] MCP server "ClaudeTalkToFigma" Connection failed: MCP error -32000: Connection closed
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 70e9184c-c121-4978-8c73-0df832fe94d3, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 23ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111181038
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40719 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111181038 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 63ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 396ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111198086
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40757 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111198086 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111198124
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40791 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111198124 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111198133
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40918 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111198133 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 161ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 8382616a-fc01-462c-b4b0-4a4502c54bd5
+[DEBUG] FileHistory: Added snapshot for 8382616a-fc01-462c-b4b0-4a4502c54bd5, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 16ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111327231
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40918 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111327231 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 285ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 548ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 767ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 898ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111359803
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40937 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111359803 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111359824
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 40957 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111359824 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111359946
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41079 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111359946 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111703912
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41146 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111703912 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 348ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message bfab9d85-f974-43d3-928c-085a79344985
+[DEBUG] FileHistory: Added snapshot for bfab9d85-f974-43d3-928c-085a79344985, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 14ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111791900
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 518 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111791900 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 338ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] MCP server "ide": Calling MCP tool: openDiff
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 105ms
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 11s
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\main\main.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761111810984
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 3505 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761111810984 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 942ms
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 899ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111816610
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 520 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111816610 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 985ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\components\searchresults.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx.tmp.57196.1761111822938
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2434 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx.tmp.57196.1761111822938 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\components\searchresults.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx.tmp.57196.1761111832124
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2603 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx.tmp.57196.1761111832124 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\SearchResults.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761111837572
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5266 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761111837572 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111854126
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 522 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111854126 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\preload\preload.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts.tmp.57196.1761111854511
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 1061 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts.tmp.57196.1761111854511 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\components\pathsettingmodal.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx.tmp.57196.1761111860488
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2133 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx.tmp.57196.1761111860488 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\PathSettingModal.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111875402
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 524 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111875402 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761111875786
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5425 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761111875786 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 996ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111885688
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761111885688 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111896316
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41168 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111896316 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111896357
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41198 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111896357 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761111896411
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761111896411 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 368ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 78e7adbd-7723-4a91-be68-3111ad6e537c
+[DEBUG] FileHistory: Added snapshot for 78e7adbd-7723-4a91-be68-3111ad6e537c, tracking 5 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 20ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112077448
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112077448 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 463ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112099049
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41603 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112099049 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112099073
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41627 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112099073 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112099082
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41747 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112099082 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 455ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 6f42c5b7-c0ad-4f43-902e-859df05c66ab
+[DEBUG] FileHistory: Added snapshot for 6f42c5b7-c0ad-4f43-902e-859df05c66ab, tracking 5 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 17ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112156799
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41747 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112156799 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 557ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112176480
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41747 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112176480 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112176511
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41747 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112176511 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112176540
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112176540 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 494ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 7d98b8a6-ec18-4d3c-86f5-0d0241de412d
+[DEBUG] FileHistory: Added snapshot for 7d98b8a6-ec18-4d3c-86f5-0d0241de412d, tracking 5 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 16ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112274757
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112274757 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\main\main.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+    at async d7 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:34138)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761112278387
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 3562 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761112278387 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 497ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112283527
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112283527 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112283568
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112283568 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112283588
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112283588 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 503ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 26c0f634-e109-4988-b4b6-17d93898987e
+[DEBUG] FileHistory: Added snapshot for 26c0f634-e109-4988-b4b6-17d93898987e, tracking 5 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 22ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112414151
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112414151 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112423133
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 378 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112423133 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+    at async d7 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:34138)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112423514
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5479 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112423514 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 484ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112432428
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 380 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112432428 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\components\loadingoverlay.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:835:2474)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx.tmp.57196.1761112432966
+[DEBUG] Temp file written successfully, size: 431 bytes
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx.tmp.57196.1761112432966 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\components\LoadingOverlay.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112442918
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 382 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112442918 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112443297
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5542 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112443297 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112452220
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5612 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112452220 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112459472
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761112459472 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112467533
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761112467533 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112477887
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112477887 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112477971
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 41943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112477971 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112477987
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42119 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112477987 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 537ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 0e4fd055-fe3a-496b-b365-cce876e59649
+[DEBUG] FileHistory: Added snapshot for 0e4fd055-fe3a-496b-b365-cce876e59649, tracking 6 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 18ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112705579
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42119 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112705579 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 536ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\types\index.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts.tmp.57196.1761112722605
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 817 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts.tmp.57196.1761112722605 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112728515
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42119 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112728515 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112728562
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42119 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112728562 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761112728580
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42207 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761112728580 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 604ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message b0b16e3b-24b3-441a-b7ea-d141badea9a3
+[DEBUG] FileHistory: Added snapshot for b0b16e3b-24b3-441a-b7ea-d141badea9a3, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 17ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113268397
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42207 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113268397 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 654ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: dir "C:\path\to\ui\folder" 2>&1 || echo "Directory does not exist"
+[DEBUG] Bash tool description: Check if the default path exists
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: dir "%APPDATA%\string-search-tool" 2>&1 || echo "Config directory not found"
+[DEBUG] Bash tool description: Check electron-store config directory
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "powershell:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json.tmp.57196.1761113331831
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 299 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json.tmp.57196.1761113331831 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(powershell:*)"]
+[DEBUG] Bash tool invoked with command: powershell -Command "Get-ChildItem -Path \"$env:APPDATA\" -Filter 'string-search*' -Directory -ErrorAction SilentlyContinue | Select-Object -First 1 FullName"
+[DEBUG] Bash tool description: Find electron-store config directory using PowerShell
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Detected change to C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 8 rule(s): ["Bash(npm install)","Bash(dir:*)","Bash(npm run build)","Bash(netstat:*)","Bash(findstr:*)","Bash(set NODE_ENV=development)","Bash(electron .)","Bash(powershell:*)"]
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113341639
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42207 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113341639 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113341675
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42207 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113341675 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113341683
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42361 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113341683 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 612ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 885e88b7-8963-4e31-bc13-2ed12991ae1f
+[DEBUG] FileHistory: Added snapshot for 885e88b7-8963-4e31-bc13-2ed12991ae1f, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 15ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113642166
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42361 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113642166 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113654145
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 550 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113654145 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\main\main.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+    at async d7 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:34138)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761113654543
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 3690 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts.tmp.57196.1761113654543 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\main.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 588ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113670631
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 552 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113670631 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\preload\preload.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts.tmp.57196.1761113671020
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 1131 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts.tmp.57196.1761113671020 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\preload\preload.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113684105
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 554 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113684105 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\types\index.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts.tmp.57196.1761113684491
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 865 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts.tmp.57196.1761113684491 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\types\index.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113698082
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 556 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113698082 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113698487
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5912 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113698487 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 17ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113708417
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 5864 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113708417 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\renderer\app.tsx/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113717712
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 6023 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx.tmp.57196.1761113717712 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\renderer\App.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113726378
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json.tmp.57196.1761113726378 to C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\79e01b67-17c7-4c98-b7fa-f554968f8ee1-agent-79e01b67-17c7-4c98-b7fa-f554968f8ee1.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113739135
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42361 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113739135 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113739183
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42361 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113739183 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113739195
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113739195 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 574ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 433b1447-360f-4b6c-a69b-8dd7be3217a5
+[DEBUG] FileHistory: Added snapshot for 433b1447-360f-4b6c-a69b-8dd7be3217a5, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 18ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113792506
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113792506 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 573ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: powershell -Command "Test-Path \"$env:APPDATA\string-search\config.json\""
+[DEBUG] Bash tool description: Check if config file exists
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at hK (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:729)
+    at file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:457
+    at Array.map (<anonymous>)
+    at tF (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:448)
+    at OlB (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2123:12745)
+    at G$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:73:19415)
+    at ka (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at S9 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Wm (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at z$ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113817809
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113817809 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113817836
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113817836 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761113817844
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42686 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761113817844 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 676ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 399ce0d6-e2de-4992-b4e5-18faf98cee67
+[DEBUG] FileHistory: Added snapshot for 399ce0d6-e2de-4992-b4e5-18faf98cee67, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 15ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114530132
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42686 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114530132 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 740ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\main\searchservice.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:58597)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+[DEBUG] FileHistory: Tracked file modification for C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts.tmp.57196.1761114545152
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 1902 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts.tmp.57196.1761114545152 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 1s
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114553068
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42686 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114553068 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114553096
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42686 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114553096 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114553103
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42820 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114553103 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 668ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message f6bf287d-fe3a-4261-97d7-e7d2cc680c4d
+[DEBUG] FileHistory: Added snapshot for f6bf287d-fe3a-4261-97d7-e7d2cc680c4d, tracking 8 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 22ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114639554
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42820 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114639554 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[ERROR] Hr2: Hr2: Diagnostics file path mismatch: expected C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts, got file://c:\users\jaewoong\desktop\project\string-search-tool\src\main\searchservice.ts/)
+    at IL.beforeFileEdited (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:794:21844)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:813:624)
+    at async WS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+    at async GS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:61132)
+    at async QS5 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:60669)
+    at async KP (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2492:57667)
+    at async wZ (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:33255)
+    at async d7 (file:///C:/Users/jaewoong/AppData/Roaming/npm/node_modules/@anthropic-ai/claude-code/cli.js:2713:34138)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts.tmp.57196.1761114651517
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 2631 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts.tmp.57196.1761114651517 to C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts
+[DEBUG] File C:\Users\jaewoong\Desktop\project\String-Search-Tool\src\main\searchService.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 693ms
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114662545
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42820 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114662545 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114662569
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42820 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114662569 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.57196.1761114662577
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 42929 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.57196.1761114662577 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false

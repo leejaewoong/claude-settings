@@ -1,0 +1,53 @@
+[DEBUG] Watching for changes in setting files C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\settings.local.json...
+[DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.26344.1760428589636
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 31061 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.26344.1760428589636 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Applying permission update: Adding 7 allow rule(s) to destination 'localSettings': ["Bash(npm install)","Bash(dir:*)","Bash(npm run build)","Bash(netstat:*)","Bash(findstr:*)","Bash(set NODE_ENV=development)","Bash(electron .)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for bash (C:\Program Files\Git\bin\bash.exe)
+[DEBUG] Looking for shell config file: C:\Users\jaewoong\.bashrc
+[DEBUG] Shell config file not found: C:\Users\jaewoong\.bashrc, creating snapshot with Claude Code defaults only
+[DEBUG] Snapshots directory: C:\Users\jaewoong\.claude\shell-snapshots
+[DEBUG] Creating snapshot at: C:\Users\jaewoong\.claude\shell-snapshots\snapshot-bash-1760428589702-lvzd4d.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\aa99f4a8-9c5e-4016-8468-82d328b826c7-agent-aa99f4a8-9c5e-4016-8468-82d328b826c7.json.tmp.26344.1760428589718
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\aa99f4a8-9c5e-4016-8468-82d328b826c7-agent-aa99f4a8-9c5e-4016-8468-82d328b826c7.json.tmp.26344.1760428589718 to C:\Users\jaewoong\.claude\todos\aa99f4a8-9c5e-4016-8468-82d328b826c7-agent-aa99f4a8-9c5e-4016-8468-82d328b826c7.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\aa99f4a8-9c5e-4016-8468-82d328b826c7-agent-aa99f4a8-9c5e-4016-8468-82d328b826c7.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\jaewoong\.claude\skills, project=C:\Users\jaewoong\Desktop\project\String-Search-Tool\.claude\skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\jaewoong\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.26344.1760428589927
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 38029 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.26344.1760428589927 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.26344.1760428590070
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 38029 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.26344.1760428590070 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.26344.1760428590075
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 38059 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.26344.1760428590075 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.26344.1760428590128
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 38059 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.26344.1760428590128 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (345 bytes)

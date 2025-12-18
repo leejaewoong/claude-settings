@@ -1,0 +1,76 @@
+"""
+Crawler control API endpoints
+"""
+import logging
+from fastapi import APIRouter, Depends
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.core.database import get_db
+from app.services.naver_cafe_crawler import NaverCafeCrawler
+from app.services.post_service import save_posts
+
+logger = logging.getLogger(__name__)
+
+router = APIRouter()
+
+
+@router.post("/run")
+async def trigger_crawl(db: AsyncSession = Depends(get_db)):
+    """Trigger manual crawl of all sources and save to DB"""
+    # For now, only Naver Cafe is implemented
+    return await trigger_naver_cafe_crawl(db)
+
+
+@router.post("/run/naver-cafe")
+async def trigger_naver_cafe_crawl(db: AsyncSession = Depends(get_db)):
+    """
+    Trigger Naver Cafe crawl and save to database.
+
+    Returns:
+        Crawl results including statistics
+    """
+    logger.info("Manual Naver Cafe crawl triggered via API")
+
+    try:
+        crawler = NaverCafeCrawler()
+        results = await crawler.crawl_all_menus()
+
+        # Flatten results
+        all_posts = []
+        menu_stats = {}
+
+        for menu_id, posts in results.items():
+            all_posts.extend(posts)
+            menu_stats[f"menu_{menu_id}"] = len(posts)
+
+        logger.info(f"Crawled {len(all_posts)} total posts from {len(results)} menus")
+
+        # Save to database
+        if all_posts:
+            save_result = await save_posts(all_posts, session=db)
+            logger.info(f"Save results: {save_result}")
+        else:
+            save_result = {"inserted": 0, "updated": 0, "failed": 0}
+            logger.warning("No posts to save")
+
+        return {
+            "status": "success",
+            "total_posts": len(all_posts),
+            "menus_crawled": len(results),
+            "menu_stats": menu_stats,
+            "save_result": save_result,
+        }
+
+    except Exception as e:
+        logger.error(f"Crawl failed: {str(e)}", exc_info=True)
+        return {
+            "status": "error",
+            "error": str(e),
+        }
+
+
+@router.get("/status")
+async def get_status():
+    """Get crawler status"""
+    # TODO: Implement actual status checking (e.g., check if Celery worker is running)
+    return {"status": "idle"}

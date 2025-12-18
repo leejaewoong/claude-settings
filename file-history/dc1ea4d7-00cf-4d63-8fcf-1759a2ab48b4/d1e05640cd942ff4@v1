@@ -1,0 +1,20 @@
+import { z } from "zod";
+
+export const settingsSchema = z.object({
+  subreddits: z
+    .array(z.string().min(1, "서브레딧 이름을 입력하세요"))
+    .min(1, "최소 1개의 서브레딧을 추가하세요"),
+  keywords: z
+    .array(z.string().min(1, "키워드를 입력하세요"))
+    .min(1, "최소 1개의 키워드를 추가하세요"),
+  checkInterval: z
+    .number()
+    .min(1, "최소 1시간")
+    .max(168, "최대 168시간(1주일)"),
+  slackWebhook: z.string().url("올바른 Slack Webhook URL을 입력하세요"),
+  sentimentThreshold: z.number().min(0, "최소 0").max(1, "최대 1"),
+  enableNotifications: z.boolean(),
+  openaiApiKey: z.string().optional(),
+});
+
+export type SettingsFormData = z.infer<typeof settingsSchema>;

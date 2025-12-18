@@ -1,0 +1,18 @@
+"""
+Crawler control API endpoints
+"""
+from fastapi import APIRouter
+
+router = APIRouter()
+
+
+@router.post("/run")
+async def trigger_crawl():
+    """Trigger manual crawl"""
+    return {"message": "Crawl triggered"}
+
+
+@router.get("/status")
+async def get_status():
+    """Get crawler status"""
+    return {"status": "idle"}

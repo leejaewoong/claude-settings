@@ -1,0 +1,33 @@
+import json
+import os
+from fastapi import APIRouter, HTTPException
+from app.schemas.config import UserConfig
+
+router = APIRouter()
+CONFIG_FILE = "user_config.json"
+
+def load_config() -> UserConfig:
+    if os.path.exists(CONFIG_FILE):
+        try:
+            with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return UserConfig(**data)
+        except Exception:
+            return UserConfig()
+    return UserConfig()
+
+def save_config(config: UserConfig):
+    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(config.model_dump(), f, indent=2, ensure_ascii=False)
+
+@router.get("/", response_model=UserConfig)
+async def get_config():
+    """Get user configuration"""
+    return load_config()
+
+
+@router.post("/", response_model=UserConfig)
+async def update_config(config: UserConfig):
+    """Update user configuration"""
+    save_config(config)
+    return config

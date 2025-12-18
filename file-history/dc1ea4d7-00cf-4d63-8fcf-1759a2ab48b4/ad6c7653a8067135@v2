@@ -1,0 +1,40 @@
+// Dashboard Stats
+export interface DashboardStats {
+  totalPosts: number;
+  sentimentDistribution: {
+    positive: number;
+    neutral: number;
+    negative: number;
+  };
+  recentActivity: number;
+  lastUpdate: string;
+}
+
+// Reddit Post
+export interface RedditPost {
+  id: string;
+  title: string;
+  content: string;
+  author: string;
+  createdAt: string;
+  score: number;
+  sentiment: "positive" | "neutral" | "negative";
+  subreddit: string;
+  url: string;
+}
+
+// Settings
+export interface Settings {
+  checkInterval: number;
+  postLimit: number;
+  filterPrompt?: string;
+  slackChannel: string;
+  deliverySchedule: "manual" | "hourly" | "daily" | "custom";
+}
+
+// API Response wrapper
+export interface ApiResponse<T> {
+  data: T;
+  message?: string;
+  error?: string;
+}

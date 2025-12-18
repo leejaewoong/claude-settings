@@ -1,0 +1,37 @@
+"""
+Quick test script to verify crawler functionality
+"""
+import asyncio
+import sys
+import os
+
+# Add the app directory to the path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'app'))
+
+async def main():
+    from app.services.naver_cafe_crawler import NaverCafeCrawler
+
+    print("Starting crawler test...")
+    crawler = NaverCafeCrawler()
+
+    # Test crawling menu 1 only (to keep it quick)
+    print("Crawling menu 1...")
+    results = await crawler.crawl_menu(1)
+
+    print(f"\n=== Results ===")
+    print(f"Found {len(results)} posts")
+
+    if results:
+        print("\n=== First Post ===")
+        first = results[0]
+        print(f"Title: {first['title']}")
+        print(f"Author: {first['author']}")
+        print(f"Link: {first['link']}")
+        print(f"Content length: {len(first['content'])} chars")
+        print(f"Comments: {len(first['comments'])} comments")
+        print(f"Created at: {first['created_at']}")
+
+    return results
+
+if __name__ == "__main__":
+    results = asyncio.run(main())

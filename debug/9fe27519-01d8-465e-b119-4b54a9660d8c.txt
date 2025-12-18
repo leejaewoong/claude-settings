@@ -1,0 +1,378 @@
+2025-12-18T09:37:53.739Z [DEBUG] Watching for changes in setting files C:\Users\jaewoong\.claude, C:\Users\jaewoong\Desktop\project\Sentiment-Curator\.claude...
+2025-12-18T09:37:53.764Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2025-12-18T09:37:53.776Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-18T09:37:53.776Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-18T09:37:53.776Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-18T09:37:53.779Z [DEBUG] LSP server manager initialized successfully
+2025-12-18T09:37:53.779Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-18T09:37:53.783Z [DEBUG] Applying permission update: Adding 38 allow rule(s) to destination 'localSettings': ["Bash(npx create-next-app@latest:*)","Bash(python -m venv:*)","Bash(./venv/Scripts/pip install:*)","Bash(./venv/Scripts/python:*)","Bash(./venv/Scripts/playwright:*)","Bash(npm install)","WebFetch(domain:v0.app)","Bash(npx shadcn@latest init:*)","Bash(npx shadcn@latest add button card separator scroll-area)","Bash(curl:*)","Bash(npm run dev:*)","Bash(npx shadcn@latest add:*)","Bash(git add:*)","Bash(git commit:*)","Bash(git rm:*)","Bash(git checkout:*)","Bash(git stash:*)","Bash(mkdir:*)","Bash(cat:*)","Bash(chmod:*)","Bash(python -m uvicorn:*)","Bash(pip install:*)","Bash(timeout 5 python:*)","Bash(ls:*)","Bash(tree:*)","Bash(find:*)","Bash(npm install:*)","Bash(npm run type-check:*)","Bash(npm run build:*)","Bash(npm run lint)","Bash(grep:*)","Bash(python:*)","Bash(./venv/Scripts/python.exe:*)","Bash(./venv/Scripts/pip.exe install:*)","Bash(./venv/Scripts/alembic.exe revision:*)","Bash(./venv/Scripts/pip.exe list:*)","Bash(timeout 120 ./venv/Scripts/python.exe:*)","Bash(timeout 90 ./venv/Scripts/python.exe:*)"]
+2025-12-18T09:37:53.787Z [DEBUG] Loading plugin figma from source: {"source":"url","url":"https://github.com/figma/mcp-server-guide.git"}
+2025-12-18T09:37:53.787Z [DEBUG] No version found for figma@claude-plugins-official, using 'unknown'
+2025-12-18T09:37:53.787Z [DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/figma/mcp-server-guide.git"} to temporary path C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050673787_a6ukag
+2025-12-18T09:37:53.818Z [DEBUG] Git remote URL: https://github.com/leejaewoong/Sentiment-Curator.git
+2025-12-18T09:37:53.818Z [DEBUG] Parsed repository: leejaewoong/Sentiment-Curator from https://github.com/leejaewoong/Sentiment-Curator.git
+2025-12-18T09:37:53.818Z [DEBUG] Parsed repository: leejaewoong/Sentiment-Curator from URL: https://github.com/leejaewoong/Sentiment-Curator.git
+2025-12-18T09:37:53.818Z [DEBUG] Path C:\Users\jaewoong\Desktop\project\Sentiment-Curator already tracked for repo leejaewoong/sentiment-curator
+2025-12-18T09:37:54.107Z [DEBUG] [SLOW OPERATION DETECTED] fs.copyFileSync (70.5ms)
+2025-12-18T09:37:54.109Z [DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.14208.1766050674109
+2025-12-18T09:37:54.109Z [DEBUG] Preserving file permissions: 100666
+2025-12-18T09:37:54.117Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (8.0ms)
+2025-12-18T09:37:54.117Z [DEBUG] Temp file written successfully, size: 58857 bytes
+2025-12-18T09:37:54.117Z [DEBUG] Applied original permissions to temp file
+2025-12-18T09:37:54.117Z [DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.14208.1766050674109 to C:\Users\jaewoong\.claude.json
+2025-12-18T09:37:54.118Z [DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+2025-12-18T09:37:54.133Z [DEBUG] [SLOW OPERATION DETECTED] fs.readFileSync (13.7ms)
+2025-12-18T09:37:54.728Z [DEBUG] Cloned repository from https://github.com/figma/mcp-server-guide.git to C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050673787_a6ukag
+2025-12-18T09:37:54.787Z [DEBUG] [SLOW OPERATION DETECTED] fs.renameSync (57.0ms)
+2025-12-18T09:37:54.787Z [DEBUG] Successfully cached plugin figma to C:\Users\jaewoong\.claude\plugins\cache\figma
+2025-12-18T09:37:54.787Z [DEBUG] Using manifest version for figma@claude-plugins-official: 1.0.0
+2025-12-18T09:37:54.787Z [DEBUG] Plugin figma@claude-plugins-official version 1.0.0 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\figma\1.0.0
+2025-12-18T09:37:54.800Z [DEBUG] [SLOW OPERATION DETECTED] fs.rmSync (12.8ms)
+2025-12-18T09:37:54.803Z [DEBUG] Loading plugin feature-dev from source: "./plugins/feature-dev"
+2025-12-18T09:37:54.859Z [DEBUG] Using git SHA for feature-dev@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:54.859Z [DEBUG] Plugin feature-dev@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\feature-dev\ab2b6d0cad88
+2025-12-18T09:37:54.859Z [DEBUG] Copied local plugin feature-dev to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\feature-dev\ab2b6d0cad88
+2025-12-18T09:37:54.861Z [DEBUG] Loading plugin security-guidance from source: "./plugins/security-guidance"
+2025-12-18T09:37:54.911Z [DEBUG] Using git SHA for security-guidance@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:54.911Z [DEBUG] Plugin security-guidance@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\security-guidance\ab2b6d0cad88
+2025-12-18T09:37:54.911Z [DEBUG] Copied local plugin security-guidance to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\security-guidance\ab2b6d0cad88
+2025-12-18T09:37:54.912Z [DEBUG] Loaded hooks from standard location for plugin security-guidance: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\security-guidance\ab2b6d0cad88\hooks\hooks.json
+2025-12-18T09:37:54.914Z [DEBUG] Loading plugin code-review from source: "./plugins/code-review"
+2025-12-18T09:37:54.962Z [DEBUG] Using git SHA for code-review@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:54.962Z [DEBUG] Plugin code-review@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\code-review\ab2b6d0cad88
+2025-12-18T09:37:54.962Z [DEBUG] Copied local plugin code-review to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\code-review\ab2b6d0cad88
+2025-12-18T09:37:54.965Z [DEBUG] Loading plugin explanatory-output-style from source: "./plugins/explanatory-output-style"
+2025-12-18T09:37:55.012Z [DEBUG] Using git SHA for explanatory-output-style@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.012Z [DEBUG] Plugin explanatory-output-style@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\explanatory-output-style\ab2b6d0cad88
+2025-12-18T09:37:55.012Z [DEBUG] Copied local plugin explanatory-output-style to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\explanatory-output-style\ab2b6d0cad88
+2025-12-18T09:37:55.013Z [DEBUG] Loaded hooks from standard location for plugin explanatory-output-style: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\explanatory-output-style\ab2b6d0cad88\hooks\hooks.json
+2025-12-18T09:37:55.015Z [DEBUG] Loading plugin learning-output-style from source: "./plugins/learning-output-style"
+2025-12-18T09:37:55.063Z [DEBUG] Using git SHA for learning-output-style@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.063Z [DEBUG] Plugin learning-output-style@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\learning-output-style\ab2b6d0cad88
+2025-12-18T09:37:55.063Z [DEBUG] Copied local plugin learning-output-style to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\learning-output-style\ab2b6d0cad88
+2025-12-18T09:37:55.064Z [DEBUG] Loaded hooks from standard location for plugin learning-output-style: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\learning-output-style\ab2b6d0cad88\hooks\hooks.json
+2025-12-18T09:37:55.066Z [DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+2025-12-18T09:37:55.113Z [DEBUG] Using git SHA for frontend-design@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.114Z [DEBUG] Plugin frontend-design@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\frontend-design\ab2b6d0cad88
+2025-12-18T09:37:55.114Z [DEBUG] Copied local plugin frontend-design to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\frontend-design\ab2b6d0cad88
+2025-12-18T09:37:55.116Z [DEBUG] Loading plugin plugin-dev from source: "./plugins/plugin-dev"
+2025-12-18T09:37:55.167Z [DEBUG] Using git SHA for plugin-dev@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.167Z [DEBUG] Plugin plugin-dev@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\plugin-dev\ab2b6d0cad88
+2025-12-18T09:37:55.167Z [DEBUG] Copied local plugin plugin-dev to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\plugin-dev\ab2b6d0cad88
+2025-12-18T09:37:55.167Z [DEBUG] Plugin plugin-dev has no entry.skills defined
+2025-12-18T09:37:55.169Z [DEBUG] Loading plugin playwright from source: "./external_plugins/playwright"
+2025-12-18T09:37:55.215Z [DEBUG] Using git SHA for playwright@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.215Z [DEBUG] Plugin playwright@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\playwright\ab2b6d0cad88
+2025-12-18T09:37:55.215Z [DEBUG] Copied local plugin playwright to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\playwright\ab2b6d0cad88
+2025-12-18T09:37:55.218Z [DEBUG] Loading plugin github from source: "./external_plugins/github"
+2025-12-18T09:37:55.266Z [DEBUG] Using git SHA for github@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.266Z [DEBUG] Plugin github@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\github\ab2b6d0cad88
+2025-12-18T09:37:55.266Z [DEBUG] Copied local plugin github to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\github\ab2b6d0cad88
+2025-12-18T09:37:55.270Z [DEBUG] Loading plugin supabase from source: "./external_plugins/supabase"
+2025-12-18T09:37:55.321Z [DEBUG] Using git SHA for supabase@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.321Z [DEBUG] Plugin supabase@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\supabase\ab2b6d0cad88
+2025-12-18T09:37:55.321Z [DEBUG] Copied local plugin supabase to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\supabase\ab2b6d0cad88
+2025-12-18T09:37:55.323Z [DEBUG] Loading plugin atlassian from source: "./external_plugins/atlassian"
+2025-12-18T09:37:55.371Z [DEBUG] Using git SHA for atlassian@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:55.372Z [DEBUG] Plugin atlassian@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\atlassian\ab2b6d0cad88
+2025-12-18T09:37:55.372Z [DEBUG] Copied local plugin atlassian to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\atlassian\ab2b6d0cad88
+2025-12-18T09:37:55.376Z [DEBUG] Loading plugin Notion from source: {"source":"url","url":"https://github.com/makenotion/claude-code-notion-plugin.git"}
+2025-12-18T09:37:55.376Z [DEBUG] No version found for Notion@claude-plugins-official, using 'unknown'
+2025-12-18T09:37:55.377Z [DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/makenotion/claude-code-notion-plugin.git"} to temporary path C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050675377_4hvs5e
+2025-12-18T09:37:56.248Z [DEBUG] Cloned repository from https://github.com/makenotion/claude-code-notion-plugin.git to C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050675377_4hvs5e
+2025-12-18T09:37:56.252Z [DEBUG] Successfully cached plugin Notion to C:\Users\jaewoong\.claude\plugins\cache\Notion
+2025-12-18T09:37:56.252Z [DEBUG] Using manifest version for Notion@claude-plugins-official: 0.1.0
+2025-12-18T09:37:56.252Z [DEBUG] Plugin Notion@claude-plugins-official version 0.1.0 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\Notion\0.1.0
+2025-12-18T09:37:56.264Z [DEBUG] [SLOW OPERATION DETECTED] fs.rmSync (11.1ms)
+2025-12-18T09:37:56.266Z [DEBUG] Loading plugin gitlab from source: "./external_plugins/gitlab"
+2025-12-18T09:37:56.315Z [DEBUG] Using git SHA for gitlab@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:56.315Z [DEBUG] Plugin gitlab@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\gitlab\ab2b6d0cad88
+2025-12-18T09:37:56.315Z [DEBUG] Copied local plugin gitlab to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\gitlab\ab2b6d0cad88
+2025-12-18T09:37:56.317Z [DEBUG] Loading plugin slack from source: "./external_plugins/slack"
+2025-12-18T09:37:56.367Z [DEBUG] Using git SHA for slack@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:56.368Z [DEBUG] Plugin slack@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\slack\ab2b6d0cad88
+2025-12-18T09:37:56.368Z [DEBUG] Copied local plugin slack to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\slack\ab2b6d0cad88
+2025-12-18T09:37:56.370Z [DEBUG] Loading plugin vercel from source: "./external_plugins/vercel"
+2025-12-18T09:37:56.429Z [DEBUG] Using git SHA for vercel@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:56.429Z [DEBUG] Plugin vercel@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\vercel\ab2b6d0cad88
+2025-12-18T09:37:56.429Z [DEBUG] Copied local plugin vercel to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\vercel\ab2b6d0cad88
+2025-12-18T09:37:56.431Z [DEBUG] Loading plugin firebase from source: "./external_plugins/firebase"
+2025-12-18T09:37:56.480Z [DEBUG] Using git SHA for firebase@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:56.480Z [DEBUG] Plugin firebase@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\firebase\ab2b6d0cad88
+2025-12-18T09:37:56.480Z [DEBUG] Copied local plugin firebase to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\firebase\ab2b6d0cad88
+2025-12-18T09:37:56.483Z [DEBUG] Loading plugin pr-review-toolkit from source: "./plugins/pr-review-toolkit"
+2025-12-18T09:37:56.533Z [DEBUG] Using git SHA for pr-review-toolkit@claude-plugins-official: ab2b6d0cad88
+2025-12-18T09:37:56.533Z [DEBUG] Plugin pr-review-toolkit@claude-plugins-official version ab2b6d0cad88 already cached at C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\pr-review-toolkit\ab2b6d0cad88
+2025-12-18T09:37:56.533Z [DEBUG] Copied local plugin pr-review-toolkit to versioned cache: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\pr-review-toolkit\ab2b6d0cad88
+2025-12-18T09:37:56.534Z [DEBUG] Found 18 plugins (18 enabled, 0 disabled)
+2025-12-18T09:37:56.544Z [DEBUG] Stats cache is up to date
+2025-12-18T09:37:56.551Z [DEBUG] Loading skills from directories: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\jaewoong\.claude\skills, project=[C:\Users\jaewoong\Desktop\project\Sentiment-Curator\.claude\skills]
+2025-12-18T09:37:56.561Z [DEBUG] Loaded 2 installed plugins from C:\Users\jaewoong\.claude\plugins\installed_plugins.json
+2025-12-18T09:37:56.594Z [DEBUG] Creating shell snapshot for bash (C:\Program Files\Git\bin\bash.exe)
+2025-12-18T09:37:56.594Z [DEBUG] Looking for shell config file: C:\Users\jaewoong\.bashrc
+2025-12-18T09:37:56.594Z [DEBUG] Shell config file not found: C:\Users\jaewoong\.bashrc, creating snapshot with Claude Code defaults only
+2025-12-18T09:37:56.594Z [DEBUG] Snapshots directory: C:\Users\jaewoong\.claude\shell-snapshots
+2025-12-18T09:37:56.605Z [DEBUG] Creating snapshot at: C:\Users\jaewoong\.claude\shell-snapshots\snapshot-bash-1766050676594-k5mbqd.sh
+2025-12-18T09:37:56.605Z [DEBUG] Shell binary exists: true
+2025-12-18T09:37:56.605Z [DEBUG] Execution timeout: 10000ms
+2025-12-18T09:37:56.611Z [DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\9fe27519-01d8-465e-b119-4b54a9660d8c-agent-9fe27519-01d8-465e-b119-4b54a9660d8c.json.tmp.14208.1766050676611
+2025-12-18T09:37:56.616Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.3ms)
+2025-12-18T09:37:56.616Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-18T09:37:56.616Z [DEBUG] Renaming C:\Users\jaewoong\.claude\todos\9fe27519-01d8-465e-b119-4b54a9660d8c-agent-9fe27519-01d8-465e-b119-4b54a9660d8c.json.tmp.14208.1766050676611 to C:\Users\jaewoong\.claude\todos\9fe27519-01d8-465e-b119-4b54a9660d8c-agent-9fe27519-01d8-465e-b119-4b54a9660d8c.json
+2025-12-18T09:37:56.617Z [DEBUG] File C:\Users\jaewoong\.claude\todos\9fe27519-01d8-465e-b119-4b54a9660d8c-agent-9fe27519-01d8-465e-b119-4b54a9660d8c.json written atomically
+2025-12-18T09:37:57.833Z [DEBUG] getPluginSkills: Processing 18 enabled plugins
+2025-12-18T09:37:57.833Z [DEBUG] Checking plugin figma: skillsPath=exists, skillsPaths=0 paths
+2025-12-18T09:37:57.833Z [DEBUG] Attempting to load skills from plugin figma default skillsPath: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\figma\1.0.0\skills
+2025-12-18T09:37:57.834Z [DEBUG] Loading hooks from plugin: security-guidance
+2025-12-18T09:37:57.834Z [DEBUG] Loading hooks from plugin: explanatory-output-style
+2025-12-18T09:37:57.834Z [DEBUG] Loading hooks from plugin: learning-output-style
+2025-12-18T09:37:57.834Z [DEBUG] Registered 3 hooks from 18 plugins
+2025-12-18T09:37:57.844Z [DEBUG] Loaded 3 skills from plugin figma default directory
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin feature-dev: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin security-guidance: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin code-review: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin explanatory-output-style: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin learning-output-style: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+2025-12-18T09:37:57.844Z [DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\frontend-design\ab2b6d0cad88\skills
+2025-12-18T09:37:57.845Z [DEBUG] Loaded 1 commands from plugin feature-dev default directory
+2025-12-18T09:37:57.864Z [DEBUG] Loaded 8 unique skills (managed: 0, user: 4, project: 4, duplicates removed: 0)
+2025-12-18T09:37:57.864Z [DEBUG] Loaded 1 skills from plugin frontend-design default directory
+2025-12-18T09:37:57.864Z [DEBUG] Checking plugin plugin-dev: skillsPath=exists, skillsPaths=0 paths
+2025-12-18T09:37:57.864Z [DEBUG] Attempting to load skills from plugin plugin-dev default skillsPath: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\plugin-dev\ab2b6d0cad88\skills
+2025-12-18T09:37:57.866Z [DEBUG] Loaded 1 commands from plugin code-review default directory
+2025-12-18T09:37:57.877Z [DEBUG] Loaded 7 skills from plugin plugin-dev default directory
+2025-12-18T09:37:57.877Z [DEBUG] Checking plugin playwright: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.877Z [DEBUG] Checking plugin github: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.877Z [DEBUG] Checking plugin supabase: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.877Z [DEBUG] Checking plugin atlassian: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.877Z [DEBUG] Checking plugin Notion: skillsPath=exists, skillsPaths=0 paths
+2025-12-18T09:37:57.877Z [DEBUG] Attempting to load skills from plugin Notion default skillsPath: C:\Users\jaewoong\.claude\plugins\cache\claude-plugins-official\Notion\0.1.0\skills
+2025-12-18T09:37:57.877Z [DEBUG] Loaded 1 commands from plugin plugin-dev default directory
+2025-12-18T09:37:57.879Z [DEBUG] Loaded 0 skills from plugin Notion default directory
+2025-12-18T09:37:57.879Z [DEBUG] Checking plugin gitlab: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.879Z [DEBUG] Checking plugin slack: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.879Z [DEBUG] Checking plugin vercel: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.879Z [DEBUG] Checking plugin firebase: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.879Z [DEBUG] Checking plugin pr-review-toolkit: skillsPath=none, skillsPaths=0 paths
+2025-12-18T09:37:57.879Z [DEBUG] Total plugin skills loaded: 11
+2025-12-18T09:37:57.879Z [DEBUG] Loaded 6 commands from plugin Notion default directory
+2025-12-18T09:37:57.880Z [DEBUG] Loaded 1 commands from plugin pr-review-toolkit default directory
+2025-12-18T09:37:57.880Z [DEBUG] Total plugin commands loaded: 10
+2025-12-18T09:37:57.882Z [DEBUG] Loaded 3 agents from plugin feature-dev default directory
+2025-12-18T09:37:57.883Z [DEBUG] Loaded 3 agents from plugin plugin-dev default directory
+2025-12-18T09:37:57.884Z [DEBUG] Loaded 6 agents from plugin pr-review-toolkit default directory
+2025-12-18T09:37:57.884Z [DEBUG] Total plugin agents loaded: 12
+2025-12-18T09:37:57.884Z [DEBUG] getSkills returning: 8 skill dir commands, 11 plugin skills
+2025-12-18T09:37:57.989Z [DEBUG] Shell snapshot created successfully (286 bytes)
+2025-12-18T09:37:58.028Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=C:\Users\jaewoong\.local\bin\claude.exe)
+2025-12-18T09:37:58.575Z [DEBUG] Successfully refreshed marketplace: claude-code-plugins
+2025-12-18T09:37:58.590Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (5.0ms)
+2025-12-18T09:37:58.590Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2025-12-18T09:37:58.590Z [DEBUG] Plugin autoupdate: checking installed plugins
+2025-12-18T09:37:58.598Z [DEBUG] [SLOW OPERATION DETECTED] fs.readFileSync (7.0ms)
+2025-12-18T09:37:58.602Z [DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/figma/mcp-server-guide.git"} to temporary path C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050678602_3joe2u
+2025-12-18T09:37:58.610Z [DEBUG] Caching plugin from source: {"source":"url","url":"https://github.com/makenotion/claude-code-notion-plugin.git"} to temporary path C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050678610_yt22gk
+2025-12-18T09:37:59.149Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-12-18T09:37:59.535Z [DEBUG] Cloned repository from https://github.com/figma/mcp-server-guide.git to C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050678602_3joe2u
+2025-12-18T09:37:59.538Z [DEBUG] Successfully cached plugin figma to C:\Users\jaewoong\.claude\plugins\cache\figma
+2025-12-18T09:37:59.538Z [DEBUG] Using manifest version for figma@claude-plugins-official: 1.0.0
+2025-12-18T09:37:59.551Z [DEBUG] [SLOW OPERATION DETECTED] fs.rmSync (12.6ms)
+2025-12-18T09:37:59.830Z [DEBUG] MCP server "plugin:figma:figma": Initializing HTTP transport to https://mcp.figma.com/mcp
+2025-12-18T09:37:59.830Z [DEBUG] MCP server "plugin:figma:figma": Node version: v24.3.0, Platform: win32
+2025-12-18T09:37:59.830Z [DEBUG] MCP server "plugin:figma:figma": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:37:59.831Z [DEBUG] MCP server "plugin:figma:figma-desktop": Initializing HTTP transport to http://127.0.0.1:3845/mcp
+2025-12-18T09:37:59.831Z [DEBUG] MCP server "plugin:figma:figma-desktop": Node version: v24.3.0, Platform: win32
+2025-12-18T09:37:59.831Z [DEBUG] MCP server "plugin:figma:figma-desktop": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:37:59.834Z [DEBUG] MCP server "plugin:playwright:playwright": Starting connection with timeout of 30000ms
+2025-12-18T09:37:59.864Z [DEBUG] MCP server "plugin:figma:figma": Proxy options: default
+2025-12-18T09:37:59.864Z [DEBUG] MCP server "plugin:figma:figma": HTTP transport options: {"url":"https://mcp.figma.com/mcp","headers":{"User-Agent":"claude-code/2.0.72"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:37:59.864Z [DEBUG] MCP server "plugin:figma:figma": HTTP transport created successfully
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma": Client created, setting up request handler
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma": Starting connection with timeout of 30000ms
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma": Testing basic HTTP connectivity to https://mcp.figma.com/mcp
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma": Parsed URL: host=mcp.figma.com, port=default, protocol=https:
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma-desktop": Proxy options: default
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma-desktop": HTTP transport options: {"url":"http://127.0.0.1:3845/mcp","headers":{"User-Agent":"claude-code/2.0.72"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:37:59.865Z [DEBUG] MCP server "plugin:figma:figma-desktop": HTTP transport created successfully
+2025-12-18T09:37:59.866Z [DEBUG] MCP server "plugin:figma:figma-desktop": Client created, setting up request handler
+2025-12-18T09:37:59.866Z [DEBUG] MCP server "plugin:figma:figma-desktop": Starting connection with timeout of 30000ms
+2025-12-18T09:37:59.866Z [DEBUG] MCP server "plugin:figma:figma-desktop": Testing basic HTTP connectivity to http://127.0.0.1:3845/mcp
+2025-12-18T09:37:59.866Z [DEBUG] MCP server "plugin:figma:figma-desktop": Parsed URL: host=127.0.0.1, port=3845, protocol=http:
+2025-12-18T09:37:59.866Z [DEBUG] MCP server "plugin:figma:figma-desktop": Using loopback address: 127.0.0.1
+2025-12-18T09:37:59.889Z [DEBUG] MCP server "plugin:figma:figma": Token expired without refresh token
+2025-12-18T09:37:59.890Z [DEBUG] MCP server "plugin:figma:figma-desktop": No token data found
+2025-12-18T09:37:59.927Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-18T09:37:59.927Z [DEBUG] Found 0 hook matchers in settings
+2025-12-18T09:37:59.927Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-18T09:37:59.949Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-18T09:37:59.949Z [DEBUG] Found 0 hook matchers in settings
+2025-12-18T09:37:59.949Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-18T09:37:59.974Z [DEBUG] MCP server "plugin:figma:figma-desktop": HTTP Connection failed after 143ms: Unable to connect. Is the computer able to access the url? (code: ConnectionRefused, errno: none)
+2025-12-18T09:37:59.974Z [ERROR] MCP server "plugin:figma:figma-desktop" Error: Unable to connect. Is the computer able to access the url?
+2025-12-18T09:37:59.974Z [DEBUG] MCP server "plugin:figma:figma-desktop": Connection failed after 143ms: Unable to connect. Is the computer able to access the url?
+2025-12-18T09:37:59.974Z [ERROR] MCP server "plugin:figma:figma-desktop" Connection failed: Unable to connect. Is the computer able to access the url?
+2025-12-18T09:37:59.976Z [DEBUG] Summarizing all 82 messages (~3859 tokens)
+2025-12-18T09:38:00.050Z [DEBUG] Cloned repository from https://github.com/makenotion/claude-code-notion-plugin.git to C:\Users\jaewoong\.claude\plugins\cache\temp_git_1766050678610_yt22gk
+2025-12-18T09:38:00.053Z [DEBUG] Successfully cached plugin Notion to C:\Users\jaewoong\.claude\plugins\cache\Notion
+2025-12-18T09:38:00.053Z [DEBUG] Using manifest version for Notion@claude-plugins-official: 0.1.0
+2025-12-18T09:38:00.090Z [DEBUG] [SLOW OPERATION DETECTED] fs.rmSync (37.3ms)
+2025-12-18T09:38:00.566Z [DEBUG] MCP server "plugin:figma:figma": Found client info
+2025-12-18T09:38:00.566Z [DEBUG] MCP server "plugin:figma:figma": Token expired without refresh token
+2025-12-18T09:38:00.566Z [DEBUG] MCP server "plugin:figma:figma": Generated new OAuth state
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Saving code verifier
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Authorization URL: https://www.figma.com/oauth/mcp?response_type=code&client_id=APowiRUdjpx682gUAx3umC&code_challenge=-_ZIxS3hhmfy8iwzvqm-EaGQTafRbhL_N0rSg1RKKnA&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A3118%2Fcallback&state=2hrswyPHmYkobcVtVCE4ydeCxFtuCjJTInZKa815XAI&scope=mcp%3Aconnect&resource=https%3A%2F%2Fmcp.figma.com%2Fmcp
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Scopes in URL: mcp:connect
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Captured scopes from authorization URL: mcp:connect
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Redirection handling is disabled, skipping redirect
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": HTTP Connection failed after 737ms: Unauthorized (code: none, errno: none)
+2025-12-18T09:38:00.567Z [ERROR] MCP server "plugin:figma:figma" Error: Unauthorized
+2025-12-18T09:38:00.567Z [DEBUG] MCP server "plugin:figma:figma": Authentication required for HTTP server
+2025-12-18T09:38:00.569Z [ERROR] MCP server "plugin:playwright:playwright" Server stderr: npm warn exec The following package was not found and will be installed: @playwright/mcp@0.0.52
+2025-12-18T09:38:01.566Z [DEBUG] Stream started - received first chunk
+2025-12-18T09:38:01.625Z [DEBUG] Stream started - received first chunk
+2025-12-18T09:38:01.808Z [DEBUG] Stream started - received first chunk
+2025-12-18T09:38:01.946Z [DEBUG] MCP server "plugin:playwright:playwright": Successfully connected to undefined server in 2114ms
+2025-12-18T09:38:01.946Z [DEBUG] MCP server "plugin:playwright:playwright": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Playwright","version":"0.0.52"}}
+2025-12-18T09:38:01.954Z [DEBUG] MCP server "plugin:github:github": Initializing HTTP transport to https://api.githubcopilot.com/mcp/
+2025-12-18T09:38:01.954Z [DEBUG] MCP server "plugin:github:github": Node version: v24.3.0, Platform: win32
+2025-12-18T09:38:01.954Z [DEBUG] MCP server "plugin:github:github": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:38:01.955Z [DEBUG] MCP server "plugin:supabase:supabase": Initializing HTTP transport to https://mcp.supabase.com/mcp
+2025-12-18T09:38:01.955Z [DEBUG] MCP server "plugin:supabase:supabase": Node version: v24.3.0, Platform: win32
+2025-12-18T09:38:01.955Z [DEBUG] MCP server "plugin:supabase:supabase": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:38:01.956Z [DEBUG] MCP server "plugin:github:github": Proxy options: default
+2025-12-18T09:38:01.956Z [DEBUG] MCP server "plugin:github:github": HTTP transport options: {"url":"https://api.githubcopilot.com/mcp/","headers":{"User-Agent":"claude-code/2.0.72","Authorization":"Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:38:01.956Z [DEBUG] MCP server "plugin:github:github": HTTP transport created successfully
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:github:github": Client created, setting up request handler
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:github:github": Starting connection with timeout of 30000ms
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:github:github": Testing basic HTTP connectivity to https://api.githubcopilot.com/mcp/
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:github:github": Parsed URL: host=api.githubcopilot.com, port=default, protocol=https:
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": Proxy options: default
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": HTTP transport options: {"url":"https://mcp.supabase.com/mcp","headers":{"User-Agent":"claude-code/2.0.72"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": HTTP transport created successfully
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": Client created, setting up request handler
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": Starting connection with timeout of 30000ms
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": Testing basic HTTP connectivity to https://mcp.supabase.com/mcp
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:supabase:supabase": Parsed URL: host=mcp.supabase.com, port=default, protocol=https:
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:atlassian:atlassian": SSE transport initialized, awaiting connection
+2025-12-18T09:38:01.957Z [DEBUG] MCP server "plugin:atlassian:atlassian": Starting connection with timeout of 30000ms
+2025-12-18T09:38:01.959Z [DEBUG] MCP server "plugin:atlassian:atlassian": Token expired without refresh token
+2025-12-18T09:38:01.960Z [DEBUG] MCP server "plugin:github:github": No token data found
+2025-12-18T09:38:01.960Z [DEBUG] MCP server "plugin:supabase:supabase": Token expired without refresh token
+2025-12-18T09:38:02.060Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.3ms)
+2025-12-18T09:38:02.069Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.4ms)
+2025-12-18T09:38:02.077Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.9ms)
+2025-12-18T09:38:02.085Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.9ms)
+2025-12-18T09:38:02.092Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.4ms)
+2025-12-18T09:38:02.100Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.7ms)
+2025-12-18T09:38:02.102Z [DEBUG] MCP server "plugin:atlassian:atlassian": Found client info
+2025-12-18T09:38:02.102Z [DEBUG] MCP server "plugin:atlassian:atlassian": Token expired without refresh token
+2025-12-18T09:38:02.102Z [DEBUG] MCP server "plugin:atlassian:atlassian": Generated new OAuth state
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": Saving code verifier
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": Authorization URL: https://mcp.atlassian.com/v1/authorize?response_type=code&client_id=NcKlPFI-B9JyVGrY&code_challenge=rcxZCj6WgbSdOkLop7mK18bEJUfE839P8iTCc-MKm0Q&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A3118%2Fcallback&state=3EY7LN_hm5MmcMskGuDzO2m-i3-dtoujvhNRkFjL5Es
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": Scopes in URL: NOT FOUND
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": No scopes available from URL or metadata
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": Redirection handling is disabled, skipping redirect
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": SSE Connection failed after 147ms: {"url":"https://mcp.atlassian.com/v1/sse","error":"Unauthorized","errorType":"FT","stack":"Error: Unauthorized\n    at _authThenStart (B:/~BUN/root/claude.exe:981:24946)\n    at processTicksAndRejections (native:7:39)"}
+2025-12-18T09:38:02.103Z [ERROR] MCP server "plugin:atlassian:atlassian" Error: Unauthorized
+2025-12-18T09:38:02.103Z [DEBUG] MCP server "plugin:atlassian:atlassian": Authentication required for SSE server
+2025-12-18T09:38:02.113Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.2ms)
+2025-12-18T09:38:02.121Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.2ms)
+2025-12-18T09:38:02.129Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.1ms)
+2025-12-18T09:38:02.137Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.0ms)
+2025-12-18T09:38:02.146Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.9ms)
+2025-12-18T09:38:02.156Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (10.0ms)
+2025-12-18T09:38:02.165Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (9.0ms)
+2025-12-18T09:38:02.173Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (7.8ms)
+2025-12-18T09:38:02.182Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.2ms)
+2025-12-18T09:38:02.190Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (8.5ms)
+2025-12-18T09:38:02.502Z [DEBUG] MCP server "plugin:supabase:supabase": Found client info
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Token expired without refresh token
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Generated new OAuth state
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Saving code verifier
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Authorization URL: https://api.supabase.com/v1/oauth/authorize?response_type=code&client_id=3b8dbc68-c3d5-456b-990e-6e853c9cc482&code_challenge=DGTpMcetA3D7q-9L8Y8bmWAyq2kY0lTWgViUWJ02dB8&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A3118%2Fcallback&state=elLnloLqQPMKaKB5aWr-Q-FkySDe3EPWawvpWX3RAMc&scope=organizations%3Aread+projects%3Aread+projects%3Awrite+database%3Awrite+database%3Aread+analytics%3Aread+secrets%3Aread+edge_functions%3Aread+edge_functions%3Awrite+environment%3Aread+environment%3Awrite+storage%3Aread&resource=https%3A%2F%2Fmcp.supabase.com%2Fmcp
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Scopes in URL: organizations:read projects:read projects:write database:write database:read analytics:read secrets:read edge_functions:read edge_functions:write environment:read environment:write storage:read
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Captured scopes from authorization URL: organizations:read projects:read projects:write database:write database:read analytics:read secrets:read edge_functions:read edge_functions:write environment:read environment:write storage:read
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": Redirection handling is disabled, skipping redirect
+2025-12-18T09:38:02.503Z [DEBUG] MCP server "plugin:supabase:supabase": HTTP Connection failed after 548ms: Unauthorized (code: none, errno: none)
+2025-12-18T09:38:02.503Z [ERROR] MCP server "plugin:supabase:supabase" Error: Unauthorized
+2025-12-18T09:38:02.504Z [DEBUG] MCP server "plugin:supabase:supabase": Authentication required for HTTP server
+2025-12-18T09:38:02.542Z [DEBUG] MCP server "plugin:github:github": HTTP Connection failed after 588ms: Streamable HTTP error: Error POSTing to endpoint: bad request: Authorization header is badly formatted
+ (code: 400, errno: none)
+2025-12-18T09:38:02.542Z [ERROR] MCP server "plugin:github:github" Error: Streamable HTTP error: Error POSTing to endpoint: bad request: Authorization header is badly formatted
+2025-12-18T09:38:02.543Z [DEBUG] MCP server "plugin:github:github": Connection failed after 589ms: Streamable HTTP error: Error POSTing to endpoint: bad request: Authorization header is badly formatted
+2025-12-18T09:38:02.543Z [ERROR] MCP server "plugin:github:github" Connection failed: Streamable HTTP error: Error POSTing to endpoint: bad request: Authorization header is badly formatted
+2025-12-18T09:38:02.544Z [DEBUG] MCP server "plugin:Notion:notion": Initializing HTTP transport to https://mcp.notion.com/mcp
+2025-12-18T09:38:02.544Z [DEBUG] MCP server "plugin:Notion:notion": Node version: v24.3.0, Platform: win32
+2025-12-18T09:38:02.545Z [DEBUG] MCP server "plugin:Notion:notion": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:38:02.545Z [DEBUG] MCP server "plugin:gitlab:gitlab": Initializing HTTP transport to https://gitlab.com/api/v4/mcp
+2025-12-18T09:38:02.545Z [DEBUG] MCP server "plugin:gitlab:gitlab": Node version: v24.3.0, Platform: win32
+2025-12-18T09:38:02.545Z [DEBUG] MCP server "plugin:gitlab:gitlab": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-12-18T09:38:02.552Z [DEBUG] MCP server "plugin:Notion:notion": Proxy options: default
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": HTTP transport options: {"url":"https://mcp.notion.com/mcp","headers":{"User-Agent":"claude-code/2.0.72"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": HTTP transport created successfully
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": Client created, setting up request handler
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": Starting connection with timeout of 30000ms
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": Testing basic HTTP connectivity to https://mcp.notion.com/mcp
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:Notion:notion": Parsed URL: host=mcp.notion.com, port=default, protocol=https:
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:gitlab:gitlab": Proxy options: default
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:gitlab:gitlab": HTTP transport options: {"url":"https://gitlab.com/api/v4/mcp","headers":{"User-Agent":"claude-code/2.0.72"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:gitlab:gitlab": HTTP transport created successfully
+2025-12-18T09:38:02.553Z [DEBUG] MCP server "plugin:gitlab:gitlab": Client created, setting up request handler
+2025-12-18T09:38:02.554Z [DEBUG] MCP server "plugin:gitlab:gitlab": Starting connection with timeout of 30000ms
+2025-12-18T09:38:02.554Z [DEBUG] MCP server "plugin:gitlab:gitlab": Testing basic HTTP connectivity to https://gitlab.com/api/v4/mcp
+2025-12-18T09:38:02.554Z [DEBUG] MCP server "plugin:gitlab:gitlab": Parsed URL: host=gitlab.com, port=default, protocol=https:
+2025-12-18T09:38:02.554Z [DEBUG] MCP server "plugin:slack:slack": SSE transport initialized, awaiting connection
+2025-12-18T09:38:02.554Z [DEBUG] MCP server "plugin:slack:slack": Starting connection with timeout of 30000ms
+2025-12-18T09:38:02.555Z [DEBUG] MCP server "plugin:slack:slack": No token data found
+2025-12-18T09:38:02.555Z [DEBUG] MCP server "plugin:Notion:notion": Token expired without refresh token
+2025-12-18T09:38:02.556Z [DEBUG] MCP server "plugin:gitlab:gitlab": Token expired without refresh token
+2025-12-18T09:38:02.634Z [DEBUG] MCP server "plugin:Notion:notion": Found client info
+2025-12-18T09:38:02.634Z [DEBUG] MCP server "plugin:Notion:notion": Token expired without refresh token
+2025-12-18T09:38:02.634Z [DEBUG] MCP server "plugin:Notion:notion": Generated new OAuth state
+2025-12-18T09:38:02.634Z [DEBUG] MCP server "plugin:Notion:notion": Saving code verifier
+2025-12-18T09:38:02.634Z [DEBUG] MCP server "plugin:Notion:notion": Authorization URL: https://mcp.notion.com/authorize?response_type=code&client_id=6ctXfAlhR8lFE8sY&code_challenge=AIVW040eU3OIVex_1P6AvR3htGIjVpK6v-0r6PJ8eyc&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A3118%2Fcallback&state=OD6b7tVed9pdEzchg3rnIKoLwJgvK9g1D9Ilhg_CGdA&resource=https%3A%2F%2Fmcp.notion.com%2F
+2025-12-18T09:38:02.635Z [DEBUG] MCP server "plugin:Notion:notion": Scopes in URL: NOT FOUND
+2025-12-18T09:38:02.635Z [DEBUG] MCP server "plugin:Notion:notion": No scopes available from URL or metadata
+2025-12-18T09:38:02.635Z [DEBUG] MCP server "plugin:Notion:notion": Redirection handling is disabled, skipping redirect
+2025-12-18T09:38:02.635Z [DEBUG] MCP server "plugin:Notion:notion": HTTP Connection failed after 91ms: Unauthorized (code: none, errno: none)
+2025-12-18T09:38:02.635Z [ERROR] MCP server "plugin:Notion:notion" Error: Unauthorized
+2025-12-18T09:38:02.635Z [DEBUG] MCP server "plugin:Notion:notion": Authentication required for HTTP server
+2025-12-18T09:38:03.190Z [DEBUG] MCP server "plugin:gitlab:gitlab": Found client info
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Token expired without refresh token
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Generated new OAuth state
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Saving code verifier
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Authorization URL: https://gitlab.com/oauth/authorize?response_type=code&client_id=20069333a752f3dfcf826475e3ead38e27e506d9072dd9a2429050fd9e0c8336&code_challenge=PdnLter9VgrLYck_5ivLHjN6xSgSa88khQ6JLpPJyP4&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A3118%2Fcallback&state=kHE-HsSGisOq9u6bTf9HbOMjCTn3CldMMFOWsSE1vr8
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Scopes in URL: NOT FOUND
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": No scopes available from URL or metadata
+2025-12-18T09:38:03.191Z [DEBUG] MCP server "plugin:gitlab:gitlab": Redirection handling is disabled, skipping redirect
+2025-12-18T09:38:03.192Z [DEBUG] MCP server "plugin:gitlab:gitlab": HTTP Connection failed after 647ms: Unauthorized (code: none, errno: none)
+2025-12-18T09:38:03.192Z [ERROR] MCP server "plugin:gitlab:gitlab" Error: Unauthorized
+2025-12-18T09:38:03.192Z [DEBUG] MCP server "plugin:gitlab:gitlab": Authentication required for HTTP server
+2025-12-18T09:38:03.212Z [DEBUG] MCP server "plugin:slack:slack": SSE Connection failed after 666ms: {"url":"https://mcp.slack.com/sse","error":"SSE error: Non-200 status code (404)","errorType":"CuD","stack":"Error: SSE error: Non-200 status code (404)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:26038)\n    at mSH (B:/~BUN/root/claude.exe:981:5383)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:2199)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:2886)\n    at processTicksAndRejections (native:7:39)"}
+2025-12-18T09:38:03.212Z [ERROR] MCP server "plugin:slack:slack" Error: SSE error: Non-200 status code (404)
+2025-12-18T09:38:03.212Z [DEBUG] MCP server "plugin:slack:slack": Connection failed after 666ms: SSE error: Non-200 status code (404)
+2025-12-18T09:38:03.212Z [ERROR] MCP server "plugin:slack:slack" Connection failed: SSE error: Non-200 status code (404)
+2025-12-18T09:38:03.215Z [DEBUG] MCP server "plugin:firebase:firebase": Starting connection with timeout of 30000ms
+2025-12-18T09:38:03.226Z [DEBUG] MCP server "ClaudeTalkToFigma": Starting connection with timeout of 30000ms
+2025-12-18T09:38:03.722Z [DEBUG] MCP server "plugin:vercel:vercel": SSE transport initialized, awaiting connection
+2025-12-18T09:38:03.723Z [DEBUG] MCP server "plugin:vercel:vercel": Starting connection with timeout of 30000ms
+2025-12-18T09:38:03.724Z [DEBUG] MCP server "plugin:vercel:vercel": No token data found
+2025-12-18T09:38:03.750Z [DEBUG] MCP server "plugin:vercel:vercel": SSE Connection failed after 536ms: {"url":"https://mcp.vercel.com/sse","error":"SSE error: Non-200 status code (404)","errorType":"CuD","stack":"Error: SSE error: Non-200 status code (404)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:26038)\n    at mSH (B:/~BUN/root/claude.exe:981:5383)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:2199)\n    at <anonymous> (B:/~BUN/root/claude.exe:981:2886)\n    at processTicksAndRejections (native:7:39)"}
+2025-12-18T09:38:03.750Z [ERROR] MCP server "plugin:vercel:vercel" Error: SSE error: Non-200 status code (404)
+2025-12-18T09:38:03.751Z [DEBUG] MCP server "plugin:vercel:vercel": Connection failed after 537ms: SSE error: Non-200 status code (404)
+2025-12-18T09:38:03.751Z [ERROR] MCP server "plugin:vercel:vercel" Connection failed: SSE error: Non-200 status code (404)
+2025-12-18T09:38:04.122Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-18T09:38:04.122Z [DEBUG] Found 0 hook matchers in settings
+2025-12-18T09:38:04.122Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-18T09:38:04.284Z [ERROR] MCP server "ClaudeTalkToFigma" Server stderr: Resolving dependencies
+2025-12-18T09:38:04.360Z [ERROR] MCP server "ClaudeTalkToFigma" Server stderr: Resolved, downloaded and extracted [2]
+2025-12-18T09:38:04.747Z [DEBUG] [SLOW OPERATION DETECTED] fs.appendFileSync (17.2ms)
+2025-12-18T09:38:10.731Z [ERROR] MCP server "plugin:firebase:firebase" Server stderr: npm error code ENOTEMPTY
+npm error syscall rmdir
+2025-12-18T09:38:10.731Z [ERROR] MCP server "plugin:firebase:firebase" Server stderr: npm error path C:\Users\jaewoong\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\lodash
+npm error errno -4051
+npm error ENOTEMPTY: directory not empty, rmdir 'C:\Users\jaewoong\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\lodash'
+2025-12-18T09:38:10.731Z [ERROR] MCP server "plugin:firebase:firebase" Server stderr: npm error A complete log of this run can be found in: C:\Users\jaewoong\AppData\Local\npm-cache\_logs\2025-12-18T09_38_03_528Z-debug-0.log
+2025-12-18T09:38:10.746Z [DEBUG] MCP server "plugin:firebase:firebase": Connection failed after 7531ms: MCP error -32000: Connection closed
+2025-12-18T09:38:10.746Z [ERROR] MCP server "plugin:firebase:firebase" Connection failed: MCP error -32000: Connection closed

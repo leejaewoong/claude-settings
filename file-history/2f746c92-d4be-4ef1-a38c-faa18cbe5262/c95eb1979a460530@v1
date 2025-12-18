@@ -1,0 +1,57 @@
+"""
+Test with limited number of posts to avoid crashes
+"""
+import asyncio
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "."))
+
+from app.services.naver_cafe_crawler import NaverCafeCrawler
+
+
+# Temporarily modify crawler to limit posts
+async def main():
+    print("=== Testing Limited Desktop Crawler (First 3 posts only) ===\n")
+
+    crawler = NaverCafeCrawler()
+
+    # Monkey patch to limit posts
+    original_crawl_menu = crawler.crawl_menu
+
+    async def limited_crawl_menu(menu_id):
+        results = await original_crawl_menu(menu_id)
+        return results[:3]  # Return only first 3
+
+    crawler.crawl_menu = limited_crawl_menu
+
+    # Test crawling
+    results = await crawler.crawl_menu(1)
+
+    print(f"\n=== Results ===")
+    print(f"Total posts crawled: {len(results)}\n")
+
+    for i, post in enumerate(results, 1):
+        print(f"\n--- Post {i} ---")
+        print(f"Title: {post['title']}")
+        print(f"Author: {post['author']}")
+        print(f"Content length: {len(post['content'])} chars")
+        if post['content']:
+            print(f"Content preview: {post['content'][:150]}...")
+        else:
+            print("Content preview: (empty)")
+        print(f"Comments: {len(post['comments'])} comments")
+        if post['comments']:
+            for j, comment in enumerate(post['comments'][:2], 1):
+                print(f"  Comment {j}: {comment['author']}: {comment['content'][:50]}...")
+
+    print("\n=== Test Complete! ===")
+
+    # Check success rate
+    posts_with_content = sum(1 for p in results if p['content'])
+    success_rate = (posts_with_content / len(results) * 100) if results else 0
+    print(f"\nSuccess rate: {posts_with_content}/{len(results)} posts ({success_rate:.1f}%) have content")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

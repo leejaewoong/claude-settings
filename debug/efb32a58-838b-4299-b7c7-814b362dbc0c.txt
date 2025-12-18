@@ -1,0 +1,82 @@
+[DEBUG] Watching for changes in setting files C:\Users\jaewoong\.claude\settings.json, c:\Users\jaewoong\Desktop\project\Sentiment-Curator\.claude\settings.local.json...
+[DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+[DEBUG] Applying permission update: Adding 31 allow rule(s) to destination 'localSettings': ["Bash(npx create-next-app@latest:*)","Bash(python -m venv:*)","Bash(./venv/Scripts/pip install:*)","Bash(./venv/Scripts/python:*)","Bash(./venv/Scripts/playwright:*)","Bash(npm install)","WebFetch(domain:v0.app)","Bash(npx shadcn@latest init:*)","Bash(npx shadcn@latest add button card separator scroll-area)","Bash(curl:*)","Bash(npm run dev:*)","Bash(npx shadcn@latest add:*)","Bash(git add:*)","Bash(git commit:*)","Bash(git rm:*)","Bash(git checkout:*)","Bash(git stash:*)","Bash(mkdir:*)","Bash(cat:*)","Bash(chmod:*)","Bash(python -m uvicorn:*)","Bash(pip install:*)","Bash(timeout 5 python:*)","Bash(ls:*)","Bash(tree:*)","Bash(find:*)","Bash(npm install:*)","Bash(npm run type-check:*)","Bash(npm run build:*)","Bash(npm run lint)","Bash(grep:*)"]
+[DEBUG] Loading plugin feature-dev from source: "./plugins/feature-dev"
+[DEBUG] Loading plugin frontend-design from source: "./plugins/frontend-design"
+[DEBUG] Loading plugin security-guidance from source: "./plugins/security-guidance"
+[DEBUG] Found 3 plugins (3 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\jaewoong\.claude\skills, project=c:\Users\jaewoong\Desktop\project\Sentiment-Curator\.claude\skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for bash (C:\Program Files\Git\bin\bash.exe)
+[DEBUG] Looking for shell config file: C:\Users\jaewoong\.bashrc
+[DEBUG] Shell config file not found: C:\Users\jaewoong\.bashrc, creating snapshot with Claude Code defaults only
+[DEBUG] Snapshots directory: C:\Users\jaewoong\.claude\shell-snapshots
+[DEBUG] Creating snapshot at: C:\Users\jaewoong\.claude\shell-snapshots\snapshot-bash-1765523165924-4a7zuw.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude\todos\efb32a58-838b-4299-b7c7-814b362dbc0c-agent-efb32a58-838b-4299-b7c7-814b362dbc0c.json.tmp.16492.1765523165940
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming C:\Users\jaewoong\.claude\todos\efb32a58-838b-4299-b7c7-814b362dbc0c-agent-efb32a58-838b-4299-b7c7-814b362dbc0c.json.tmp.16492.1765523165940 to C:\Users\jaewoong\.claude\todos\efb32a58-838b-4299-b7c7-814b362dbc0c-agent-efb32a58-838b-4299-b7c7-814b362dbc0c.json
+[DEBUG] File C:\Users\jaewoong\.claude\todos\efb32a58-838b-4299-b7c7-814b362dbc0c-agent-efb32a58-838b-4299-b7c7-814b362dbc0c.json written atomically
+[DEBUG] getPluginSkills: Processing 3 enabled plugins
+[DEBUG] Checking plugin feature-dev: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Checking plugin frontend-design: skillsPath=exists, skillsPaths=0 paths
+[DEBUG] Attempting to load skills from plugin frontend-design default skillsPath: C:\Users\jaewoong\.claude\plugins\marketplaces\claude-code-plugins\plugins\frontend-design\skills
+[DEBUG] Loading hooks from plugin: security-guidance
+[DEBUG] Registered 1 hooks from 3 plugins
+[DEBUG] Loaded 4 skills total (managed: 0, user: 0, project: 4)
+[DEBUG] Loaded 1 skills from plugin frontend-design default directory
+[DEBUG] Checking plugin security-guidance: skillsPath=none, skillsPaths=0 paths
+[DEBUG] Total plugin skills loaded: 1
+[DEBUG] Loaded 1 commands from plugin feature-dev default directory
+[DEBUG] Total plugin commands loaded: 1
+[DEBUG] getSkillsIfEnabled returning: 4 skill dir commands, 1 plugin skills
+[DEBUG] Loaded 3 agents from plugin feature-dev default directory
+[DEBUG] Total plugin agents loaded: 3
+[DEBUG] MCP server "ClaudeTalkToFigma": Starting connection with timeout of 30000ms
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=c:\Users\jaewoong\.vscode\extensions\anthropic.claude-code-2.0.25\resources\claude-code\vendor\ripgrep\x64-win32\rg.exe)
+[ERROR] MCP server "ClaudeTalkToFigma" Server stderr: Resolving dependencies
+[ERROR] Failed to save config with lock: Error: Lock file is already being held
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.16492.1765523166344
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 51786 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.16492.1765523166344 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[ERROR] Failed to save config with lock: Error: Lock file is already being held
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.16492.1765523166363
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 51786 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.16492.1765523166363 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[ERROR] MCP server "ClaudeTalkToFigma" Server stderr: Resolved, downloaded and extracted [2]
+[DEBUG] Writing to temp file: C:\Users\jaewoong\.claude.json.tmp.16492.1765523166567
+[DEBUG] Preserving file permissions: 100666
+[DEBUG] Temp file written successfully, size: 51936 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming C:\Users\jaewoong\.claude.json.tmp.16492.1765523166567 to C:\Users\jaewoong\.claude.json
+[DEBUG] File C:\Users\jaewoong\.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (356 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "ClaudeTalkToFigma" Server stderr: EBUSY: failed copying files from cache to destination for package claude-talk-to-figma-mcp
+Saved lockfile
+[DEBUG] MCP server "ClaudeTalkToFigma": Connection failed after 6901ms: MCP error -32000: Connection closed
+[ERROR] MCP server "ClaudeTalkToFigma" Connection failed: MCP error -32000: Connection closed
+[DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+[DEBUG] Skills and commands included in Skill tool: frontend-design
+[DEBUG] Skill prompt: showing "frontend-design:frontend-design" (userFacingName="frontend-design")
+[DEBUG] Slash commands included in SlashCommand tool: /feature-dev:feature-dev
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: C:\Users\jaewoong\.claude\shell-snapshots\snapshot-bash-1765523165924-4a7zuw.sh
