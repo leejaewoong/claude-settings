@@ -1,0 +1,9 @@
+debug/
+file-history/
+project/
+shell-snapshots/
+statsig/
+todos/
+stats-cache
+history
+credentials
