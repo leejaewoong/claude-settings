@@ -4,6 +4,8 @@ projects/
 shell-snapshots/
 statsig/
 todos/
-stats-cache
-history
-credentials
+ide/
+plugins/cache/
+stats-cache*
+history*
+*credentials*
