@@ -26,10 +26,10 @@
     "feature-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\feature-dev\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\feature-dev\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:37.387Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -37,10 +37,10 @@
     "security-guidance@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:37.417Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -48,10 +48,10 @@
     "code-review@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\code-review\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\code-review\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:37.449Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -59,10 +59,10 @@
     "explanatory-output-style@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\explanatory-output-style\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\explanatory-output-style\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:37.474Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -70,10 +70,10 @@
     "frontend-design@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:40.932Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -81,10 +81,10 @@
     "plugin-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\plugin-dev\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\plugin-dev\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:40.959Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -92,10 +92,10 @@
     "playwright@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\playwright\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\playwright\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:40.983Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -103,10 +103,10 @@
     "github@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\github\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\github\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.029Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -114,10 +114,10 @@
     "supabase@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\supabase\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\supabase\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.051Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -125,10 +125,10 @@
     "atlassian@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\atlassian\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\atlassian\\c2625747baa8",
+        "version": "c2625747baa8",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T02:22:00.438Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -136,10 +136,10 @@
     "gitlab@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\gitlab\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\gitlab\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.074Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -147,10 +147,10 @@
     "slack@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\slack\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\slack\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.148Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -158,10 +158,10 @@
     "vercel@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\vercel\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\vercel\\1.0.0",
+        "version": "1.0.0",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T02:22:00.364Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -169,10 +169,10 @@
     "firebase@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\firebase\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\firebase\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.177Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }
@@ -180,10 +180,10 @@
     "pr-review-toolkit@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\pr-review-toolkit\\ab2b6d0cad88",
-        "version": "ab2b6d0cad88",
+        "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\pr-review-toolkit\\6d3752c000e2",
+        "version": "6d3752c000e2",
         "installedAt": "2025-12-18T09:38:10.009Z",
-        "lastUpdated": "2025-12-18T09:38:10.009Z",
+        "lastUpdated": "2025-12-19T05:43:41.216Z",
         "gitCommitSha": "ab2b6d0cad88ead3da5466ef2acef0c4a351971e",
         "isLocal": true
       }

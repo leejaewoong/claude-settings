@@ -71,6 +71,44 @@ Organize changes by category:
 
 ---
 
+## Commit Unit Guidelines
+
+### Principle: One Logical Change per Commit
+
+Each commit should represent **one complete, logical change** that:
+* Has a single, clear purpose
+* Can be understood independently
+* Could be reverted without breaking other features
+
+### ✅ Good Commit Units
+
+* **One complete feature** (auth service + middleware + UI)
+* **One bug fix** (specific bug with all necessary files)
+* **One refactoring** (one module or concept)
+* **Related changes** (changes that must work together)
+
+### ❌ Bad Commit Units
+
+* **Multiple unrelated changes** (Login + Payment + CSS)
+* **Incomplete features** (half of authentication logic)
+* **Too granular** (single variable name change)
+
+### When to Split
+
+Split when changes:
+1. Serve different purposes
+2. Could be reverted independently
+3. Affect different features/modules
+
+### When to Combine
+
+Combine when changes:
+1. Must work together
+2. Would break if split
+3. Are different aspects of one logical change
+
+---
+
 ## Commit Process
 
 1. **Propose** commit message after completing work
