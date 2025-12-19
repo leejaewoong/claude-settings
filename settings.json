@@ -9,6 +9,8 @@
       "Bash(node:*)",
       "Bash(git status)",
       "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
       "Bash(mkdir:*)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
