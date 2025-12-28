@@ -22,7 +22,7 @@ Korean category
 
 **Main types**: ✨Feat, 🛠Fix, ♻️Refactor, 💄Design, ✏️Docs
 
-**Detailed guide**: `commit-message` skill
+**Detailed guide**: `/commit` command
 
 ---
 
