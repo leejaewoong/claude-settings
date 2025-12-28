@@ -13,7 +13,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "C:\\Users\\jaewoong\\.claude\\plugins\\marketplaces\\claude-plugins-official",
-    "lastUpdated": "2025-12-19T06:25:26.118Z"
+    "lastUpdated": "2025-12-28T18:08:03.274Z"
   },
   "anthropic-agent-skills": {
     "source": {
@@ -21,6 +21,6 @@
       "repo": "anthropics/skills"
     },
     "installLocation": "C:\\Users\\jaewoong\\.claude\\plugins\\marketplaces\\anthropic-agent-skills",
-    "lastUpdated": "2025-12-18T10:58:45.412Z"
+    "lastUpdated": "2025-12-28T17:50:07.453Z"
   }
 }
