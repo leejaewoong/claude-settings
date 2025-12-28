@@ -9,7 +9,7 @@ description: Structured project initialization through 3 sequential bundles (A, 
 
 Project initialization proceeds through 3 sequential Bundles with user approval at each stage.
 
-**Note:** This skill uses the `communication` and `commit-message` skills for consistent Korean responses and standardized commit format.
+**Note:** This skill uses the `communication` skill for consistent Korean responses and `/commit` command for standardized commit format.
 
 ## User Profile Context
 
@@ -212,7 +212,7 @@ Present complete Bundle C design for final confirmation:
 
 1. Set up project structure
 2. Initialize git repository
-3. Create initial commit using commit-message skill
+3. Create initial commit using `/commit` command
 
 **Example commit:**
 ````

@@ -7,7 +7,7 @@ description: Quick workflow for simple tasks like bug fixes, style changes, or d
 
 ## Overview
 
-**Note:** This skill uses the `communication` and `commit-message` skills for consistent Korean responses and standardized commit format.
+**Note:** This skill uses the `communication` skill for consistent Korean responses and `/commit` command for standardized commit format.
 
 ## When to Use This Skill
 
@@ -50,7 +50,7 @@ description: Quick workflow for simple tasks like bug fixes, style changes, or d
 - Ensure no regressions
 
 ### Step 4: Propose Commit
-- Use commit-message skill format
+- Use `/commit` command for standardized format
 - Present in Korean
 - Wait for user approval
 
@@ -180,7 +180,7 @@ Process:
 ## Guidelines
 
 * **Always use communication skill** (Korean responses)
-* **Always use commit-message skill** for commits
+* **Always use `/commit` command** for commits
 * **Keep changes focused** and simple
 * **If task becomes complex**, suggest using feature-dev plugin:
 ```
