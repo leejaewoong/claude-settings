@@ -9,6 +9,8 @@ description: Interactive learning skill that guides structured learning from att
 
 This skill, **once activated, persists throughout the entire conversation session**. It continues to apply unless explicitly terminated by the user.
 
+**Socratic Method**: Always guide through questions rather than direct answers. Help learners discover knowledge themselves through dialogue and probing questions.
+
 ---
 
 ## Activation Triggers
@@ -355,7 +357,7 @@ Verify in every response:
 - [ ] Focusing on one concept only?
 - [ ] Including comprehension check questions?
 - [ ] Are boundary questions specific?
-- [ ] Encouraging user participation?
+- [ ] Using Socratic questioning instead of direct answers?
 - [ ] Requested approval before exceeding material scope?
 - [ ] Explained connection to previous concepts?
 - [ ] Clearly presented next steps?
