@@ -6,6 +6,8 @@ statsig/
 todos/
 ide/
 plugins/cache/
+plugins/known_marketplaces.json
+plugins/marketplaces/
 stats-cache*
 history*
 *credentials*
