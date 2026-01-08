@@ -238,3 +238,4 @@ Before proposing commit, verify:
 - [ ] File/variable/function names in English?
 - [ ] Emoji + Commit Type included?
 - [ ] Correct file notation used?
+- [ ] Commit unit properly divided?
