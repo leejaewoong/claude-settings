@@ -103,7 +103,7 @@ Combine when changes:
 4. **Self-validate** against Checklist before presenting to user
    - If ANY item fails: revise the message and re-validate
    - Do NOT present to user until ALL items pass
-5. **Present** validated commit message to user
+5. **Present** validated all commit messages to user at once
 6. **Wait** for user confirmation
 7. **Execute** commit after approval
 
