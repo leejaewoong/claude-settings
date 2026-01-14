@@ -57,15 +57,6 @@ Review all changes in the project and write a commit message following the rules
 
 ---
 
-## Detailed Description Structure
-
-Organize changes by category:
-* Write Korean category title for each group
-* Include reason for change if necessary
-* File-level details: `- path/filename: 한국어로 변경 내용 설명`
-
----
-
 ## Commit Unit Guidelines
 
 ### Principle: One Logical Change per Commit
@@ -107,13 +98,14 @@ Combine when changes:
 ## Commit Process
 
 1. **Review** all changes in the project
-2. **Draft** commit message following the Format
-3. **Self-validate** against Checklist before presenting to user
+2. **Check commit unit** - Apply "Commit Unit Guidelines" above   
+3. **Draft** commit message following the Format
+4. **Self-validate** against Checklist before presenting to user
    - If ANY item fails: revise the message and re-validate
    - Do NOT present to user until ALL items pass
-4. **Present** validated commit message to user
-5. **Wait** for user confirmation
-6. **Execute** commit after approval
+5. **Present** validated commit message to user
+6. **Wait** for user confirmation
+7. **Execute** commit after approval
 
 ---
 
