@@ -38,5 +38,11 @@
     "firebase@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -File C:/Users/jaewoong/.claude/statusline.ps1",
+    "updateInterval": 3000,
+    "padding": 0    
   }
 }
