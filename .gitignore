@@ -11,3 +11,6 @@ plugins/marketplaces/
 stats-cache*
 history*
 *credentials*
+cache/
+plans/
+/HANDOFF.md
