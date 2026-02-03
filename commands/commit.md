@@ -59,7 +59,9 @@ Review all changes in the project and write a commit message following the rules
 
 ## Commit Unit Guidelines
 
-### Principle: One Logical Change per Commit
+### CRITICAL: One Logical Change per Commit
+
+**MUST check commit unit BEFORE writing any commit message.**
 
 Each commit should represent **one complete, logical change** that:
 * Has a single, clear purpose
@@ -79,12 +81,13 @@ Each commit should represent **one complete, logical change** that:
 * **Incomplete features** (half of authentication logic)
 * **Too granular** (single variable name change)
 
-### When to Split
+### When to Split - MUST split into separate commits when:
 
-Split when changes:
-1. Serve different purposes
-2. Could be reverted independently
-3. Affect different features/modules
+1. Changes serve different purposes
+2. Changes could be reverted independently
+3. Changes affect different features/modules
+
+**NEVER combine unrelated changes in a single commit.**
 
 ### When to Combine
 
@@ -98,7 +101,7 @@ Combine when changes:
 ## Commit Process
 
 1. **Review** all changes in the project
-2. **Check commit unit** - Apply "Commit Unit Guidelines" above   
+2. **Check commit unit** - MUST apply "Commit Unit Guidelines" above. If multiple logical changes detected, MUST split commits.
 3. **Draft** commit message following the Format
 4. **Self-validate** against Checklist before presenting to user
    - If ANY item fails: revise the message and re-validate
