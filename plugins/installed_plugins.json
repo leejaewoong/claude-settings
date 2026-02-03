@@ -7,8 +7,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\feature-dev\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:11.930Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "security-guidance@claude-plugins-official": [
@@ -17,8 +16,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:11.959Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "code-review@claude-plugins-official": [
@@ -27,8 +25,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\code-review\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:11.986Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "explanatory-output-style@claude-plugins-official": [
@@ -37,8 +34,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\explanatory-output-style\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.018Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "frontend-design@claude-plugins-official": [
@@ -47,8 +43,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.049Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "plugin-dev@claude-plugins-official": [
@@ -57,8 +52,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\plugin-dev\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.190Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "playwright@claude-plugins-official": [
@@ -67,8 +61,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\playwright\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.259Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "github@claude-plugins-official": [
@@ -77,8 +70,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\github\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.232Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "supabase@claude-plugins-official": [
@@ -87,8 +79,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\supabase\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.286Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "gitlab@claude-plugins-official": [
@@ -97,8 +88,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\gitlab\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.309Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "slack@claude-plugins-official": [
@@ -107,8 +97,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\slack\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.336Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "firebase@claude-plugins-official": [
@@ -117,8 +106,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\firebase\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.370Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "pr-review-toolkit@claude-plugins-official": [
@@ -127,8 +115,7 @@
         "installPath": "C:\\Users\\jaewoong\\.claude\\plugins\\cache\\claude-plugins-official\\pr-review-toolkit\\113b335d11ae",
         "version": "113b335d11ae",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2026-01-08T08:11:12.409Z",
-        "isLocal": true
+        "lastUpdated": "2026-01-28T11:36:15.276Z"
       }
     ],
     "example-skills@anthropic-agent-skills": [
@@ -137,8 +124,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\anthropic-agent-skills\\example-skills\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ]
   }
