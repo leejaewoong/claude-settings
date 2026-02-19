@@ -6,12 +6,10 @@ statsig/
 todos/
 ide/
 plugins/cache/
-plugins/known_marketplaces.json
-plugins/marketplaces/
 stats-cache*
 history*
 *credentials*
+telemetry/
 cache/
 plans/
-/HANDOFF.md
-paste-cache/
+.claude/
