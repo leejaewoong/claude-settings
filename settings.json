@@ -1,17 +1,4 @@
 {
-  "hooks": {
-    "Stop": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "prompt",
-            "prompt": "현재 세션이 /commit 커맨드 실행 중인지 확인하세요. /commit 커맨드가 아니면 approve 하세요.\n\n/commit 커맨드라면 다음을 검증하세요:\n1. 변경사항이 여러 논리적 단위로 분리되어야 하는지 분석했는가?\n2. 분리가 필요한 경우, 각 단위별로 별도의 커밋 메시지를 작성했는가?\n3. 분리 기준 (기능/버그/리팩토링/문서)이 적절한가?\n\n모든 항목 통과 시 'approve', 단위 분리 검토가 필요하면 'block'과 함께 피드백을 제공하세요."
-          }
-        ]
-      }
-    ]
-  },
   "permissions": {
     "allow": [
       "Bash(cat:*)",
@@ -31,6 +18,24 @@
       "Bash(mv:*)",
       "WebFetch"
     ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "현재 세션이 /commit 커맨드 실행 중인지 확인하세요. /commit 커맨드가 아니면 approve 하세요.\n\n/commit 커맨드라면 다음을 검증하세요:\n1. 변경사항이 여러 논리적 단위로 분리되어야 하는지 분석했는가?\n2. 분리가 필요한 경우, 각 단위별로 별도의 커밋 메시지를 작성했는가?\n3. 분리 기준 (기능/버그/리팩토링/문서)이 적절한가?\n\n모든 항목 통과 시 'approve', 단위 분리 검토가 필요하면 'block'과 함께 피드백을 제공하세요."
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -File C:/Users/jaewoong/.claude/statusline.ps1",
+    "padding": 0
   },
   "enabledPlugins": {
     "figma@claude-plugins-official": true,
@@ -52,10 +57,15 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
   },
-  "statusLine": {
-    "type": "command",
-    "command": "powershell -File C:/Users/jaewoong/.claude/statusline.ps1",
-    "updateInterval": 3000,
-    "padding": 0    
+  "mcpServers": {
+    "figma": {
+      "command": "npx",
+      "args": [
+        "figma-mcp-server"
+      ],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "${FIGMA_ACCESS_TOKEN}"
+      }
+    }
   }
 }
