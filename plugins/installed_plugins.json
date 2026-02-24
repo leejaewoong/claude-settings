@@ -7,8 +7,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\feature-dev\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "security-guidance@claude-plugins-official": [
@@ -17,8 +16,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "code-review@claude-plugins-official": [
@@ -27,8 +25,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\code-review\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "explanatory-output-style@claude-plugins-official": [
@@ -37,8 +34,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\explanatory-output-style\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "frontend-design@claude-plugins-official": [
@@ -47,8 +43,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "plugin-dev@claude-plugins-official": [
@@ -57,8 +52,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\plugin-dev\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "playwright@claude-plugins-official": [
@@ -67,8 +61,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\playwright\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "github@claude-plugins-official": [
@@ -77,8 +70,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\github\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "supabase@claude-plugins-official": [
@@ -87,8 +79,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\supabase\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "gitlab@claude-plugins-official": [
@@ -97,18 +88,16 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\gitlab\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "slack@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\slack\\unknown",
-        "version": "unknown",
+        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\slack\\1.0.0",
+        "version": "1.0.0",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2026-02-24T13:29:02.206Z"
       }
     ],
     "firebase@claude-plugins-official": [
@@ -117,8 +106,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\firebase\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "pr-review-toolkit@claude-plugins-official": [
@@ -127,8 +115,7 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\pr-review-toolkit\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
       }
     ],
     "example-skills@anthropic-agent-skills": [
@@ -137,8 +124,47 @@
         "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\anthropic-agent-skills\\example-skills\\unknown",
         "version": "unknown",
         "installedAt": "2025-12-28T17:49:55.239Z",
-        "lastUpdated": "2025-12-28T17:49:55.239Z",
-        "isLocal": true
+        "lastUpdated": "2025-12-28T17:49:55.239Z"
+      }
+    ],
+    "figma@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\figma\\1.1.0",
+        "version": "1.1.0",
+        "installedAt": "2026-01-25T14:45:35.484Z",
+        "lastUpdated": "2026-02-24T13:29:01.970Z",
+        "gitCommitSha": "20aca44ee6ba6092037e943c151c067896828360"
+      }
+    ],
+    "atlassian@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\atlassian\\63e369036b13",
+        "version": "63e369036b13",
+        "installedAt": "2026-01-25T14:45:37.306Z",
+        "lastUpdated": "2026-02-24T13:29:02.331Z",
+        "gitCommitSha": "7caef65e1070f5219efa018fa0b1023738dbd56b"
+      }
+    ],
+    "Notion@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\Notion\\0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-01-25T14:45:39.195Z",
+        "lastUpdated": "2026-01-25T14:45:39.195Z",
+        "gitCommitSha": "9847f2aa1a15f25df35ed1fb7b4557dbb60cd651"
+      }
+    ],
+    "vercel@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\iamle\\.claude\\plugins\\cache\\claude-plugins-official\\vercel\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-25T14:45:41.051Z",
+        "lastUpdated": "2026-01-25T14:45:41.051Z",
+        "gitCommitSha": "ae067751b4f42c97d13054211657275029ca8b6d"
       }
     ]
   }
