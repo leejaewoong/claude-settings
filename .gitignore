@@ -9,3 +9,6 @@ plugins/cache/
 stats-cache*
 history*
 *credentials*
+backups/
+cache/
+paste-cache/
