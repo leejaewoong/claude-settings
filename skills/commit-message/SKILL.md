@@ -1,4 +1,9 @@
-Review all changes in the project and write a commit message following the rules below.
+---
+name: commit-message
+description: Standardized Korean commit messages with emoji and detailed structure. Use when proposing commits after completing work.
+---
+
+# Commit Message Skill
 
 ## Critical Language Rule
 
@@ -106,7 +111,7 @@ Combine when changes:
 
 ## Commit Process
 
-1. **Review** all changes in the project
+1. **Propose** commit message after completing work
 2. **Wait** for user confirmation
 3. **Execute** commit after approval
 
