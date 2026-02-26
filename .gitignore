@@ -13,3 +13,6 @@ telemetry/
 cache/
 plans/
 .claude/
+config.json
+mcp-needs-auth-cache.json
+backups/
