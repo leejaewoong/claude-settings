@@ -70,6 +70,11 @@
 | `Bash(pwd)` | 현재 작업 디렉토리 경로 출력 |
 | `Bash(which:*)` | 실행 파일의 경로 확인 (Linux/Mac) |
 | `Bash(where:*)` | 실행 파일의 경로 확인 (Windows) |
+| `Bash(start:*)` | Windows에서 파일/URL을 기본 프로그램으로 열기 |
+| `Bash(sleep:*)` | 지정한 시간(초) 동안 대기 |
+| `Bash(netstat:*)` | 네트워크 연결 상태 및 포트 사용 현황 조회 |
+| `Bash(grep:*)` | 파일 내용 또는 파이프 입력에서 정규표현식으로 패턴 검색 |
+| `Bash(head:*)` | 파일 또는 파이프 입력의 처음 N줄만 출력 |
 
 ## 🌐 웹
 
