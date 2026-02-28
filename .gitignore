@@ -9,6 +9,12 @@ plugins/cache/
 stats-cache*
 history*
 *credentials*
-backups/
+!*.example.json
+telemetry/
 cache/
 paste-cache/
+plans/
+.claude/
+config.json
+mcp-needs-auth-cache.json
+backups/
