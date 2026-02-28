@@ -46,6 +46,8 @@
       "Bash(start:*)",
       "Bash(sleep:*)",
       "Bash(netstat:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
 
       "WebFetch",
 
