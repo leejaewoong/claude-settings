@@ -23,22 +23,22 @@
 
 | 권한 | 설명 |
 |---|---|
-| `Bash(git status)` | 작업 트리 상태 확인 (인자 없이 실행) |
-| `Bash(git log:*)` | 커밋 히스토리 조회 |
-| `Bash(git show:*)` | 특정 커밋의 변경 내용 확인 |
-| `Bash(git diff:*)` | 변경사항 비교 (staged/unstaged) |
-| `Bash(git branch:*)` | 브랜치 목록 조회 및 생성/삭제 |
+| `Bash(git status)` / `Bash(git status:*)` | 작업 트리 상태 확인 |
+| `Bash(git log)` / `Bash(git log:*)` | 커밋 히스토리 조회 |
+| `Bash(git show)` / `Bash(git show:*)` | 특정 커밋의 변경 내용 확인 |
+| `Bash(git diff)` / `Bash(git diff:*)` | 변경사항 비교 (staged/unstaged) |
+| `Bash(git branch)` / `Bash(git branch:*)` | 브랜치 목록 조회 및 생성/삭제 |
 | `Bash(git clone:*)` | 원격 저장소를 로컬에 복제 |
-| `Bash(git fetch:*)` | 원격 저장소 정보를 로컬에 동기화 |
-| `Bash(git remote:*)` | 원격 저장소 URL 조회 및 관리 |
+| `Bash(git fetch)` / `Bash(git fetch:*)` | 원격 저장소 정보를 로컬에 동기화 |
+| `Bash(git remote)` / `Bash(git remote:*)` | 원격 저장소 URL 조회 및 관리 |
 | `Bash(git add:*)` | 변경된 파일을 스테이징 영역에 추가 |
 | `Bash(git commit:*)` | 스테이징된 변경사항을 커밋으로 저장 |
-| `Bash(git push:*)` | 로컬 커밋을 원격 저장소에 푸시 |
+| `Bash(git push)` / `Bash(git push:*)` | 로컬 커밋을 원격 저장소에 푸시 |
 | `Bash(git checkout:*)` | 브랜치 전환 또는 특정 파일 복원 |
 | `Bash(git restore:*)` | 작업 트리의 파일을 이전 상태로 복원 |
-| `Bash(git stash:*)` | 변경사항을 임시 저장 및 복원 |
+| `Bash(git stash)` / `Bash(git stash:*)` | 변경사항을 임시 저장 및 복원 |
 | `Bash(git merge:*)` | 다른 브랜치의 변경사항을 현재 브랜치에 병합 |
-| `Bash(git tag:*)` | 태그 조회, 생성, 삭제 (릴리스 관리) |
+| `Bash(git tag)` / `Bash(git tag:*)` | 태그 조회, 생성, 삭제 (릴리스 관리) |
 | `Bash(git config:*)` | Git 설정 값 조회 및 변경 |
 | `Bash(git read-tree:*)` | 트리 객체 정보를 인덱스로 읽기 |
 
