@@ -11,8 +11,7 @@
       "Bash(cp:*)",
       "Bash(mv:*)",
       "Bash(rm:*)",
-
-      "Bash(git status)",
+      "Bash(git status:*)",
       "Bash(git log:*)",
       "Bash(git show:*)",
       "Bash(git diff:*)",
@@ -30,16 +29,12 @@
       "Bash(git tag:*)",
       "Bash(git config:*)",
       "Bash(git read-tree:*)",
-
       "Bash(node:*)",
       "Bash(npm:*)",
       "Bash(npx:*)",
-
       "Bash(python:*)",
       "Bash(pip:*)",
-
       "Bash(gh:*)",
-
       "Bash(pwd)",
       "Bash(which:*)",
       "Bash(where:*)",
@@ -48,9 +43,7 @@
       "Bash(netstat:*)",
       "Bash(grep:*)",
       "Bash(head:*)",
-
       "WebFetch",
-
       "mcp__figma__get_screenshot",
       "mcp__figma__get_metadata",
       "mcp__figma__get_design_context",
