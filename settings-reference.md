@@ -59,6 +59,7 @@
 | 권한 | 설명 |
 |---|---|
 | `Bash(python:*)` | Python 스크립트 실행 |
+| `Bash(PYTHONIOENCODING=utf-8 python:*)` | UTF-8 인코딩 환경변수와 함께 Python 실행 |
 | `Bash(pip:*)` | pip의 모든 하위 명령어 실행 (install, list, show 등 포함) |
 
 ## 🐙 GitHub CLI
