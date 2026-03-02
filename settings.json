@@ -1,9 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "EditFile",
-      "CreateFile",
+      "Edit",
       "Write",
+      "Read",
+      "NotebookEdit",
       "Bash(cat:*)",
       "Bash(ls:*)",
       "Bash(find:*)",
