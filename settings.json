@@ -55,6 +55,7 @@
       "Bash(head:*)",
       "Bash(tail:*)",
       "Bash(wc:*)",
+      "Bash(curl:*)",
       "WebFetch",
       "mcp__figma__get_screenshot",
       "mcp__figma__get_metadata",
@@ -70,9 +71,7 @@
       "mcp__figma-dev-mode-mcp-server__get_design_context",
       "mcp__figma-dev-mode-mcp-server__get_variable_defs",
       "mcp__figma-dev-mode-mcp-server__get_code_connect_map",
-      "mcp__figma-dev-mode-mcp-server__create_design_system_rules",
-      "Bash(curl -s -X POST 'http://localhost:8000/api/get_sentiments_and_patch_notes' -H 'Content-Type: application/json' -d '{\"\"query\"\": \"\"test\"\", \"\"k\"\": 3}')",
-      "Bash(PYTHONIOENCODING=utf-8 python -c \":*)"
+      "mcp__figma-dev-mode-mcp-server__create_design_system_rules"
     ]
   },
   "model": "opus",
