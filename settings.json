@@ -4,6 +4,8 @@
       "Edit",
       "Write",
       "Read",
+      "Glob",
+      "Grep",
       "NotebookEdit",
       "Bash(cat:*)",
       "Bash(ls:*)",
