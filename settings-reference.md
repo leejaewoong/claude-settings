@@ -41,6 +41,7 @@
 | `Bash(git tag)` / `Bash(git tag:*)` | 태그 조회, 생성, 삭제 (릴리스 관리) |
 | `Bash(git config:*)` | Git 설정 값 조회 및 변경 |
 | `Bash(git read-tree:*)` | 트리 객체 정보를 인덱스로 읽기 |
+| `Bash(git worktree)` / `Bash(git worktree:*)` | Git worktree 관리 (생성, 목록, 삭제) |
 
 ## 📦 Node.js / NPM
 
