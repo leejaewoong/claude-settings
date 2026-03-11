@@ -53,26 +53,3 @@
 | 상점 | 재판매 안내 | |
 | 서바이버 패스 | 보상/미션 부가 설명 | hover시 툴팁 노출 |
 
-## 자주 쓰는 조합
-
-```json
-// PC 호버 버튼
-{
-  "type": "component",
-  "component": "HoverButton",
-  "variant": "기기=PC, 상태=Nomal, 사이즈=Default",
-  "x": 420, "y": 560,
-  "width": 67, "height": 30,
-  "textOverrides": { "Label": "장착하기" }
-}
-
-// 콘솔 호버 버튼
-{
-  "type": "component",
-  "component": "HoverButton",
-  "variant": "기기=Console, 상태=Nomal, 사이즈=Default",
-  "x": 420, "y": 560,
-  "width": 83, "height": 30,
-  "textOverrides": { "Label": "장착하기" }
-}
-```

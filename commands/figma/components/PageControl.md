@@ -47,19 +47,6 @@
 - 배너 슬라이드 인디케이터
 - 테이블 하단 페이지네이션
 
-## 자주 쓰는 조합
-
-```json
-// Page stepper (Default)
-{
-  "type": "component",
-  "component": "PageControl",
-  "variant": "Default",
-  "x": 800, "y": 940,
-  "width": 160, "height": 32
-}
-```
-
 ## 규칙 (위키 사양서)
 
 ### Page Button (페이지 인디케이터)
@@ -88,25 +75,3 @@
 - 페이지 1개일 때 전체 Disabled
 - **PC**: 화살표 Click, Disabled 상태는 Hover 불가
 - **Console**: R Stick 또는 L/R Trigger로 조작
-
-## 적용 케이스 (위키 사양서)
-
-### Page Button
-| 화면 | 설명 |
-|------|------|
-| 뉴스 | Hero/Promotion 캐러셀 |
-| 스토어 | Featured 페이지 캐러셀 |
-| 이미지 모달 | 로비 진입 모달 |
-
-### Pagination
-| 화면 | 설명 |
-|------|------|
-| 전적 > 통계 > 순위표 | |
-| 플레이 > 사용자 지정 | |
-
-### Page Stepper
-| 화면 | 설명 |
-|------|------|
-| 플레이 | 게임 유형 탐색 |
-| 소셜 | 친구 리스트 탐색 |
-| 패스 | 보상 탭 탐색 |

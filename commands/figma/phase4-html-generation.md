@@ -1,6 +1,6 @@
 # Phase 4: HTML 생성
 
-> **필수 참조**: `commands/figma/config.md`의 OUTPUT 설정, `commands/figma/layout-components.md`의 캐시 경로
+> **필수 참조**: `commands/figma/config.md`의 OUTPUT 설정 + ASSET_DIR, `commands/figma/layout-components.md`의 프리셋 경로
 > **컴포넌트 상세**: `commands/figma/components/{이름}.md` 참조
 
 추출된 DS 토큰 + 스크린샷 분석 결과를 조합하여 HTML을 생성한다.
@@ -16,8 +16,20 @@
     소요: "즉시 (생성 아님, 복사)"
 
   Step_2_레이아웃_주입:
-    설명: "GNB/LNB/Footer는 캐시 HTML을 그대로 삽입 (새로 생성 금지)"
-    소요: "즉시 (캐시 복사)"
+    설명: "GNB/LNB/Footer는 프리셋 HTML을 로드하고 동적 마커를 치환하여 삽입 (새로 생성 금지)"
+    소요: "즉시 (프리셋 로드 + 마커 치환)"
+    프리셋_경로:
+      GNB+LNB: "C:\\figma-mockups\\_shared\\gnb.html"
+      LNB_Only: "C:\\figma-mockups\\_shared\\lnb.html"
+      FOOTER: "C:\\figma-mockups\\_shared\\footer.html"
+    동적_마커_치환:
+      "{{ACTIVE_TAB}}": "Phase 1 Q1에서 선택한 1뎁스 메뉴 (예: PLAY, STORE 등)"
+      "{{LNB_TABS}}": "Phase 1 Q2에서 확정된 2뎁스 메뉴 항목 배열 (예: NORMAL,RANKED,ARCADE,...)"
+      "{{ACTIVE_LNB_TAB}}": "Phase 1 Q3에서 선택한 3뎁스 (또는 2뎁스 첫 항목)"
+      "{{FOOTER_BUTTONS}}": "화면별 좌측 액션 버튼 텍스트 (예: PRIMARY,SECONDARY)"
+      "{{HEADER_TEXT}}": "LNB Only 사용 시 화면 타이틀 (Phase 1에서 확정된 메뉴명)"
+      "{{ASSET_DIR}}": "config.md의 ASSET_DIR 절대경로 (에셋 이미지 참조)"
+    보조재화_자동_배치: "{{SUB_CURRENCY}} 수동 치환 불필요 — gnb.html 스크립트가 {{ACTIVE_TAB}} 기반으로 자동 처리 (매핑 메뉴: HIDEOUT/WORKSHOP/PASS → 전용 아이콘, 나머지 → 랜덤 2~3개)"
 
   Step_3_콘텐츠_집중:
     설명: "CONTENT_HTML만 새로 생성 — 이것이 유일한 생성 작업"
@@ -67,31 +79,34 @@ CSS_최적화:
     body {
       width: 1920px;
       height: 1080px;
-      background: var(--bg-primary);
-      color: var(--text-primary);
+      background: var(--bg-primary, #000000);
+      color: var(--text-primary, #eaeaea);
       font-family: 'PUBG Body', sans-serif;
       overflow: hidden;
       position: relative;
     }
 
     /* ===== 레이아웃: GNB + LNB + Content + Footer 수직 배치 ===== */
+    /* background: #000000 — Figma 캡처 시 프레임 배경이 비어 보이는 것을 방지 */
     .layout {
       display: flex;
       flex-direction: column;
       width: 1920px;
       height: 1080px;
+      background: #000000;
     }
 
-    /* GNB 영역: 72px 고정 + Currency 52px */
+    /* GNB+LNB 영역: 162px 고정 (GNB 72px + 재화바 52px + 보조재화바 38px, LNB 42px 중앙 배치) */
     .gnb { flex-shrink: 0; }
 
     /* LNB 영역: Q5에서 선택 시에만 포함 */
     .lnb { flex-shrink: 0; }
 
     /* ===== 컨텐츠 영역: 명시적 높이 계산 ===== */
-    /* GNB+LNB=168px, Footer=56px → 콘텐츠=856px */
-    /* GNB만=72px, Footer=56px → 콘텐츠=952px */
-    /* GNB+LNB+Footer 없음 → 콘텐츠=1080px */
+    /* GNB+LNB=162px, Footer=56px → 콘텐츠=862px */
+    /* LNB Only=162px, Footer=56px → 콘텐츠=862px */
+    /* Footer만 → 콘텐츠=1024px */
+    /* 없음 → 콘텐츠=1080px */
     .content {
       flex: 1;
       min-height: 600px; /* 콘텐츠가 절대 사라지지 않도록 최소 높이 보장 */
@@ -110,7 +125,7 @@ CSS_최적화:
 <body>
   <div class="layout">
 
-    <!-- GNB: Q5에서 선택 시 캐시에서 로드 또는 동적 생성 -->
+    <!-- GNB: Q5에서 선택 시 프리셋에서 로드 + 동적 마커 치환 -->
     {{#if GNB}}
     <header class="gnb">
       {{GNB_HTML}}
@@ -129,7 +144,7 @@ CSS_최적화:
       {{CONTENT_HTML}}
     </main>
 
-    <!-- Footer: Q5에서 선택 시 캐시에서 로드 또는 동적 생성 -->
+    <!-- Footer: Q5에서 선택 시 프리셋에서 로드 + 동적 마커 치환 -->
     {{#if FOOTER}}
     <footer class="footer">
       {{FOOTER_HTML}}
@@ -197,13 +212,10 @@ CSS_최적화:
         <div class="tab-content">{{탭 내용}}</div>
       </div>
 
-  modal_popup:
-    특징: "오버레이 팝업, 딤 배경"
-    적용_화면: 기타_팝업_*, 구매 확인, 필터
-    구조: |
-      <div class="modal-overlay">
-        <div class="modal-card">{{팝업 내용}}</div>
-      </div>
+  # modal_popup — 제작 제외
+  # 미리보기/팝업 화면은 기존 프로덕트 규칙이 정교하여 시안 제작 불필요.
+  # 단, 해당 화면으로 진입하는 버튼/트리거는 부모 화면에 반드시 포함할 것.
+  # 예: 아이템 카드(클릭→미리보기), "구매" 버튼(클릭→구매 확인 팝업)
 ```
 
 ## 스크린샷 분석 → HTML 변환 규칙
@@ -236,8 +248,8 @@ CSS_최적화:
       콘텐츠 영역(.content)과 그 내부 요소에 반드시 명시적 크기를 지정한다.
 
     높이_계산:
-      GNB+LNB+Footer: "콘텐츠 높이 = 1080 - 168 - 56 = 856px"
-      GNB만+Footer: "콘텐츠 높이 = 1080 - 72 - 56 = 952px"
+      GNB+LNB+Footer: "콘텐츠 높이 = 1080 - 162 - 56 = 862px"
+      LNB_Only+Footer: "콘텐츠 높이 = 1080 - 162 - 56 = 862px"
       Footer만: "콘텐츠 높이 = 1080 - 56 = 1024px"
       없음: "콘텐츠 높이 = 1080px"
 
@@ -280,11 +292,68 @@ CSS_최적화:
       - "콘텐츠 전체 높이가 .content 영역의 50% 이상을 채우는가?"
       - "비어 보이는 영역이 없는가? (배경색으로 시각 확인)"
 
+  4.6_캐릭터_모델링_배치:
+    조건: "Phase 1 Q6에서 '캐릭터 모델링 포함' 선택 시"
+    참조_이미지: "SCREENSHOTS_DIR/캐릭터 모델링.png (전신, 검은 배경)"
+
+    Y좌표_규칙: |
+      캐릭터 발 밑 = Footer 바로 윗부분에 고정.
+      Footer와의 간격: 0~50px (최대 50px).
+      CSS: bottom 값 = Footer높이(56px) + 간격(0~50px).
+    X좌표_규칙: |
+      자유롭게 변경 가능.
+      단, 캐릭터 본체가 화면 밖으로 잘리면 안 됨.
+      검은 배경 부분은 잘려도 무방.
+    크기_규칙: |
+      캐릭터 높이 = 콘텐츠 영역의 70~90%.
+      GNB+LNB+Footer 기준: 862px × 0.7~0.9 = 약 600~775px.
+      캐릭터가 GNB/LNB 영역을 침범하지 않도록 주의.
+
+    CSS_패턴: |
+      /* 캐릭터 모델링 — .layout 내부에 absolute 배치 */
+      .character-model {
+        position: absolute;
+        bottom: 56px;           /* Footer 높이 = 56px, 간격 0px */
+        /* bottom: 86px;        /* Footer + 30px 간격 예시 */
+        left: 50%;              /* X좌표 자유 변경 */
+        transform: translateX(-50%);
+        height: 700px;          /* 콘텐츠 영역 70~90% */
+        z-index: 2;             /* UI 패널 뒤 또는 앞 조절 */
+        mix-blend-mode: lighten; /* 검은 배경 제거 */
+        pointer-events: none;
+      }
+      /* 발 아래 그림자 (선택) */
+      .character-shadow {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 30px;
+        background: radial-gradient(ellipse, rgba(0,0,0,0.4) 0%, transparent 70%);
+        z-index: 1;
+      }
+
+    HTML_삽입_위치: |
+      .layout 내부, .content 바깥에 absolute로 배치.
+      <div class="layout">
+        {{GNB}}
+        <main class="content">...</main>
+        <img class="character-model" src="SCREENSHOTS_DIR/캐릭터 모델링.png" alt="캐릭터">
+        <div class="character-shadow"></div>
+        {{FOOTER}}
+      </div>
+
+    주의사항:
+      - "mix-blend-mode: lighten은 검은 배경(#000~#333)만 투명화함 — 밝은 배경에서는 다르게 보일 수 있음"
+      - "좌우 분할 레이아웃(커스터마이즈 등)에서는 캐릭터를 우측 패널 영역에 배치"
+      - "모달/팝업 화면에서는 캐릭터 배치 비권장 (모달에 가려짐)"
+
   5_컴포넌트_크기_준수:
     원칙: |
       HTML 요소의 CSS 크기는 DS 컴포넌트 공식 규격에 맞춘다.
       스크린샷 분석으로 대략적 위치를 잡되, 최종 크기는 아래 표를 따른다.
-      이 규격을 벗어나면 Phase 5 캡처 → Phase 6 DS 변환 시 여백/크기 불일치가 발생한다.
+      이 규격을 벗어나면 Figma 캡처 결과물에서 DS 가이드와 크기 불일치가 발생한다.
 
     크기_참조표:
       SquareButton:
@@ -331,8 +400,8 @@ CSS_최적화:
 
   6_콘텐츠_완전성:
     원칙: |
-      HTML에 표현하는 모든 시각 요소는 Phase 5에서 customNodes로 1:1 매핑된다.
-      따라서 HTML에서 생략하면 최종 Figma에서도 누락된다.
+      HTML에 표현하는 모든 시각 요소는 Figma 캡처에 그대로 반영된다.
+      따라서 HTML에서 생략하면 최종 Figma 시안에서도 누락된다.
       아래 체크리스트를 확인하여 빠짐없이 생성한다.
 
     반복_요소_전개:

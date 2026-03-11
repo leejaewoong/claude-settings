@@ -89,26 +89,3 @@
 | 제작소 상자 열기 | |
 | OES (리스트/포인트/빙고/룰렛) | |
 
-## 자주 쓰는 조합
-
-```json
-// 일반 툴팁 (고정 너비, 타이틀 포함)
-{
-  "type": "component",
-  "component": "Tooltip",
-  "variant": "Type=General, Width=Fixed, Title=On, Divider=On, Scroll=Off",
-  "x": 500, "y": 200,
-  "width": 300, "height": 120,
-  "textOverrides": { "Title": "보상 안내", "Description": "매일 접속 시 보상을 받을 수 있습니다." }
-}
-
-// 일반 툴팁 (가변 너비, 타이틀 없음)
-{
-  "type": "component",
-  "component": "Tooltip",
-  "variant": "Type=General, Width=Variable, Title=Off, Divider=Off, Scroll=Off",
-  "x": 500, "y": 200,
-  "width": 200, "height": 60,
-  "textOverrides": { "Description": "간단 설명" }
-}
-```

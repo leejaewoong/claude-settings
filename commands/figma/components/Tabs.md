@@ -72,35 +72,3 @@
 | 피처 | 페이지 | 설명 |
 |------|--------|------|
 | 제작소 | 오버뷰 | 장인 제작, 제작소 소식, 더 보기 탭 구성 |
-
-## 자주 쓰는 조합
-
-```json
-// PC Hug width 탭
-{
-  "type": "component",
-  "component": "Tabs",
-  "variant": "너비 유형=Hug width (텍스트 맞춤), 타입=PC",
-  "x": 360, "y": 280,
-  "width": 480, "height": 44,
-  "textOverrides": {
-    "Tab1": "전체",
-    "Tab2": "스킨",
-    "Tab3": "재화",
-    "Tab4": "기타"
-  }
-}
-
-// Fill Width 탭 (균등 분할)
-{
-  "type": "component",
-  "component": "Tabs",
-  "variant": "너비 유형=Fill Width (너비 분할), 타입=PC",
-  "x": 360, "y": 280,
-  "width": 1200, "height": 44,
-  "textOverrides": {
-    "Tab1": "보상",
-    "Tab2": "미션"
-  }
-}
-```

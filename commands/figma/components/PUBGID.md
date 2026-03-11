@@ -65,24 +65,3 @@
 | 클랜 | 클랜원 목록에서 직급 아이콘 포함 |
 | 프로필 | Large 사이즈로 상세 정보 표시 |
 
-## 자주 쓰는 조합
-
-```json
-// Medium 사이즈 기본 PUBG ID
-{
-  "type": "component",
-  "component": "PUBGID",
-  "variant": "Size=Medium",
-  "x": 100, "y": 200,
-  "width": 300, "height": 56
-}
-
-// Large 사이즈 프로필용
-{
-  "type": "component",
-  "component": "PUBGID",
-  "variant": "Size=Large",
-  "x": 100, "y": 100,
-  "width": 400, "height": 80
-}
-```

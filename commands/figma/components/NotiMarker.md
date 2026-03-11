@@ -46,25 +46,3 @@
 | 은신처 | 일반 - 기본형, 사이드 탭: 일반 알림 수량형 |
 | OES | 사이드 탭: 일반, 보상 알림 모두 강조형으로 통일 |
 
-## 자주 쓰는 조합
-
-```json
-// 기본형 일반 알림
-{
-  "type": "component",
-  "component": "NotiMarker",
-  "variant": "Type=Normal, State=Default",
-  "x": 120, "y": 40,
-  "width": 8, "height": 8
-}
-
-// 수량 표시형 보상 알림
-{
-  "type": "component",
-  "component": "NotiMarker",
-  "variant": "Type=Reward, State=Count",
-  "x": 120, "y": 40,
-  "width": 20, "height": 16,
-  "textOverrides": { "Count": "5" }
-}
-```

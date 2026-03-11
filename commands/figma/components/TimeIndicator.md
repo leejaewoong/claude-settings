@@ -69,36 +69,3 @@
 | 남은 상품 판매 기간 | 상점 미리보기 | 기본형 텍스트식 |
 | 패스 배너 남은 기간 | 패스 | 기본형 텍스트식 |
 
-## 자주 쓰는 조합
-
-```json
-// 기본형 텍스트식
-{
-  "type": "component",
-  "component": "TimeIndicator",
-  "variant": "Type=Default, Size=Medium, State=Normal",
-  "x": 300, "y": 200,
-  "width": 160, "height": 24,
-  "textOverrides": { "Time": "6d 23h 45m" }
-}
-
-// 축약형 태그식 (하이라이트)
-{
-  "type": "component",
-  "component": "TimeIndicator",
-  "variant": "Type=Compact, Size=Small, State=Highlight",
-  "x": 500, "y": 200,
-  "width": 48, "height": 20,
-  "textOverrides": { "Time": "3d" }
-}
-
-// ENDS IN 문구 포함
-{
-  "type": "component",
-  "component": "TimeIndicator",
-  "variant": "Type=Default, Size=Medium, State=Highlight",
-  "x": 300, "y": 240,
-  "width": 220, "height": 24,
-  "textOverrides": { "Prefix": "ENDS IN", "Time": "2d 12h 30m" }
-}
-```

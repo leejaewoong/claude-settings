@@ -86,39 +86,3 @@
 | 상점 아이템 목록 | 구매 가능 아이템 |
 | 패스 보상 | 보상 그리드 (구간별) |
 | 은신처 | 인벤토리 슬롯 |
-
-## 모사 패턴 (customNodes)
-
-```json
-// 아이템 슬롯 (Acquired, Classic) — 획득 완료
-[
-  {
-    "name": "ItemSlot — Classic, Acquired",
-    "type": "frame",
-    "x": 100, "y": 100,    
-    "fill": "#1e1e24",
-    "cornerRadius": 4,
-    "stroke": "#8b8b8b"
-  },
-  {
-    "name": "ItemSlot — Acquired 오버레이",
-    "type": "rect",
-    "x": 100, "y": 100,    
-    "fill": "#000000",
-    "opacity": 0.4,
-    "cornerRadius": 4
-  },
-  {
-    "name": "ItemSlot — 체크",
-    "type": "text",
-    "x": 166, "y": 178,
-    "width": 40, "height": 40,
-    "characters": "✓",
-    "fontSize": 24,
-    "fontFamily": "Inter",
-    "fontStyle": "Bold",
-    "fill": "#5a9a6a",
-    "textAlignHorizontal": "CENTER"
-  }
-]
-```

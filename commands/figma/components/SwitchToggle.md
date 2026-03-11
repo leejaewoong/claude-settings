@@ -41,24 +41,3 @@
 | 커스터마이즈 외형/은신처 밀수품 | Large | Disabled/ON | 상점 우측 상단 |
 | 클랜 받은 초대 | Large | Active/ON | 우측 상단 |
 
-## 자주 쓰는 조합
-
-```json
-// Medium 토글 (활성/ON)
-{
-  "type": "component",
-  "component": "SwitchToggle",
-  "variant": "Status=Active, Toggle=On, Size=Medium",
-  "x": 300, "y": 500,
-  "width": 44, "height": 24
-}
-
-// Small 토글 (비활성/ON)
-{
-  "type": "component",
-  "component": "SwitchToggle",
-  "variant": "Status=Disabled, Toggle=On, Size=Small",
-  "x": 300, "y": 540,
-  "width": 36, "height": 20
-}
-```

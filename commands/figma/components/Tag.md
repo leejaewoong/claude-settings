@@ -82,26 +82,3 @@
 | Pass - Survivor | 오버뷰/리워드/미션 HUD 영역, Default/Premium 컬러 |
 | Pass - Crafter | 리워드/미션 HUD 영역, 시즌/업적 미션 프리미엄 태그 |
 
-## 자주 쓰는 조합
-
-```json
-// PREMIUM 태그
-{
-  "type": "component",
-  "component": "Tag",
-  "variant": "Type=Premium, Size=Default (medium), Icon=False",
-  "x": 360, "y": 430,
-  "width": 80, "height": 24,
-  "textOverrides": { "Label": "PREMIUM" }
-}
-
-// NEW 뱃지
-{
-  "type": "component",
-  "component": "Tag",
-  "variant": "Type=Red, Size=Small, Icon=False",
-  "x": 520, "y": 300,
-  "width": 48, "height": 20,
-  "textOverrides": { "Label": "NEW" }
-}
-```
