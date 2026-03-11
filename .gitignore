@@ -10,6 +10,8 @@ stats-cache*
 history*
 *credentials*
 !*.example.json
+.env
+!.env.example
 telemetry/
 cache/
 paste-cache/

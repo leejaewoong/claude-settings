@@ -1,0 +1,110 @@
+# ContentSwitch (콘텐츠 스위치)
+
+## 용도
+세그먼트 전환 UI. 2~3개 옵션 간 전환. 무료/프리미엄 토글, 보기 모드 전환 등.
+
+## Variant 속성
+
+| 속성 | 값 | 설명 |
+|------|-----|------|
+| Type | Text | 텍스트 전환 |
+| | Icon | 아이콘 전환 |
+| Console | True | 콘솔 대응 |
+| | False | PC 전용 |
+| Overlay | True | 오버레이 모드 |
+| | False | 일반 모드 |
+| 배경 표시 | True | 배경 있음 |
+| | False | 배경 없음 |
+| 수량 | 2개 | 2개 옵션 |
+| | 3개 | 3개 옵션 |
+
+## 추천 사이즈
+
+| 수량 | 너비 | 높이 |
+|------|------|------|
+| 2개 | 200~280 | 36~44 |
+| 3개 | 300~400 | 36~44 |
+
+## textOverrides
+
+| 키 | 설명 |
+|----|------|
+| Label | 전체 라벨 (예: "무료 / 프리미엄") |
+
+## 색상 정보
+
+```yaml
+색상:
+  배경: "#1a1a22"
+  활성_옵션_배경: "#2a2a35"
+  활성_텍스트: "#eaeaea"
+  비활성_텍스트: "#8b8b8b"
+  cornerRadius: 4
+  내부_padding: 4
+```
+
+## 규칙 (위키 사양서)
+
+### 용도
+- 2~3개의 상호 배타적 옵션 전환
+- 하나의 옵션이 항상 선택 상태
+
+### 배치
+- 콘텐츠 영역 상단 또는 필터 영역에 배치
+- 수평 중앙 정렬 또는 좌측 정렬
+
+## 적용 케이스 (위키 사양서)
+
+| 화면 | 설명 |
+|------|------|
+| 패스 보상 | 무료/프리미엄 전환 |
+| 커스터마이즈 | 보기 모드 전환 |
+| 상점 | 필터 전환 |
+
+## 모사 패턴 (customNodes)
+
+```json
+// 2개 옵션 ContentSwitch (첫 번째 활성)
+[
+  {
+    "name": "ContentSwitch 배경",
+    "type": "frame",
+    "x": 928, "y": 180,
+    "width": 260, "height": 40,
+    "fill": "#1a1a22",
+    "cornerRadius": 4
+  },
+  {
+    "name": "ContentSwitch 활성 옵션",
+    "type": "rect",
+    "x": 932, "y": 184,
+    "width": 124, "height": 32,
+    "fill": "#2a2a35",
+    "cornerRadius": 4
+  },
+  {
+    "name": "옵션1 (활성)",
+    "type": "text",
+    "x": 952, "y": 190,
+    "width": 84, "height": 20,
+    "characters": "무료",
+    "fontSize": 13,
+    "fontFamily": "Inter",
+    "fontStyle": "Bold",
+    "fill": "#eaeaea",
+    "textAlignHorizontal": "CENTER"
+  },
+  {
+    "name": "옵션2 (비활성)",
+    "type": "text",
+    "x": 1072, "y": 190,
+    "width": 84, "height": 20,
+    "characters": "프리미엄",
+    "fontSize": 13,
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fill": "#8b8b8b",
+    "textAlignHorizontal": "CENTER"
+  }
+]
+```
