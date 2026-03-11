@@ -1,0 +1,110 @@
+# ContextMenu (컨텍스트 메뉴)
+
+## 용도
+우클릭/더보기 메뉴. 아이템 우클릭 액션, 더보기(...) 메뉴 등.
+
+## Variant 속성
+
+| 속성 | 값 | 설명 |
+|------|-----|------|
+| Type | Default | 기본 메뉴 |
+| | Destructive | 삭제/위험 액션 포함 |
+
+## 추천 사이즈
+
+| 항목 | 값 |
+|------|-----|
+| 너비 | 180~240 |
+| 항목 높이 | 36~40 |
+
+## 색상 정보
+
+```yaml
+색상:
+  배경: "#1e1e24"
+  border: "#2a2a35"
+  cornerRadius: 4
+  shadow: "0 4px 12px rgba(0,0,0,0.5)"
+  항목_텍스트: "#eaeaea"
+  항목_호버_배경: "#2a2a35"
+  항목_destructive: "#ff5252"
+  구분선: "#2a2a35"
+  padding: "상하 4px"
+  항목_padding: "좌우 16px, 상하 8px"
+  fontSize: 13
+```
+
+## 규칙 (위키 사양서)
+
+### 구성
+- 메뉴 항목 목록 (텍스트, 선택적 아이콘)
+- 항목 그룹 간 구분선
+- 위험 액션은 빨간 텍스트
+
+### 배치
+- 클릭/우클릭 지점 근처에 표시
+- 화면 경계 넘지 않도록 자동 위치 조정
+
+## 적용 케이스 (위키 사양서)
+
+| 화면 | 설명 |
+|------|------|
+| 인벤토리 | 아이템 우클릭 (장착/분해/거래) |
+| 소셜 | 플레이어 우클릭 (초대/신고/차단) |
+
+## 모사 패턴 (customNodes)
+
+```json
+// 컨텍스트 메뉴 (3항목 + 구분선 + 삭제)
+[
+  {
+    "name": "메뉴 배경",
+    "type": "frame",
+    "x": 500, "y": 300,
+    "width": 200, "height": 180,
+    "fill": "#1e1e24",
+    "cornerRadius": 4,
+    "stroke": "#2a2a35"
+  },
+  {
+    "name": "항목1",
+    "type": "text",
+    "x": 516, "y": 312,
+    "width": 168, "height": 20,
+    "characters": "장착",
+    "fontSize": 13,
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fill": "#eaeaea"
+  },
+  {
+    "name": "항목2",
+    "type": "text",
+    "x": 516, "y": 348,
+    "width": 168, "height": 20,
+    "characters": "미리보기",
+    "fontSize": 13,
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fill": "#eaeaea"
+  },
+  {
+    "name": "구분선",
+    "type": "line",
+    "x": 516, "y": 384,
+    "width": 168, "height": 0,
+    "stroke": "#2a2a35"
+  },
+  {
+    "name": "삭제 항목",
+    "type": "text",
+    "x": 516, "y": 400,
+    "width": 168, "height": 20,
+    "characters": "분해",
+    "fontSize": 13,
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fill": "#ff5252"
+  }
+]
+```

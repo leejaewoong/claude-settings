@@ -75,9 +75,14 @@
 | `Bash(pwd)` | 현재 작업 디렉토리 경로 출력 |
 | `Bash(which:*)` | 실행 파일의 경로 확인 (Linux/Mac) |
 | `Bash(where:*)` | 실행 파일의 경로 확인 (Windows) |
+| `Bash(cd:*)` | 디렉토리 이동 (복합 명령어에서 `cd ... && ...` 형태로 사용) |
 | `Bash(start:*)` | Windows에서 파일/URL을 기본 프로그램으로 열기 |
 | `Bash(sleep:*)` | 지정한 시간(초) 동안 대기 |
 | `Bash(netstat:*)` | 네트워크 연결 상태 및 포트 사용 현황 조회 |
+| `Bash(lsof:*)` | 열린 파일/포트 확인 (프로세스별 파일 디스크립터 조회) |
+| `Bash(xxd:*)` | 파일 hex 덤프 (바이너리 파일 분석) |
+| `Bash(clip)` | 표준 입력을 클립보드에 복사 (Windows) |
+| `Bash(python3:*)` | Python 3 인터프리터로 스크립트 실행 |
 | `Bash(grep:*)` | 파일 내용 또는 파이프 입력에서 정규표현식으로 패턴 검색 |
 | `Bash(head:*)` | 파일 또는 파이프 입력의 처음 N줄만 출력 |
 | `Bash(tail:*)` | 파일 또는 파이프 입력의 마지막 N줄만 출력 |
@@ -116,6 +121,24 @@
 |---|---|
 | `Bash(curl:*)` | HTTP 요청 전송 (GET, POST 등 모든 메서드) |
 | `WebFetch` | 지정한 URL에서 웹 콘텐츠를 가져와 분석 |
+
+## 🎨 Figma MCP
+
+| 권한 | 설명 |
+|---|---|
+| `mcp__figma__get_screenshot` | Figma 노드 스크린샷 캡처 |
+| `mcp__figma__get_metadata` | Figma 노드 메타데이터 (XML 구조) 조회 |
+| `mcp__figma__get_design_context` | Figma 노드 디자인 컨텍스트 (코드 + 스크린샷) 추출 |
+| `mcp__figma__get_variable_defs` | Figma 변수(토큰) 정의 조회 |
+| `mcp__figma__get_code_connect_map` | Code Connect 매핑 조회 |
+| `mcp__figma__get_code_connect_suggestions` | Code Connect AI 매핑 제안 |
+| `mcp__figma__create_design_system_rules` | 디자인 시스템 규칙 프롬프트 생성 |
+| `mcp__figma__generate_figma_design` | HTML → Figma 캡처 (newFile / existingFile / clipboard) |
+| `mcp__figma__generate_diagram` | FigJam 다이어그램 생성 (Mermaid.js) |
+| `mcp__figma__whoami` | Figma MCP 인증 사용자 정보 확인 |
+| `mcp__figma__get_figjam` | FigJam 노드 코드 생성 |
+| `mcp__figma__add_code_connect_map` | Code Connect 매핑 추가 |
+| `mcp__figma__send_code_connect_mappings` | Code Connect 매핑 일괄 저장 |
 
 ---
 

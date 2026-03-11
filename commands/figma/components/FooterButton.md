@@ -1,0 +1,72 @@
+# FooterButton (푸터 버튼)
+
+## 용도
+화면 하단에 배치되는 액션 버튼. 미션 진행, 아이템 티어 표기 등과 함께 사용.
+
+## Variant 속성
+
+| 속성 | 값 | 설명 |
+|------|-----|------|
+| Title | True | 타이틀 표기 |
+| | False | 타이틀 숨김 |
+| MissionState | Default | 기본 상태 (진척도 0~완료 직전) |
+| | Complete | 완료 상태 (진척도 100%) |
+| | Locked | 잠김 상태 (진행도 바 숨김 + 딤) |
+| Interaction | Default | 기본 상태 |
+| | Hover | 호버 상태 |
+| | Selected | 선택 상태 |
+
+## textOverrides
+
+| 키 | 설명 |
+|----|------|
+| Title | 미션 타이틀 |
+| Description | 미션 설명 (필수) |
+
+## 규칙 (위키 사양서)
+
+### 아이템 슬롯
+- 미션 보상 아이템 제공 시 규격화된 아이템 슬롯 활용하여 표시
+- 아이템 슬롯은 진행 정보 UI 좌측 또는 우측에 배치 가능
+
+### 미션 내용
+- 타이틀과 설명은 둘 중 하나 반드시 표기
+- 미션 부여 번호는 생략 가능
+- 미션 프로그레스 바는 조건에 관계없이 반드시 표기
+- 완료/잠금 시 백그라운드 딤 처리 적용
+
+### 기타
+- 버튼, 툴팁 등 외부 요소는 얹어 쓰기
+
+## 적용 케이스 (위키 사양서)
+
+| 화면 | 설명 |
+|------|------|
+| 티어 배경 표시 | 아이템 배경에 티어 컬러 표시 (모든 아이템 화면) |
+| 제작소 | 아이템 클릭 시 중앙에 텍스트로 티어/유형/이름 표시 |
+| 커스터마이즈/미리보기/은신처 | 호버 시 하단에 티어/유형/이름 표시 |
+| 프로필/로비 커스터마이즈/패스/미리보기 상단 | 호버 시 우측에 티어/유형/이름 표시 |
+
+## 자주 쓰는 조합
+
+```json
+// 기본 상태 푸터 버튼
+{
+  "type": "component",
+  "component": "FooterButton",
+  "variant": "Title=True, MissionState=Default, Interaction=Default",
+  "x": 100, "y": 650,
+  "width": 400, "height": 60,
+  "textOverrides": { "Title": "미션 1", "Description": "적 처치 10회" }
+}
+
+// 완료 상태
+{
+  "type": "component",
+  "component": "FooterButton",
+  "variant": "Title=True, MissionState=Complete, Interaction=Default",
+  "x": 100, "y": 650,
+  "width": 400, "height": 60,
+  "textOverrides": { "Title": "미션 1", "Description": "적 처치 10회" }
+}
+```

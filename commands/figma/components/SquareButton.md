@@ -1,0 +1,112 @@
+# SquareButton (스퀘어 버튼 V2)
+
+## 용도
+모든 버튼 UI. CTA, 확인, 취소, 액션 버튼 등.
+
+## Variant 속성
+
+| 속성 | 값 | 설명 |
+|------|-----|------|
+| Type | Primary | 주요 액션 (확인, 구매, 획득) — 골드 배경 |
+| | Secondary | 보조 액션 (취소, 안내, 뒤로가기) — 다크 배경+보더 |
+| | Light | 가벼운 디자인 — Primary/Secondary보다 경량 |
+| | Plus | 플러스 멤버쉽 전용 버튼 |
+| Size | XLarge | 초대형 |
+| | Large | 대형 (높이 54px) |
+| | Default | 기본 크기 (높이 44px) |
+| | Small | 소형 (높이 32px) |
+| | XSmall | 초소형 |
+| State | Normal | 기본 |
+| | Hover | 호버 |
+| | Focused | 포커스 (콘솔 대응) |
+| Disabled | False | 활성 |
+| | True | 비활성 (회색) |
+| autolayout | True | 텍스트 길이에 따라 너비 자동 |
+| | False | 고정 너비 |
+| show-border | True | 테두리 표시 |
+| | False | 테두리 없음 |
+
+## 규칙 (위키 사양서)
+
+### 버튼 타입 활용
+- **Primary + Secondary**: 한 묶음으로 활용. 주 버튼이 항상 첫 번째 순서에 위치
+- **Light**: Primary/Secondary보다 가벼운 디자인이 필요할 때 광범위하게 활용
+- **Plus**: 플러스 멤버쉽 전용 버튼
+
+### 테두리형 (테두리형 속성)
+- 콘솔 케이스 한정 사용
+- 모든 버튼 타입과 사이즈에 공통 적용
+
+### 너비 옵션
+- **반응형 (Default)**: 텍스트 길이에 맞춰 가변
+- **고정형**: 지정된 너비로 고정
+- 버튼 최소 너비: XSmall 기준 80px
+
+### 상태
+- Normal, Hovered, Disabled — 모든 타입 공통
+- 콘솔: 포커스 컴포넌트를 버튼 위에 얹는 방식 (별도 포커스 상태 없음)
+
+### 텍스트
+- 모든 버튼은 반드시 텍스트 포함
+- 1~2 단어로 간결하게, 줄넘김 없음 (최대 W기준 33자)
+- 텍스트 크기는 버튼 규격에 맞는 사이즈를 임의 변경하지 않음
+
+### 아이콘
+- 텍스트 좌우측 중 한 쪽을 선택하여 아이콘 표기
+- 사용할 아이콘은 자유롭게 변경 가능
+
+### 콘솔/PC 키
+- 키 아이콘은 자유롭게 변경 가능
+- 모든 타입에 공통 적용
+
+## 추천 사이즈
+
+| Size | 너비 | 높이 |
+|------|------|------|
+| XSmall | 60~100 | 26 |
+| Small | 80~160 | 32 |
+| Default | 120~280 | 44 |
+| Large | 160~360 | 54 |
+| XLarge | 200~400 | 64 |
+
+## textOverrides
+
+| 키 | 설명 |
+|----|------|
+| Label | 버튼 텍스트 |
+
+## 적용 케이스 (위키 사양서)
+
+| 타입 | 적용 위치 | 설명 |
+|------|----------|------|
+| Primary & Secondary | 확인/취소 모달, 피쳐 내 주요 액션 | 상점 체크아웃, 커스터마이즈, 제작소, 은신처 등 |
+| Light | 알림 모두 삭제, 확률 보기, 연승 도전 결과, 서비스 약관 | 가벼운 액션에 활용 |
+| Plus | PUBG 플러스 멤버쉽 업그레이드 | 로비, 플러스 멤버쉽 모달, 커스터마이즈 |
+
+## 자주 쓰는 조합
+
+```json
+// Primary 버튼
+{
+  "type": "component",
+  "component": "SquareButton",
+  "variant": "autolayout=True, show-border=False, Type=Primary, Size=Default, Disabled=False, State=Normal",
+  "textOverrides": { "Label": "확인" }
+}
+
+// Secondary 버튼
+{
+  "type": "component",
+  "component": "SquareButton",
+  "variant": "autolayout=True, show-border=False, Type=Secondary, Size=Default, Disabled=False, State=Normal",
+  "textOverrides": { "Label": "취소" }
+}
+
+// 비활성 버튼
+{
+  "type": "component",
+  "component": "SquareButton",
+  "variant": "autolayout=True, show-border=False, Type=Primary, Size=Default, Disabled=True, State=Normal",
+  "textOverrides": { "Label": "잔액 부족" }
+}
+```

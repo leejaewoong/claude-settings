@@ -1,0 +1,128 @@
+# Modals (모달)
+
+## 용도
+모달 다이얼로그. 구매 확인, 경고, 안내 팝업, 시스템 알림 등.
+
+## Variant 속성
+
+| 속성 | 값 | 설명 |
+|------|-----|------|
+| Type | Small | 소형 모달 (660px) |
+| | Default | 기본 모달 (760px) |
+| | Large | 대형 모달 (960px) |
+| | Full | 전체 화면 (1920×1080) |
+| Description | True | 설명 텍스트 표시 |
+| | False | 설명 숨김 |
+| Console key | True | 콘솔 키 표시 |
+| | False | PC 전용 |
+
+## 추천 사이즈
+
+| Type | 너비 | 높이 |
+|------|------|------|
+| Small | 660 | 가변 (400~800) |
+| Default | 760 | 가변 (400~800) |
+| Large | 960 | 가변 (400~800) |
+| Full | 1920 | 1080 |
+
+## 색상 정보
+
+```yaml
+색상:
+  딤_오버레이: "fill=#000000, opacity=0.7"
+  모달_배경: "#1e1e24"
+  모달_border: "#2a2a35"
+  cornerRadius: 8
+  타이틀_텍스트: "#eaeaea"
+  서브타이틀_텍스트: "#8b8b8b"
+  구분선: "#2a2a35"
+  닫기_버튼_배경: "#222228"
+  닫기_버튼_border: "#333340"
+  경고_박스_배경: "#2a2418"
+  경고_박스_border: "#3d3520"
+  경고_텍스트: "#f2a900"
+```
+
+## 구조 (내부 구성)
+
+```yaml
+모달_구조:
+  1_타이틀_영역:
+    위치: "상단 32px 패딩"
+    타이틀: "fontSize=20, fontStyle=Bold, fill=#eaeaea"
+    서브타이틀: "fontSize=13, fontStyle=Regular, fill=#8b8b8b"
+    닫기_버튼: "우측 상단, 32×32, fill=#222228"
+  2_콘텐츠_영역:
+    위치: "타이틀 아래"
+    좌우_패딩: 32
+  3_버튼_영역:
+    위치: "하단 32px 패딩"
+    Primary_Secondary: "나란히 배치 또는 Full Width"
+```
+
+## 규칙 (위키 사양서)
+
+### 구성
+- 딤 오버레이 + 모달 본체로 구성
+- 타이틀은 항상 표시, 닫기 버튼은 우측 상단
+- 하단에 Primary + Secondary 버튼 배치
+
+### 크기
+- Small: 간단한 확인/취소
+- Default: 일반적인 정보 표시
+- Large: 복잡한 콘텐츠
+- Full: 전체 화면 점유
+
+## 적용 케이스 (위키 사양서)
+
+| 화면 | 설명 |
+|------|------|
+| 구매 확인 | 아이템 구매 전 최종 확인 |
+| 경고 | 되돌릴 수 없는 액션 경고 |
+| 안내 | 이벤트/업데이트 안내 |
+| 설정 | 옵션 변경 확인 |
+
+## 모사 패턴 (customNodes)
+
+```json
+// Small 모달 (구매 확인)
+[
+  {
+    "name": "딤 오버레이",
+    "type": "rect",
+    "x": 0, "y": 0,
+    "width": 1920, "height": 1080,
+    "fill": "#000000",
+    "opacity": 0.7
+  },
+  {
+    "name": "모달 배경",
+    "type": "frame",
+    "x": 630, "y": 200,
+    "width": 660, "height": 680,
+    "fill": "#1e1e24",
+    "cornerRadius": 8,
+    "stroke": "#2a2a35"
+  },
+  {
+    "name": "모달 타이틀",
+    "type": "text",
+    "x": 662, "y": 232,
+    "width": 300, "height": 28,
+    "characters": "모달 제목",
+    "fontSize": 20,
+    "fontFamily": "Inter",
+    "fontStyle": "Bold",
+    "fill": "#eaeaea"
+  },
+  {
+    "name": "닫기 버튼",
+    "type": "rect",
+    "x": 1248, "y": 228,
+    "width": 32, "height": 32,
+    "fill": "#222228",
+    "stroke": "#333340",
+    "cornerRadius": 2
+  }
+]
+```

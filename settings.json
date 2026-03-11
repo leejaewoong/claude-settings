@@ -54,9 +54,14 @@
       "Bash(pwd)",
       "Bash(which:*)",
       "Bash(where:*)",
+      "Bash(cd:*)",
       "Bash(start:*)",
       "Bash(sleep:*)",
       "Bash(netstat:*)",
+      "Bash(lsof:*)",
+      "Bash(xxd:*)",
+      "Bash(clip)",
+      "Bash(python3:*)",
       "Bash(grep:*)",
       "Bash(head:*)",
       "Bash(tail:*)",
@@ -94,6 +99,10 @@
       "mcp__figma__create_design_system_rules",
       "mcp__figma__generate_figma_design",
       "mcp__figma__generate_diagram",
+      "mcp__figma__whoami",
+      "mcp__figma__get_figjam",
+      "mcp__figma__add_code_connect_map",
+      "mcp__figma__send_code_connect_mappings",
       "mcp__figma-dev-mode-mcp-server__get_screenshot",
       "mcp__figma-dev-mode-mcp-server__get_metadata",
       "mcp__figma-dev-mode-mcp-server__get_design_context",
@@ -123,5 +132,6 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
   },
-  "autoUpdatesChannel": "latest"
+  "autoUpdatesChannel": "latest",
+  "effortLevel": "high"
 }
