@@ -36,24 +36,3 @@
 | 리스트형 UI | 세로 스크롤러 기본 적용 |
 | 가로 나열형 UI | 가로 스크롤러 적용 |
 
-## 자주 쓰는 조합
-
-```json
-// 세로 스크롤러
-{
-  "type": "component",
-  "component": "Scroller",
-  "variant": "Orientation=Vertical, Interaction=Normal",
-  "x": 780, "y": 100,
-  "width": 4, "height": 400
-}
-
-// 가로 스크롤러
-{
-  "type": "component",
-  "component": "Scroller",
-  "variant": "Orientation=Horizontal, Interaction=Normal",
-  "x": 100, "y": 580,
-  "width": 400, "height": 4
-}
-```

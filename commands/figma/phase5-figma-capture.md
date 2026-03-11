@@ -1,4 +1,4 @@
-# Phase 5: HTML → Figma 캡처 (필수 — DS 변환 전 시각 참조)
+# Phase 5: HTML → Figma 캡처 (최종 산출물)
 
 > **필수 참조**: `commands/figma/config.md`의 FIGMA_PLAN_KEY, FIGMA_DELAY
 

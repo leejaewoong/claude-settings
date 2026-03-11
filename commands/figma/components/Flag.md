@@ -37,25 +37,3 @@
 | 신규 콘텐츠 강조 | 시즈널 맵 로비 배너, 맵 선택 모달 피쳐드 배너 | Type=New |
 | 신규 상품 프로모션 | 뉴스 > 프로모션 배너 | |
 | 콘텐츠 카테고리 구분 | 뉴스 > 커뮤니티 배너 | 다른 컬러로 구분 |
-
-## 자주 쓰는 조합
-
-```json
-// NEW 플래그
-{
-  "type": "component",
-  "component": "Flag",
-  "variant": "Type=New",
-  "x": 360, "y": 300,
-  "width": 184, "height": 24
-}
-
-// 한정 플래그
-{
-  "type": "component",
-  "component": "Flag",
-  "variant": "Type=Yellow",
-  "x": 360, "y": 300,
-  "width": 184, "height": 24
-}
-```

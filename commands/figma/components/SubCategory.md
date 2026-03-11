@@ -55,36 +55,3 @@
 | 제작소 > 특수제작 | |
 | 커스터마이즈 > 무기 > 참 | Inactive 상태 사용 |
 
-## 자주 쓰는 조합
-
-```json
-// 텍스트 서브 카테고리 (활성)
-{
-  "type": "component",
-  "component": "SubCategory",
-  "variant": "State=Active, Content=Text",
-  "x": 100, "y": 120,
-  "width": 80, "height": 32,
-  "textOverrides": { "Label": "전체" }
-}
-
-// 텍스트 서브 카테고리 (일반)
-{
-  "type": "component",
-  "component": "SubCategory",
-  "variant": "State=Normal, Content=Text",
-  "x": 184, "y": 120,
-  "width": 80, "height": 32,
-  "textOverrides": { "Label": "상의" }
-}
-
-// 아이콘+텍스트 서브 카테고리
-{
-  "type": "component",
-  "component": "SubCategory",
-  "variant": "State=Normal, Content=IconText",
-  "x": 268, "y": 120,
-  "width": 100, "height": 32,
-  "textOverrides": { "Label": "돌격소총" }
-}
-```

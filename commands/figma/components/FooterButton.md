@@ -47,26 +47,3 @@
 | 커스터마이즈/미리보기/은신처 | 호버 시 하단에 티어/유형/이름 표시 |
 | 프로필/로비 커스터마이즈/패스/미리보기 상단 | 호버 시 우측에 티어/유형/이름 표시 |
 
-## 자주 쓰는 조합
-
-```json
-// 기본 상태 푸터 버튼
-{
-  "type": "component",
-  "component": "FooterButton",
-  "variant": "Title=True, MissionState=Default, Interaction=Default",
-  "x": 100, "y": 650,
-  "width": 400, "height": 60,
-  "textOverrides": { "Title": "미션 1", "Description": "적 처치 10회" }
-}
-
-// 완료 상태
-{
-  "type": "component",
-  "component": "FooterButton",
-  "variant": "Title=True, MissionState=Complete, Interaction=Default",
-  "x": 100, "y": 650,
-  "width": 400, "height": 60,
-  "textOverrides": { "Title": "미션 1", "Description": "적 처치 10회" }
-}
-```

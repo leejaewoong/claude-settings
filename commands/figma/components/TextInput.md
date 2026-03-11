@@ -28,30 +28,6 @@
 | Placeholder | 플레이스홀더 텍스트 |
 | Value | 입력된 값 |
 
-## 자주 쓰는 조합
-
-```json
-// 기본 입력 필드
-{
-  "type": "component",
-  "component": "TextInput",
-  "variant": "Size=Default, State=Normal",
-  "x": 360, "y": 200,
-  "width": 344, "height": 44,
-  "textOverrides": { "Placeholder": "검색어를 입력하세요" }
-}
-
-// 대형 입력 필드 (모달 내)
-{
-  "type": "component",
-  "component": "TextInput",
-  "variant": "Size=Large, State=Normal",
-  "x": 660, "y": 527,
-  "width": 600, "height": 54,
-  "textOverrides": { "Placeholder": "비밀번호를 입력하세요" }
-}
-```
-
 ## 규칙 (위키 사양서)
 
 ### 타입
@@ -80,22 +56,3 @@
 ### 사운드
 - Hover/Focusing: UI_Common_Hover_Medium
 - Click: UI_Common_Click_Confirm
-
-## 적용 케이스 (위키 사양서)
-
-### 검색
-| 화면 | 설명 |
-|------|------|
-| 플레이 > 사용자 지정 | 매치 검색 |
-| 소셜 > 닉네임 검색 | 닉네임 검색 |
-| 클랜 > 검색 | 클랜 이름/태그 검색 |
-| 클랜 > 초대 | 초대용 닉네임 검색 |
-
-### 입력
-| 화면 | 설명 |
-|------|------|
-| 아웃게임 | 채팅 입력 |
-| 사용자 지정 > 생성 | 매치 세션명 입력 |
-| 상점 > 보너스/기프트 코드 | 리딤 코드 입력 |
-| 소셜 > PUBG ID > 메모 | 플레이어 메모 입력 |
-| 클랜 > 관리 > 커뮤니티 링크/공지사항 | 링크/공지 입력 |

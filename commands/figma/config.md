@@ -12,6 +12,7 @@ THEME: "dark"
 FIGMA_DELAY: 3000
 FIGMA_PLAN_KEY: "organization::1460451802116636798"  # KRAFTON, Inc.
 FIGMA_PLAN_NAME: "KRAFTON, Inc."
+ASSET_DIR: "C:\\Users\\jaewoong\\Desktop\\PUBG 스크린샷\\에셋"  # SCREENSHOTS_DIR/에셋/ — 레이아웃 프리셋에서 참조
 ```
 
 ## Figma DS URL 설정

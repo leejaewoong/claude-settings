@@ -47,24 +47,3 @@
 | 최초 캐릭터 생성 스킨 데이터 | Spinner + Symbol | Text |
 | OES 빙고 티켓 | Spinner + Symbol | Text |
 
-## 자주 쓰는 조합
-
-```json
-// PC 기본 로딩 (Spinner + Symbol)
-{
-  "type": "component",
-  "component": "Loading",
-  "variant": "Type=Spinner + Symbol",
-  "x": 640, "y": 360,
-  "width": 80, "height": 80
-}
-
-// Console 기본 로딩 (Text)
-{
-  "type": "component",
-  "component": "Loading",
-  "variant": "Type=Text",
-  "x": 640, "y": 360,
-  "width": 120, "height": 32
-}
-```

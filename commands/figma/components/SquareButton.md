@@ -82,31 +82,3 @@
 | Primary & Secondary | 확인/취소 모달, 피쳐 내 주요 액션 | 상점 체크아웃, 커스터마이즈, 제작소, 은신처 등 |
 | Light | 알림 모두 삭제, 확률 보기, 연승 도전 결과, 서비스 약관 | 가벼운 액션에 활용 |
 | Plus | PUBG 플러스 멤버쉽 업그레이드 | 로비, 플러스 멤버쉽 모달, 커스터마이즈 |
-
-## 자주 쓰는 조합
-
-```json
-// Primary 버튼
-{
-  "type": "component",
-  "component": "SquareButton",
-  "variant": "autolayout=True, show-border=False, Type=Primary, Size=Default, Disabled=False, State=Normal",
-  "textOverrides": { "Label": "확인" }
-}
-
-// Secondary 버튼
-{
-  "type": "component",
-  "component": "SquareButton",
-  "variant": "autolayout=True, show-border=False, Type=Secondary, Size=Default, Disabled=False, State=Normal",
-  "textOverrides": { "Label": "취소" }
-}
-
-// 비활성 버튼
-{
-  "type": "component",
-  "component": "SquareButton",
-  "variant": "autolayout=True, show-border=False, Type=Primary, Size=Default, Disabled=True, State=Normal",
-  "textOverrides": { "Label": "잔액 부족" }
-}
-```
