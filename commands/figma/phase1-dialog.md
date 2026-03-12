@@ -144,14 +144,19 @@ N. 이 화면으로 확정
         단, 캐릭터 본체가 화면 밖으로 잘리면 안 된다.
         검은 배경 부분은 잘려도 무방하다.
       크기: |
-        캐릭터 이미지 높이는 콘텐츠 영역의 70~90% 범위.
-        GNB+LNB(162px)+Footer(56px) 사용 시: 콘텐츠 862px → 캐릭터 약 600~775px.
-        캐릭터가 GNB/LNB 영역을 침범하지 않도록 주의.
+        캐릭터 원본 크기를 유지한다 (height: auto).
+        인위적으로 축소하지 않는다 (700px 등 고정 높이 금지).
+        캐릭터 위에 UI/컴포넌트가 표시될 수 있으므로 z-index를 낮게(1) 설정한다.
 
     스타일_처리:
-      배경_제거: "캐릭터 모델링.png의 검은 배경은 mix-blend-mode: lighten 또는 CSS mask로 제거"
-      그림자: "캐릭터 발 아래 원형 그림자(radial-gradient) 추가 권장"
-      레이어: "캐릭터는 콘텐츠 위에 position: absolute로 배치, z-index로 UI 뒤/앞 조절"
+      배경_검은색: |
+        캐릭터 이미지의 검은 배경 가장자리가 페이지와 자연스럽게 블렌딩되도록
+        .layout에 has-character 클래스를 추가하고 배경을 #111115으로 강제한다.
+        .layout.has-character { background: #111115; }
+        .layout.has-character .content { background: #111115; }
+      배경_제거: "캐릭터 모델링.png의 검은 배경은 mix-blend-mode: lighten으로 제거 (배경 #111115 + lighten 블렌딩 — #000~#333 검은 영역이 #111115보다 어두워 정상 제거)"
+      그림자: "캐릭터 발 아래 원형 그림자(radial-gradient) 추가 권장 (z-index: 0)"
+      레이어: "캐릭터는 z-index: 1, UI 패널은 z-index: 3+, GNB는 z-index: 10"
 
     적용_화면_예시:
       - "커스터마이즈 (옷장/외형/포즈) — 캐릭터 중앙~우측, 좌측에 아이템 패널"

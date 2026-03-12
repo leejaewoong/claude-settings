@@ -13,12 +13,12 @@
     실패시: "서버 시작 후 재시도"
 
   2_HTML_렌더링:
-    확인: "http://localhost:8765/[경로]/index.html 접근 가능? (서버 루트를 C:\figma-mockups로 설정)"
-    방법: "curl -s -o /dev/null -w '%{http_code}' URL"
+    확인: "http://localhost:8765 접근 가능? (Phase 4 인메모리 서버)"
+    방법: "curl -s -o /dev/null -w '%{http_code}' http://localhost:8765"
     기대값: "200"
 
   3_캡처_스크립트:
-    확인: "capture.js가 HTML </body> 직전에 삽입?"
+    확인: "capture.js 삽입은 Step_2에서 서버 재시작 시 처리"
     코드: '<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>'
 
   4_Figma_MCP:
@@ -29,16 +29,17 @@
 ## 캡처 실행 절차
 
 ```yaml
-Step_1_서버_시작:
-  명령: |
-    cd C:\figma-mockups
-    python -m http.server 8765 &
-    # 또는
-    npx http-server C:\figma-mockups -p 8765 -c-1 &
-  메모: "서버 PID 기록 (종료용), 서버 루트를 OUTPUT_DIR로 설정"
+Step_1_서버_확인:
+  설명: "Phase 4에서 이미 인메모리 서버가 실행 중"
+  확인: "curl -s -o /dev/null -w '%{http_code}' http://localhost:8765 → 200"
+  실패시: "Phase 4의 인메모리 서버 명령 재실행"
 
 Step_2_캡처_스크립트_삽입:
-  대상: "HTML </body> 직전"
+  설명: "capture.js를 포함한 HTML로 서버 재시작"
+  절차:
+    1: "기존 서버 프로세스 종료"
+    2: "HTML 문자열의 </body> 직전에 capture.js 스크립트 태그 추가"
+    3: "수정된 HTML로 인메모리 서버 재시작 (Phase 4와 동일 명령)"
   삽입: '<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>'
   주의: "중복 삽입 금지"
 
@@ -77,7 +78,7 @@ Step_3.5_헤드리스_캡처:
       const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--window-size=1920,1080'] });
       const page = await browser.newPage();
       await page.setViewport({ width: 1920, height: 1080 });
-      const url = 'http://localhost:8765/{{메뉴경로}}/index.html#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout';
+      const url = 'http://localhost:8765#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout';
       await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
       // capture.js가 DOM 캡처 + 전송 완료할 때까지 대기
       await page.waitForFunction(() => window.__figmaCaptureComplete === true, { timeout: 20000 }).catch(() => {});
@@ -96,7 +97,7 @@ Step_3.5_헤드리스_캡처:
   폴백_수동_브라우저:
     조건: "Puppeteer 설치 불가 또는 headless 캡처 실패 시"
     명령: |
-      start "" "http://localhost:8765/{{메뉴경로}}/index.html#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout"
+      start "" "http://localhost:8765#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout"
     안내: "브라우저 창이 열립니다. 캡처 완료 후 자동으로 닫아도 됩니다."
 
 Step_4_완료_대기:
@@ -106,9 +107,8 @@ Step_4_완료_대기:
 
 Step_5_정리:
   작업:
-    - HTML에서 capture.js 스크립트 태그 제거
-    - HTTP 서버 종료
-  보존: "HTML 파일은 유지 (수정/재캡처용)"
+    - 인메모리 서버 프로세스 종료
+  보존: "디스크에 저장된 파일 없음 — 재캡처 시 Phase 4부터 재실행"
 ```
 
 ## 에러 핸들링

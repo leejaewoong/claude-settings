@@ -1,7 +1,8 @@
 # Phase 4: HTML 생성
 
-> **필수 참조**: `commands/figma/config.md`의 OUTPUT 설정 + ASSET_DIR, `commands/figma/layout-components.md`의 프리셋 경로
+> **필수 참조**: `commands/figma/config.md`의 SERVE_PORT + ASSET_DIR, `commands/figma/layout-components.md`의 프리셋 경로
 > **컴포넌트 상세**: `commands/figma/components/{이름}.md` 참조
+> **시각 품질**: `commands/figma/content-design-rules.md` 필수 준수 — 위계/색상 절제/반투명 패널/여백/타이포/프리셋
 
 추출된 DS 토큰 + 스크린샷 분석 결과를 조합하여 HTML을 생성한다.
 
@@ -37,6 +38,12 @@
       - "레이아웃 패턴 1개 선택 → 해당 구조 HTML만 작성"
       - "CSS는 클래스 기반으로 재사용 (인라인 style 최소화)"
       - "반복 요소는 HTML 내 동일 클래스로 통일, 개별 스타일 금지"
+    시각품질_적용:
+      - "L1/L2/L3 위계 배분 결정 (content-design-rules.md 섹션 B)"
+      - "패널 배경을 반투명으로 처리 (솔리드 금지, 섹션 D)"
+      - "accent-primary 사용 4회 이하 확인 (섹션 C)"
+      - "그라디언트/그림자 프리셋만 사용 확인 (섹션 G)"
+      - "인접 배경색 1단계 이상 차이 확인 (섹션 C)"
 
   Step_4_검증_스킵:
     설명: "생성 중 검증하지 않음 — 사용자 리뷰에서 확인"
@@ -87,13 +94,13 @@ CSS_최적화:
     }
 
     /* ===== 레이아웃: GNB + LNB + Content + Footer 수직 배치 ===== */
-    /* background: #000000 — Figma 캡처 시 프레임 배경이 비어 보이는 것을 방지 */
+    /* background: var(--bg-primary) — GNB/Footer와 배경색 통일 */
     .layout {
       display: flex;
       flex-direction: column;
       width: 1920px;
       height: 1080px;
-      background: #000000;
+      background: var(--bg-primary, #1a1a22);
     }
 
     /* GNB+LNB 영역: 162px 고정 (GNB 72px + 재화바 52px + 보조재화바 38px, LNB 42px 중앙 배치) */
@@ -175,6 +182,11 @@ CSS_최적화:
         <div class="stat-card">{{통계 위젯}}</div>
         ...
       </div>
+    시각_가이드:
+      L1: "상단 대형 수치 카드 1-2개 (높이 200px+, 반투명 패널)"
+      L2: "하단 소형 카드 그리드 (높이 120-160px)"
+      비율: "대형 40%, 소형 50%, 여백 10%"
+      배경: "비네팅 그라디언트 또는 캐릭터 배경 위 반투명 오버레이"
 
   list_detail:
     특징: "좌측 목록 + 우측 상세 패널, 또는 풀 리스트"
@@ -184,6 +196,11 @@ CSS_최적화:
         <aside class="list-panel">{{목록}}</aside>
         <section class="detail-panel">{{상세}}</section>
       </div>
+    시각_가이드:
+      L1: "우측 상세 패널 (면적 60-70%, 반투명 rgba(26,26,34,0.85))"
+      L2: "좌측 목록 패널 (면적 25-30%, 반투명 rgba(30,30,36,0.80))"
+      비율: "좌측 280-320px 고정, 우측 flex:1"
+      배경: "좌우 패널 모두 반투명, 배경색 1단계 차이"
 
   card_grid:
     특징: "카드형 아이템 반복 배치"
@@ -193,6 +210,11 @@ CSS_최적화:
         <div class="item-card">{{아이템}}</div>
         ...
       </div>
+    시각_가이드:
+      L1: "선택된 카드 확대 또는 상단 배너 (accent border 허용)"
+      L2: "카드 그리드 전체 (반투명 컨테이너, 개별 카드는 border만)"
+      비율: "카드 이미지 65%, 텍스트+패딩 35%"
+      배경: "카드 컨테이너 rgba(30,30,36,0.80), 개별 카드 rgba(26,26,34,0.90)"
 
   form_settings:
     특징: "입력 폼, 토글, 설정 항목 나열"
@@ -202,6 +224,11 @@ CSS_최적화:
         <div class="form-group">{{설정 항목}}</div>
         ...
       </div>
+    시각_가이드:
+      L1: "좌측 카테고리 패널 + 우측 설정 영역 (반투명)"
+      L2: "설정 그룹 카드 (배경 1단계 차이, 반투명)"
+      비율: "카테고리 240px 고정, 설정 영역 flex:1"
+      배경: "카테고리 rgba(26,26,34,0.85), 설정 그룹 rgba(30,30,36,0.80)"
 
   tabbed_content:
     특징: "탭 전환으로 하위 뷰 변경"
@@ -211,6 +238,11 @@ CSS_최적화:
         <nav class="tab-bar">{{탭}}</nav>
         <div class="tab-content">{{탭 내용}}</div>
       </div>
+    시각_가이드:
+      L1: "탭 콘텐츠 메인 영역 (반투명 패널)"
+      L2: "탭 바 (선택 탭에만 accent underline, 1곳)"
+      비율: "탭 바 44px 고정, 콘텐츠 나머지 전체"
+      배경: "탭 콘텐츠 rgba(26,26,34,0.85), 탭 바는 bg-tertiary"
 
   # modal_popup — 제작 제외
   # 미리보기/팝업 화면은 기존 프로덕트 규칙이 정교하여 시안 제작 불필요.
@@ -296,6 +328,11 @@ CSS_최적화:
     조건: "Phase 1 Q6에서 '캐릭터 모델링 포함' 선택 시"
     참조_이미지: "SCREENSHOTS_DIR/캐릭터 모델링.png (전신, 검은 배경)"
 
+    배경_규칙: |
+      캐릭터 이미지의 검은 배경 가장자리가 페이지와 자연스럽게 블렌딩되도록
+      .layout에 has-character 클래스를 추가하고 배경을 #111115으로 강제한다.
+      mix-blend-mode: lighten으로 검은 배경(#000~#333)이 #111115보다 어두워 정상적으로 제거된다.
+
     Y좌표_규칙: |
       캐릭터 발 밑 = Footer 바로 윗부분에 고정.
       Footer와의 간격: 0~50px (최대 50px).
@@ -305,11 +342,18 @@ CSS_최적화:
       단, 캐릭터 본체가 화면 밖으로 잘리면 안 됨.
       검은 배경 부분은 잘려도 무방.
     크기_규칙: |
-      캐릭터 높이 = 콘텐츠 영역의 70~90%.
-      GNB+LNB+Footer 기준: 862px × 0.7~0.9 = 약 600~775px.
-      캐릭터가 GNB/LNB 영역을 침범하지 않도록 주의.
+      캐릭터 원본 크기를 유지한다 (height: auto).
+      인위적으로 축소하지 않는다 (700px 등 고정 높이 금지).
+      캐릭터 위에 UI/컴포넌트가 표시될 수 있으므로 z-index를 낮게 설정한다.
+
+    z_index_가이드: |
+      GNB: 10 > 콘텐츠: 3 > 캐릭터: 1 > 그림자: 0
 
     CSS_패턴: |
+      /* 캐릭터 모델링 포함 시 배경 강제 — GNB/Footer와 통일 */
+      .layout.has-character { background: #111115; }
+      .layout.has-character .content { background: #111115; }
+
       /* 캐릭터 모델링 — .layout 내부에 absolute 배치 */
       .character-model {
         position: absolute;
@@ -317,8 +361,8 @@ CSS_최적화:
         /* bottom: 86px;        /* Footer + 30px 간격 예시 */
         left: 50%;              /* X좌표 자유 변경 */
         transform: translateX(-50%);
-        height: 700px;          /* 콘텐츠 영역 70~90% */
-        z-index: 2;             /* UI 패널 뒤 또는 앞 조절 */
+        height: auto;           /* 원본 크기 유지, 인위적 축소 금지 */
+        z-index: 1;             /* UI(3+)보다 낮게 */
         mix-blend-mode: lighten; /* 검은 배경 제거 */
         pointer-events: none;
       }
@@ -331,12 +375,13 @@ CSS_최적화:
         width: 200px;
         height: 30px;
         background: radial-gradient(ellipse, rgba(0,0,0,0.4) 0%, transparent 70%);
-        z-index: 1;
+        z-index: 0;
       }
 
     HTML_삽입_위치: |
       .layout 내부, .content 바깥에 absolute로 배치.
-      <div class="layout">
+      has-character 클래스를 .layout에 추가한다.
+      <div class="layout has-character">
         {{GNB}}
         <main class="content">...</main>
         <img class="character-model" src="SCREENSHOTS_DIR/캐릭터 모델링.png" alt="캐릭터">
@@ -345,9 +390,10 @@ CSS_최적화:
       </div>
 
     주의사항:
-      - "mix-blend-mode: lighten은 검은 배경(#000~#333)만 투명화함 — 밝은 배경에서는 다르게 보일 수 있음"
+      - "mix-blend-mode: lighten은 검은 배경(#000~#333)만 투명화함 — has-character로 배경을 #111115로 강제 (캐릭터 이미지의 #000~#333이 #111115보다 어두워 정상 제거)"
       - "좌우 분할 레이아웃(커스터마이즈 등)에서는 캐릭터를 우측 패널 영역에 배치"
       - "모달/팝업 화면에서는 캐릭터 배치 비권장 (모달에 가려짐)"
+      - "UI 패널은 z-index: 3 이상으로 설정하여 캐릭터(z-index: 1) 위에 표시"
 
   5_컴포넌트_크기_준수:
     원칙: |
@@ -473,11 +519,34 @@ mock_data:
       });
 ```
 
-## 출력 경로
+## 인메모리 서빙
 
-```
-C:\figma-mockups\[메뉴경로]\index.html
-예: C:\figma-mockups\전적_매치히스토리\index.html
+```yaml
+파일_저장_금지: "HTML을 디스크에 쓰지 않는다. Write 도구 호출 없이 Bash로 인메모리 서버를 시작한다."
+
+서버_시작:
+  방법: "생성한 HTML을 Bash heredoc으로 Node.js 인메모리 서버에 전달"
+  명령: |
+    node -e "
+    const http=require('http');
+    let d='';
+    process.stdin.on('data',c=>d+=c);
+    process.stdin.on('end',()=>{
+      http.createServer((q,r)=>{
+        r.writeHead(200,{'Content-Type':'text/html;charset=utf-8'});
+        r.end(d);
+      }).listen(8765,()=>console.log('http://localhost:8765'));
+    });" <<'HTMLEOF'
+    {{생성된 HTML 전체}}
+    HTMLEOF
+  실행: "run_in_background: true — 서버를 백그라운드로 실행"
+  URL: "http://localhost:8765"
+
+수정_시_서버_재시작:
+  절차:
+    1: "기존 서버 프로세스 종료 (kill)"
+    2: "수정된 HTML로 동일 명령 재실행"
+  주의: "사용자에게 브라우저 새로고침 안내"
 ```
 
 ## 사용자 리뷰 (HTML 확정)
@@ -488,14 +557,12 @@ HTML 생성 후 반드시 사용자 확인을 거쳐야 Phase 5(Figma 캡처)로
 리뷰_절차:
 
   1_프리뷰_제공:
-    방법: "HTTP 서버를 시작하고 브라우저에서 확인할 수 있는 URL을 안내"
-    명령: |
-      cd C:\figma-mockups && python -m http.server 8765 &
-    URL: "http://localhost:8765/{{메뉴경로}}/index.html"
+    방법: "인메모리 서버가 시작되면 브라우저에서 확인할 수 있는 URL을 안내"
+    URL: "http://localhost:8765"
     안내_메시지: |
       HTML 시안이 생성되었습니다.
       아래 URL에서 확인해주세요:
-      → http://localhost:8765/{{메뉴경로}}/index.html
+      → http://localhost:8765
 
       수정하고 싶은 부분이 있으면 말씀해주세요.
       확인되면 "확인" 또는 "OK"라고 답변해주세요.
@@ -504,7 +571,8 @@ HTML 생성 후 반드시 사용자 확인을 거쳐야 Phase 5(Figma 캡처)로
     조건: "사용자가 수정 요청 시"
     처리: |
       - 사용자 피드백을 반영하여 HTML 수정
-      - 수정 후 브라우저 새로고침 안내
+      - 인메모리 서버 재시작 (기존 종료 → 수정된 HTML로 재시작)
+      - 브라우저 새로고침 안내
       - 다시 확인 질문
     반복: "사용자가 '확인'할 때까지"
 
