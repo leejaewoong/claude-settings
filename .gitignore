@@ -19,4 +19,5 @@ plans/
 .claude/
 config.json
 mcp-needs-auth-cache.json
+wiki_cache/
 backups/
