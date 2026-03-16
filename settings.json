@@ -89,6 +89,8 @@
       "Bash(unzip:*)",
       "Bash(gzip:*)",
       "Bash(gunzip:*)",
+      "Bash(kill:*)",
+      "Bash(source:*)",
       "WebFetch",
       "mcp__figma__get_screenshot",
       "mcp__figma__get_metadata",

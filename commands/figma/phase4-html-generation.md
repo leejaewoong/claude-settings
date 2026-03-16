@@ -2,7 +2,7 @@
 
 > **필수 참조**: `commands/figma/config.md`의 SERVE_PORT + ASSET_DIR, `commands/figma/layout-components.md`의 프리셋 경로
 > **컴포넌트 상세**: `commands/figma/components/{이름}.md` 참조
-> **시각 품질**: `commands/figma/content-design-rules.md` 필수 준수 — 위계/색상 절제/반투명 패널/여백/타이포/프리셋
+> **시각 품질**: `commands/figma/concepts/concept-{A|B|C}.md` — Phase 1 Q8에서 선택된 컨셉 규칙 적용
 
 추출된 DS 토큰 + 스크린샷 분석 결과를 조합하여 HTML을 생성한다.
 
@@ -39,11 +39,17 @@
       - "CSS는 클래스 기반으로 재사용 (인라인 style 최소화)"
       - "반복 요소는 HTML 내 동일 클래스로 통일, 개별 스타일 금지"
     시각품질_적용:
-      - "L1/L2/L3 위계 배분 결정 (content-design-rules.md 섹션 B)"
-      - "패널 배경을 반투명으로 처리 (솔리드 금지, 섹션 D)"
-      - "accent-primary 사용 4회 이하 확인 (섹션 C)"
-      - "그라디언트/그림자 프리셋만 사용 확인 (섹션 G)"
-      - "인접 배경색 1단계 이상 차이 확인 (섹션 C)"
+      컨셉_분기:
+        Concept_A:
+          규칙: "commands/figma/concepts/concept-a-pubg.md 읽고 적용"
+          적용: "섹션 A-H + 셀프체크 전체 준수"
+        Concept_B:
+          규칙: "commands/figma/concepts/concept-b-competitor.md 읽고 적용"
+          적용: "경쟁작별 시각 규칙 적용, DS 토큰 기반 유지, 참조 타이틀 안내"
+        Concept_C:
+          규칙: "commands/figma/concepts/concept-c-experimental.md 읽고 적용"
+          적용: "frontend-design SKILL.md 원칙 적용, DS foundation만 유지"
+      공통: "폰트(PUBG Body/Headline), GNB/Footer 프리셋, 컴포넌트 크기 — 모든 컨셉 동일"
 
   Step_4_검증_스킵:
     설명: "생성 중 검증하지 않음 — 사용자 리뷰에서 확인"
@@ -289,7 +295,7 @@ CSS_최적화:
       - ".content 내부의 최상위 컨테이너에 width: 100%, height: 100% 또는 명시적 px 높이 지정"
       - "그리드/리스트 컨테이너에 min-height 지정 (최소 400px)"
       - "좌우 분할 레이아웃은 양쪽 패널 모두 height: 100% 지정"
-      - "카드 그리드는 개별 카드에 명시적 width, height (px) 지정"
+      - "카드 그리드는 콘텐츠 영역을 충분히 채우도록 열 수와 카드 크기를 자유 결정"
       - "빈 영역이 생기면 background-color로 구분 가능하게 처리"
 
     콘텐츠_컨테이너_템플릿:
@@ -313,10 +319,11 @@ CSS_최적화:
           width: 100%;
           height: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
-          grid-auto-rows: 210px;
+          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          grid-auto-rows: minmax(150px, auto);
           gap: 12px;
         }
+        /* 슬롯 크기와 열 수는 화면 목적에 맞게 자유 결정 — 가로·세로 여백 최소화 */
 
     검증_체크리스트:
       - ".content 직계 자식 요소에 height 또는 min-height가 있는가?"
@@ -342,8 +349,7 @@ CSS_최적화:
       단, 캐릭터 본체가 화면 밖으로 잘리면 안 됨.
       검은 배경 부분은 잘려도 무방.
     크기_규칙: |
-      캐릭터 원본 크기를 유지한다 (height: auto).
-      인위적으로 축소하지 않는다 (700px 등 고정 높이 금지).
+      캐릭터 높이를 850px로 고정한다 (height: 850px, width: auto).
       캐릭터 위에 UI/컴포넌트가 표시될 수 있으므로 z-index를 낮게 설정한다.
 
     z_index_가이드: |
@@ -361,7 +367,8 @@ CSS_최적화:
         /* bottom: 86px;        /* Footer + 30px 간격 예시 */
         left: 50%;              /* X좌표 자유 변경 */
         transform: translateX(-50%);
-        height: auto;           /* 원본 크기 유지, 인위적 축소 금지 */
+        height: 850px;          /* 캐릭터 높이 850px 고정 */
+        width: auto;            /* 비율 유지 */
         z-index: 1;             /* UI(3+)보다 낮게 */
         mix-blend-mode: lighten; /* 검은 배경 제거 */
         pointer-events: none;
@@ -397,9 +404,9 @@ CSS_최적화:
 
   5_컴포넌트_크기_준수:
     원칙: |
-      HTML 요소의 CSS 크기는 DS 컴포넌트 공식 규격에 맞춘다.
-      스크린샷 분석으로 대략적 위치를 잡되, 최종 크기는 아래 표를 따른다.
-      이 규격을 벗어나면 Figma 캡처 결과물에서 DS 가이드와 크기 불일치가 발생한다.
+      HTML 요소의 CSS 크기는 DS 컴포넌트 규격을 참고한다.
+      스크린샷 분석으로 대략적 위치를 잡되, 최종 크기는 아래 표를 참고한다.
+      ItemSlot은 콘텐츠 영역을 충분히 채우도록 크기와 열 수를 자유롭게 결정한다.
 
     크기_참조표:
       SquareButton:
@@ -412,10 +419,10 @@ CSS_최적화:
         너비: "내부 텍스트에 따라 자동 (min-width: 60px)"
 
       ItemSlot:
-        Small: "40-89px (인벤토리 축소, 같은구간 보상 썸네일)"
-        Middle: "90-200px (보상 그리드 기본 카드)"
-        Large: "201-350px (상세 미리보기 이미지)"
-        5열_그리드_기본: "width: 174px, height: 210px, gap: 12px"
+        Small: "~60px (참고, 인벤토리/보조 썸네일)"
+        Middle: "~150px (참고, 일반 그리드)"
+        Large: "~300px (참고, 상세 미리보기)"
+        크기_자유: "슬롯 크기와 열 수는 콘텐츠 영역을 충분히 채우도록 자유 결정 (가로 여백 최소화)"
         내부_구조: "상단 이미지(60-70%) + 하단 텍스트(아이템명+등급)"
 
       Modal:
@@ -453,12 +460,12 @@ CSS_최적화:
     반복_요소_전개:
       원칙: "그리드/리스트의 각 아이템은 내부 구조까지 완전히 HTML로 작성"
       아이템_카드_필수_요소:
-        - "등급/상태 태그 (무료, 획득, 등급명)"
+        - "등급/상태 태그 (FREE, OWNED, 등급명 — 영문)"
         - "아이템 이미지 영역 (placeholder 또는 이모지)"
         - "가격 표시 (미구매 시: 'C 120' 등)"
-        - "아이템명 텍스트"
-        - "등급 텍스트 (CLASSIC, RARE, EPIC 등 — 등급별 색상)"
-        - "획득 완료 시: 오버레이 + ✓ 마크 + '획득 완료' 텍스트"
+        - "아이템명 텍스트 (영문)"
+        - "등급 텍스트 (COMMON, RARE, EPIC, LEGENDARY, MYTHIC — 등급별 색상)"
+        - "획득 완료 시: 오버레이 + ✓ 마크 + 'OWNED' 텍스트"
 
     보조_UI_누락_방지:
       체크리스트:
@@ -475,21 +482,22 @@ CSS_최적화:
 
 ```yaml
 mock_data:
-  원칙: "실제 PUBG 게임 데이터와 유사하게"
+  원칙: "실제 PUBG 게임 데이터와 유사하게, 모든 텍스트는 영문으로 작성"
+  언어: "EN — 디자인에 표시되는 모든 텍스트(버튼, 라벨, 메뉴, 상태, Mock 데이터)는 영문"
 
   플레이어명: "BETTER_Player01"
   클랜명: "BETTERGROUND"
   레벨: 42
-  티어: "다이아몬드 III"
+  티어: "Diamond III"
 
   매치_데이터:
-    날짜_범위: "최근 7일"
+    날짜_범위: "Last 7 Days"
     킬수_범위: 0~15
     등수_범위: 1~100
-    맵: ["에란겔", "미라마", "태이고", "데스턴"]
+    맵: ["Erangel", "Miramar", "Taego", "Deston"]
 
   아이템:
-    등급: ["일반", "희귀", "영웅", "전설", "신화"]
+    등급: ["Common", "Rare", "Epic", "Legendary", "Mythic"]
     가격_단위: "G-COIN"
 ```
 
@@ -546,38 +554,54 @@ mock_data:
   절차:
     1: "기존 서버 프로세스 종료 (kill)"
     2: "수정된 HTML로 동일 명령 재실행"
-  주의: "사용자에게 브라우저 새로고침 안내"
+
+자동_진행:
+  설명: "HTML 생성 및 서버 시작 완료 후 즉시 Phase 5(Figma 캡처)로 진행"
+  주의: "서버는 Phase 5 캡처에서 사용하므로 유지"
 ```
 
-## 사용자 리뷰 (HTML 확정)
+## 멀티 컨셉 생성
 
-HTML 생성 후 반드시 사용자 확인을 거쳐야 Phase 5(Figma 캡처)로 진행한다.
+Phase 1 Q8에서 복수 컨셉 선택(MULTI_CONCEPT = true) 시 적용한다.
 
 ```yaml
-리뷰_절차:
+멀티_컨셉_생성:
 
-  1_프리뷰_제공:
-    방법: "인메모리 서버가 시작되면 브라우저에서 확인할 수 있는 URL을 안내"
-    URL: "http://localhost:8765"
-    안내_메시지: |
-      HTML 시안이 생성되었습니다.
-      아래 URL에서 확인해주세요:
-      → http://localhost:8765
+  공통_요소:
+    설명: "GNB/LNB/Footer 마커 치환, Mock 데이터는 1회만 생성 (모든 컨셉 동일)"
+    폰트: "PUBG Body / PUBG Headline — 모든 컨셉 공통"
+    대상: "Step 1(골격), Step 2(레이아웃) 결과물은 모든 컨셉이 공유"
 
-      수정하고 싶은 부분이 있으면 말씀해주세요.
-      확인되면 "확인" 또는 "OK"라고 답변해주세요.
+  CONTENT_HTML_생성:
+    단일_컨셉:
+      방법: "해당 컨셉 규칙 파일 로드 → CONTENT_HTML 1개 생성 → 서빙 → Phase 5"
+    복수_컨셉:
+      방법: |
+        SELECTED_CONCEPTS 배열을 순회하며 각 컨셉별 CONTENT_HTML을 생성한다.
+        1. 공통 골격(Step 1-2) 결과물을 메모리에 보관
+        2. 각 컨셉의 규칙 파일을 읽고 CONTENT_HTML만 개별 생성
+        3. 공통 골격 + 컨셉별 CONTENT_HTML을 조합하여 전체 HTML 구성
+        4. 모든 컨셉 HTML을 메모리에 보관
+        5. 첫 번째 컨셉 HTML을 port 8765에 서빙 → Phase 5로 자동 진행
 
-  2_수정_반복:
-    조건: "사용자가 수정 요청 시"
-    처리: |
-      - 사용자 피드백을 반영하여 HTML 수정
-      - 인메모리 서버 재시작 (기존 종료 → 수정된 HTML로 재시작)
-      - 브라우저 새로고침 안내
-      - 다시 확인 질문
-    반복: "사용자가 '확인'할 때까지"
+  병렬_생성:
+    조건: "SELECTED_CONCEPTS 길이 ≥ 2"
+    방법: |
+      Agent 도구로 컨셉별 서브에이전트를 병렬 실행하여 CONTENT_HTML 생성 시간을 단축한다.
+      1. 메인 스레드: 공통 요소 생성 (Step 1-2: 골격 + GNB/Footer)
+      2. Agent 도구로 컨셉별 서브에이전트 병렬 실행 (최대 3개):
+         - 각 에이전트에 전달: Phase 1-3 컨텍스트 요약 + 해당 컨셉 규칙 파일 경로
+         - 각 에이전트의 작업: CONTENT_HTML 생성 후 반환
+      3. 메인 스레드: 반환된 CONTENT_HTML들을 공통 템플릿에 각각 조합
+      4. 첫 번째 컨셉 HTML을 서빙 → Phase 5에서 순차 캡처
+    제약:
+      - "서빙/캡처는 단일 포트(8765)이므로 순차 처리"
+      - "Agent 병렬화의 이점: HTML '생성' 시간 단축 (가장 큰 병목)"
 
-  3_확정_후_진행:
-    조건: "사용자가 '확인', 'OK', 'ㅇㅇ', '넘어가' 등 승인 답변"
-    처리: "Phase 5(Figma 캡처)로 진행"
-    주의: "서버는 Phase 5 캡처에서도 사용하므로 유지"
+  Concept_B_표시:
+    조건: "Concept B가 SELECTED_CONCEPTS에 포함된 경우"
+    안내: |
+      컨셉 B 시안을 생성합니다.
+      참조: {경쟁작명} — {해당 화면 유형}
+      주요 적용: {적용된 시각 요소 1-2줄 요약}
 ```
