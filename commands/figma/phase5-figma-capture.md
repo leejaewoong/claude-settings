@@ -162,3 +162,41 @@ Step_5_정리:
     - 같은 HTML 재캡처 시 브라우저 새로고침 필요
     - 최대 연속 캡처: 10페이지 (이후 새 파일 생성 권장)
 ```
+
+## 멀티 컨셉 캡처
+
+Phase 1 Q8에서 복수 컨셉이 선택된 경우, 각 컨셉별 HTML을 순차 캡처한다.
+
+```yaml
+멀티_컨셉_캡처:
+  조건: "SELECTED_CONCEPTS 배열 길이 > 1"
+
+  절차:
+    첫_컨셉:
+      1: "SELECTED_CONCEPTS[0]의 전체 HTML을 port 8765에 서빙 (capture.js 포함)"
+      2: "mcp__figma__generate_figma_design(outputMode: 'newFile', fileName: '{{메뉴경로}} 시안')"
+      3: "headless 캡처 실행"
+      4: "fileKey 획득 + 저장"
+
+    이후_컨셉:
+      반복: "SELECTED_CONCEPTS[1..N] 각각에 대해"
+      1: "기존 서버 종료"
+      2: "다음 컨셉 HTML을 port 8765에 서빙 (capture.js 포함)"
+      3: "mcp__figma__generate_figma_design(outputMode: 'existingFile', fileKey: '{{저장된_fileKey}}')"
+      4: "headless 캡처 실행"
+      5: "5초 대기 (API rate limit)"
+
+  페이지_네이밍:
+    단일_컨셉: "{{메뉴경로}} 시안"
+    복수_컨셉:
+      A: "{{메뉴경로}} — 컨셉 A (PUBG 준수)"
+      B: "{{메뉴경로}} — 컨셉 B ({경쟁작명} 참조)"
+      C: "{{메뉴경로}} — 컨셉 C (실험적)"
+
+  완료_메시지: |
+    Figma 파일이 생성되었습니다.
+    - 컨셉 A: Page 1 (PUBG 준수)
+    - 컨셉 B: Page 2 ({경쟁작명} 참조)
+    - 컨셉 C: Page 3 (실험적)
+    URL: {figma_file_url}
+```

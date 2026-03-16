@@ -12,15 +12,15 @@ LAYOUT_COMPONENTS:
     참조_URL: "https://www.figma.com/design/IbLDVPfcTP8KedJzt5olZw/-%EA%B3%B5%ED%86%B5--PUBG-UI-Kit?m=auto&node-id=5608-59793"
     크기: "1920px x 162px"
     내부_구조:
-      GNB_본체: "72px (y:0-72) — 로고(좌) + 탭 9개(중앙, 국문) + 글로벌 아이콘 4개(우)"
+      GNB_본체: "72px (y:0-72) — 로고(좌) + 탭 9개(중앙, 영문) + 글로벌 아이콘 4개(우)"
       재화바: "52px (y:72-124) — G-COIN, BP, Plus 우측 정렬"
       보조재화바: "38px (y:124-162) — 메뉴별 보조재화 아이콘 우측 정렬"
       LNB: "42px — 재화바+보조재화바에 걸쳐 중앙 배치 (A/D 키힌트 포함)"
     포함요소:
       - PUBG 로고 (좌측)
-      - GNB 탭 (중앙, 국문): [Q] 플레이, 패스, 전적, 커스터마이즈, 은신처, 제작소, 상점, 이스포츠, 나만의상점 [E] (9개)
+      - GNB 탭 (중앙, 영문): [Q] PLAY, PASS, CAREER, CUSTOMIZE, HIDEOUT, WORKSHOP, STORE, ESPORTS, MY SHOP [E] (9개)
       - 글로벌 아이콘 (우측): 이벤트, 뉴스, 알림센터, 시스템메뉴 (4개)
-      - 재화 표시: G-COIN, BP, Plus 상태
+      - 재화 표시: G-COIN, BP, Plus 아이콘
       - LNB 서브탭 (중앙): A | 탭1 탭2 탭3 ... | D
     프리셋_경로: "C:\\figma-mockups\\_shared\\gnb.html"
     가이드: "https://ordo.pubg.com/6becdc2a4/p/19c570-global-header"
@@ -55,7 +55,7 @@ LAYOUT_COMPONENTS:
         - 채팅 위젯
         - 팀 파인더
         - 팀 슬롯 (최대 4인)
-        - 소셜 (친구 수)
+        - 소셜
         - 클랜
     프리셋_경로: "C:\\figma-mockups\\_shared\\footer.html"
     가이드: "https://ordo.pubg.com/6becdc2a4/p/12c87d-footer"
