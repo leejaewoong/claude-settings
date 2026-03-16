@@ -219,7 +219,7 @@ Q8_처리:
     - 화면 목적에 맞는 버튼 구성 문의
     - "이 화면에 필요한 하단 버튼이 있나요? (예: 저장, 확인, 닫기 등)"
   프리셋_로드:
-    - C:\figma-mockups\_shared\ 의 프리셋 HTML 사용
+    - commands/figma/presets/ 의 프리셋 HTML 사용
     - GNB+LNB → gnb.html (1920×162px, 보조재화 자동 배치)
     - LNB Only → lnb.html (1920×162px)
     - FOOTER → footer.html (1920×56px)

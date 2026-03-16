@@ -22,7 +22,7 @@ LAYOUT_COMPONENTS:
       - 글로벌 아이콘 (우측): 이벤트, 뉴스, 알림센터, 시스템메뉴 (4개)
       - 재화 표시: G-COIN, BP, Plus 아이콘
       - LNB 서브탭 (중앙): A | 탭1 탭2 탭3 ... | D
-    프리셋_경로: "C:\\figma-mockups\\_shared\\gnb.html"
+    프리셋_경로: "commands/figma/presets/gnb.html"
     가이드: "https://ordo.pubg.com/6becdc2a4/p/19c570-global-header"
 
   LNB_Only:
@@ -38,7 +38,7 @@ LAYOUT_COMPONENTS:
       - 헤더 텍스트 (화면 타이틀)
       - 탭 버튼 (Normal/Selected 상태)
       - 키보드 단축키 표시 (A/D)
-    프리셋_경로: "C:\\figma-mockups\\_shared\\lnb.html"
+    프리셋_경로: "commands/figma/presets/lnb.html"
     참고: "탭 텍스트는 Phase 1에서 확정된 메뉴의 2뎁스 항목으로 동적 교체"
 
   FOOTER:
@@ -57,7 +57,7 @@ LAYOUT_COMPONENTS:
         - 팀 슬롯 (최대 4인)
         - 소셜
         - 클랜
-    프리셋_경로: "C:\\figma-mockups\\_shared\\footer.html"
+    프리셋_경로: "commands/figma/presets/footer.html"
     가이드: "https://ordo.pubg.com/6becdc2a4/p/12c87d-footer"
 
   프리셋_사용:

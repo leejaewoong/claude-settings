@@ -1,0 +1,409 @@
+<!-- GNB+LNB 프리셋 — 1920×162px -->
+<!-- Figma 참조: 공통-PUBG-UI-Kit#5608:59793 -->
+<!-- 동적 마커: {{ACTIVE_TAB}}, {{LNB_TABS}}, {{ACTIVE_LNB_TAB}}, {{SUB_CURRENCY}}, {{ASSET_DIR}} -->
+
+<style>
+  /* ===== GNB+LNB 프리셋 스타일 ===== */
+  .gnb-wrapper {
+    width: 1920px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'PUBG Body', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* --- GNB 본체 (72px) --- */
+  .gnb-bar {
+    width: 1920px;
+    height: 72px;
+    background: linear-gradient(180deg, #1e1e28 0%, #111115 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+    z-index: 10;
+  }
+  .gnb-logo {
+    width: 120px;
+    height: 42px;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+  .gnb-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* GNB 탭 */
+  .gnb-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .gnb-tab-key {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin: 0 8px;
+    background: rgba(255,255,255,0.05);
+  }
+  .gnb-tab {
+    padding: 0 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8b8b8b;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+  }
+  .gnb-tab.active {
+    color: #eaeaea;
+    font-weight: 700;
+  }
+  .gnb-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background: #f2a900;
+  }
+  .gnb-tab .noti-dot {
+    width: 6px;
+    height: 6px;
+    background: #f2a900;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 8px;
+  }
+
+  /* GNB 우측 글로벌 아이콘 */
+  .gnb-global-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  .gnb-icon-btn {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+  }
+  .gnb-icon-btn img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(0.8);
+  }
+
+  /* GNB 탭 아이콘 (이스포츠/나만의상점) */
+  .gnb-tab-icon {
+    padding: 0 8px;
+  }
+  .gnb-tab-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(0.7);
+  }
+  .gnb-tab-icon.active img {
+    filter: brightness(1);
+  }
+
+  /* --- 재화바 + 보조재화바 + LNB 중앙 영역 (90px) --- */
+  .gnb-sub-area {
+    width: 1920px;
+    height: 90px;
+    background: #111115;
+    display: flex;
+    position: relative;
+  }
+
+  /* LNB 탭 — 중앙 배치, 재화바+보조재화바에 걸침 */
+  .lnb-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    z-index: 5;
+  }
+  .lnb-key {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #8b8b8b;
+    margin: 0 12px;
+    background: rgba(255,255,255,0.05);
+  }
+  .lnb-tab {
+    padding: 0 20px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8b8b8b;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .lnb-tab.active {
+    color: #eaeaea;
+    font-weight: 600;
+  }
+
+  /* 재화바 — 우측 정렬 (52px) */
+  .currency-bar {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 6;
+  }
+  .currency-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 0 12px;
+    background: none;
+    border-radius: 4px;
+  }
+  .currency-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  .currency-value {
+    font-size: 13px;
+    color: #eaeaea;
+    font-weight: 500;
+  }
+  .plus-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .plus-badge img {
+    width: 55px;
+    height: 24px;
+    object-fit: contain;
+    filter: none;
+  }
+
+  /* 보조재화바 — 우측 정렬 (38px) */
+  .sub-currency-bar {
+    position: absolute;
+    right: 40px;
+    top: 52px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 6;
+  }
+  .sub-currency-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .sub-currency-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  .sub-currency-value {
+    font-size: 12px;
+    color: #8b8b8b;
+  }
+
+  /* 구분선 */
+  .gnb-divider {
+    width: 1920px;
+    height: 1px;
+    background: rgba(255,255,255,0.06);
+    flex-shrink: 0;
+  }
+</style>
+
+<div class="gnb-wrapper">
+  <!-- GNB 본체 (72px) -->
+  <div class="gnb-bar">
+    <!-- 로고 -->
+    <div class="gnb-logo">
+      <img src="{{ASSET_DIR}}/로고.png" alt="PUBG">
+    </div>
+
+    <!-- GNB 탭 (중앙) -->
+    <nav class="gnb-tabs">
+      <div class="gnb-tab-key">Q</div>
+      <div class="gnb-tab" data-tab="PLAY">PLAY</div>
+      <div class="gnb-tab" data-tab="PASS">PASS</div>
+      <div class="gnb-tab" data-tab="CAREER">CAREER<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="CUSTOMIZE">CUSTOMIZE<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="HIDEOUT">HIDEOUT<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="WORKSHOP">WORKSHOP</div>
+      <div class="gnb-tab" data-tab="STORE">STORE</div>
+      <div class="gnb-tab gnb-tab-icon" data-tab="ESPORTS">
+        <img src="{{ASSET_DIR}}/아이콘_GNB_이스포츠.png" alt="이스포츠">
+      </div>
+      <div class="gnb-tab gnb-tab-icon" data-tab="MYSHOP">
+        <img src="{{ASSET_DIR}}/아이콘_GNB_나만의상점.png" alt="나만의상점">
+      </div>
+      <div class="gnb-tab-key">E</div>
+    </nav>
+
+    <!-- 글로벌 아이콘 (우측) -->
+    <div class="gnb-global-icons">
+      <div class="gnb-icon-btn"><img src="{{ASSET_DIR}}/아이콘_GNB_이벤트.png" alt="이벤트"></div>
+      <div class="gnb-icon-btn"><img src="{{ASSET_DIR}}/아이콘_GNB_뉴스.png" alt="뉴스"></div>
+      <div class="gnb-icon-btn"><img src="{{ASSET_DIR}}/아이콘_GNB_알림센터.png" alt="알림센터"></div>
+      <div class="gnb-icon-btn"><img src="{{ASSET_DIR}}/아이콘_GNB_시스템 메뉴.png" alt="설정"></div>
+    </div>
+  </div>
+
+  <div class="gnb-divider"></div>
+
+  <!-- 재화바(52px) + 보조재화바(38px) + LNB(중앙 42px) -->
+  <div class="gnb-sub-area">
+    <!-- LNB 탭 (중앙) -->
+    <nav class="lnb-center" id="lnb-tabs">
+      <div class="lnb-key">A</div>
+      <!-- {{LNB_TABS}} 마커로 동적 생성 -->
+      <div class="lnb-tab" data-tab="NORMAL">NORMAL</div>
+      <div class="lnb-tab" data-tab="RANKED">RANKED</div>
+      <div class="lnb-tab" data-tab="ARCADE">ARCADE</div>
+      <div class="lnb-tab" data-tab="TRAINING">TRAINING</div>
+      <div class="lnb-tab" data-tab="CUSTOM">CUSTOM</div>
+      <div class="lnb-tab" data-tab="RUMBLE">RUMBLE</div>
+      <div class="lnb-key">D</div>
+    </nav>
+
+    <!-- 재화 (우측 상단 52px) -->
+    <div class="currency-bar">
+      <div class="currency-item">
+        <img class="currency-icon" src="{{ASSET_DIR}}/아이콘_LNB_G-COIN.png" alt="G-COIN">
+        <span class="currency-value">100</span>
+      </div>
+      <div class="currency-item">
+        <img class="currency-icon" src="{{ASSET_DIR}}/아이콘__LNB_BP.png" alt="BP">
+        <span class="currency-value">999,999</span>
+      </div>
+      <div class="plus-badge">
+        <img src="{{ASSET_DIR}}/아이콘_LNB_플러스계정.png" alt="Plus">
+      </div>
+    </div>
+
+    <!-- 보조재화 (우측 하단 38px) — ACTIVE_TAB에 따라 자동 배치 -->
+    <div class="sub-currency-bar" id="sub-currency"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var activeTab = '{{ACTIVE_TAB}}';
+  var activeLnbTab = '{{ACTIVE_LNB_TAB}}';
+  var assetDir = '{{ASSET_DIR}}';
+
+  // GNB 활성 탭 설정
+  document.querySelectorAll('.gnb-tab').forEach(function(tab) {
+    if (tab.dataset.tab === activeTab.toUpperCase()) {
+      tab.classList.add('active');
+    }
+  });
+
+  // LNB 활성 탭 설정
+  document.querySelectorAll('.lnb-tab').forEach(function(tab) {
+    if (tab.dataset.tab === activeLnbTab.toUpperCase()) {
+      tab.classList.add('active');
+    }
+  });
+
+  // ===== 보조재화 자동 배치 =====
+  // 메뉴별 보조재화 에셋 매핑
+  var subCurrencyMap = {
+    'HIDEOUT':  { icons: ['아이콘_은신처_보조재화1.png','아이콘_은신처_보조재화2.png','아이콘_은신처_보조재화3.png','아이콘_은신처_보조재화4.png'], values: ['1,240','860','320','55'] },
+    'WORKSHOP': { icons: ['아이콘_제작소_보조재화1.png','아이콘_제작소_보조재화2.png','아이콘_제작소_보조재화3.png'], values: ['2,500','780','150'] },
+    'PASS':     { icons: ['아이콘_패스_보조재화1.png'], values: ['4,200'] }
+  };
+
+  // 전체 보조재화 아이콘 풀 (보조재화 없는 메뉴의 랜덤 배치용)
+  var allIcons = [
+    '아이콘_은신처_보조재화1.png','아이콘_은신처_보조재화2.png','아이콘_은신처_보조재화3.png','아이콘_은신처_보조재화4.png',
+    '아이콘_제작소_보조재화1.png','아이콘_제작소_보조재화2.png','아이콘_제작소_보조재화3.png',
+    '아이콘_패스_보조재화1.png',
+    '아이콘_이스포츠_보조재화1.png','아이콘_이스포츠_보조재화2.png'
+  ];
+
+  var tabKey = activeTab.toUpperCase();
+  var container = document.getElementById('sub-currency');
+  var items = [];
+
+  if (subCurrencyMap[tabKey]) {
+    // 매핑된 메뉴: 해당 보조재화 아이콘 + 수치 표시
+    var mapping = subCurrencyMap[tabKey];
+    for (var i = 0; i < mapping.icons.length; i++) {
+      items.push({ icon: mapping.icons[i], value: mapping.values[i] });
+    }
+  } else {
+    // 매핑 없는 메뉴: 전체 풀에서 2~3개 랜덤 선택
+    var shuffled = allIcons.slice();
+    for (var j = shuffled.length - 1; j > 0; j--) {
+      var r = Math.floor(Math.random() * (j + 1));
+      var tmp = shuffled[j]; shuffled[j] = shuffled[r]; shuffled[r] = tmp;
+    }
+    var count = 2 + Math.floor(Math.random() * 2); // 2~3개
+    var mockValues = ['1,500','3,200','720','480','2,100','950'];
+    for (var k = 0; k < count; k++) {
+      items.push({ icon: shuffled[k], value: mockValues[k] });
+    }
+  }
+
+  // DOM 렌더링
+  items.forEach(function(item) {
+    var div = document.createElement('div');
+    div.className = 'sub-currency-item';
+    div.innerHTML =
+      '<img class="sub-currency-icon" src="' + assetDir + '/' + item.icon + '" alt="보조재화">' +
+      '<span class="sub-currency-value">' + item.value + '</span>';
+    container.appendChild(div);
+  });
+})();
+</script>

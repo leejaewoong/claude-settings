@@ -20,9 +20,9 @@
     설명: "GNB/LNB/Footer는 프리셋 HTML을 로드하고 동적 마커를 치환하여 삽입 (새로 생성 금지)"
     소요: "즉시 (프리셋 로드 + 마커 치환)"
     프리셋_경로:
-      GNB+LNB: "C:\\figma-mockups\\_shared\\gnb.html"
-      LNB_Only: "C:\\figma-mockups\\_shared\\lnb.html"
-      FOOTER: "C:\\figma-mockups\\_shared\\footer.html"
+      GNB+LNB: "commands/figma/presets/gnb.html"
+      LNB_Only: "commands/figma/presets/lnb.html"
+      FOOTER: "commands/figma/presets/footer.html"
     동적_마커_치환:
       "{{ACTIVE_TAB}}": "Phase 1 Q1에서 선택한 1뎁스 메뉴 (예: PLAY, STORE 등)"
       "{{LNB_TABS}}": "Phase 1 Q2에서 확정된 2뎁스 메뉴 항목 배열 (예: NORMAL,RANKED,ARCADE,...)"
