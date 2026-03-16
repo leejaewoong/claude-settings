@@ -89,16 +89,27 @@ Step_3.5_헤드리스_캡처:
     })().catch(e => { console.error(e); process.exit(1); });
     "
 
-  사전_설치:
-    확인: "npm list -g puppeteer 2>/dev/null || echo 'not installed'"
-    설치: "npm install -g puppeteer"
-    참고: "Chromium이 자동 다운로드됨 (~170MB, 최초 1회)"
+  자동_설치:
+    설명: "캡처 실행 전 Puppeteer 설치 여부를 확인하고, 미설치 시 자동 설치한다"
+    필수: true  # 선택이 아닌 필수 실행 절차
+    절차:
+      1_확인: "npm list -g puppeteer 2>/dev/null"
+      2_미설치_시_자동_설치:
+        안내: |
+          ⚙️ Puppeteer가 설치되어 있지 않습니다.
+          헤드리스 캡처를 위해 자동 설치를 진행합니다. (Chromium ~170MB, 최초 1회)
+        명령: "npm install -g puppeteer"
+        타임아웃: "120초 (Chromium 다운로드 포함)"
+      3_설치_검증: "npm list -g puppeteer — 성공 시 헤드리스 캡처 진행"
+      4_설치_실패_시: "수동 브라우저 폴백으로 전환 (아래 폴백 절차)"
 
   폴백_수동_브라우저:
-    조건: "Puppeteer 설치 불가 또는 headless 캡처 실패 시"
+    조건: "자동 설치 실패 또는 headless 캡처 실패 시"
+    안내: |
+      ⚠️ 헤드리스 캡처에 실패했습니다. 수동 브라우저로 전환합니다.
+      수동 설치가 필요한 경우: npm install -g puppeteer
     명령: |
       start "" "http://localhost:8765#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout"
-    안내: "브라우저 창이 열립니다. 캡처 완료 후 자동으로 닫아도 됩니다."
 
 Step_4_완료_대기:
   방법: "captureId로 generate_figma_design 재호출하여 polling"

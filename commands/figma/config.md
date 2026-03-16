@@ -4,7 +4,6 @@
 
 ```yaml
 SCREENSHOTS_DIR: "C:\Users\jaewoong\Desktop\PUBG 스크린샷"
-# OUTPUT_DIR: 더 이상 사용하지 않음 — HTML은 인메모리 서빙 (Phase 4 참조)
 SERVE_PORT: 8765  # 인메모리 HTTP 서버 포트
 DS_FILE: "ORDO Design System"
 OUTPUT_WIDTH: "1920px"
