@@ -15,6 +15,30 @@ FIGMA_PLAN_NAME: "KRAFTON, Inc."
 ASSET_DIR: "C:\\Users\\jaewoong\\Desktop\\PUBG 스크린샷\\에셋"  # SCREENSHOTS_DIR/에셋/ — 레이아웃 프리셋에서 참조
 ```
 
+## 색상 팔레트 (단일 소스)
+
+```yaml
+COLOR:
+  설명: "모든 색상의 단일 소스. 컨셉 규칙에서 직접 색상을 정의하지 않고 이 섹션을 참조한다."
+  참조: "Phase 3 DS 토큰 캐시 (phase3-ds-analysis.md) — CSS 변수 전체 정의"
+
+  핵심_팔레트:
+    accent: "#f2a900 → var(--accent-primary)"
+    accent_hover: "#d4940a → var(--accent-secondary)"
+    bg_primary: "#1a1a22 → var(--bg-primary)"
+    bg_secondary: "#1e1e24 → var(--bg-secondary)"
+    bg_tertiary: "#222228 → var(--bg-tertiary)"
+    bg_elevated: "#2a2a35 → var(--bg-elevated)"
+    text_primary: "#eaeaea → var(--text-primary)"
+    text_secondary: "#8b8b8b → var(--text-secondary)"
+    text_disabled: "#555555 → var(--text-disabled)"
+
+  사용_규칙:
+    - "HTML에서 색상은 반드시 CSS 변수(var(--*))로 참조"
+    - "hex 직접 사용 금지 — fallback으로만 허용: var(--accent-primary, #f2a900)"
+    - "컨셉별 색상 오버라이드 금지 — 모든 컨셉이 동일 팔레트 사용"
+```
+
 ## Figma DS URL 설정
 
 ```yaml
