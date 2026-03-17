@@ -2,6 +2,41 @@
 
 > **필수 참조**: `commands/figma/config.md`의 FIGMA_PLAN_KEY, FIGMA_DELAY
 
+## MCP 재확인 (Phase 5 진입 시)
+
+Phase 1~4 진행 중 MCP 연결이 끊어졌을 수 있으므로, 캡처 전에 재확인한다.
+
+```yaml
+MCP_재확인:
+  조건: "MCP_STATUS == 'connected' 인 경우에만 실행 (HTML-only 모드이면 바로 'HTML-only 완료' 섹션으로 이동)"
+
+  절차:
+    1_whoami_호출:
+      호출: mcp__figma__whoami()
+      성공: "MCP_STATUS 유지 → 사전 체크리스트로 진행"
+      실패: "아래 복구 흐름 실행"
+
+    2_복구_흐름:
+      안내: |
+        ⚠️ Figma MCP 연결이 끊어졌습니다.
+        HTML 생성은 완료되었으며, 서버에서 확인 가능합니다: http://localhost:8765
+
+      진단: "Phase 0과 동일한 케이스 분류로 에러 원인 판별 (인증 만료 / 서버 미실행 / 기타)"
+      복구_안내: |
+        에러 원인에 맞는 복구 절차를 안내한다:
+        - 인증 만료 → /mcp 실행 → 브라우저 OAuth 재인증
+        - 서버 미실행 → /mcp에서 서버 상태 확인 및 재시작
+        - 기타 → /mcp 서버 재시작 + 재인증 시도
+
+      선택지: |
+        1. 복구 후 재확인 — 위 절차를 완료한 뒤 MCP 연결을 다시 확인합니다
+        2. HTML-only 모드로 전환 — Figma 캡처 없이 마무리합니다
+
+      처리:
+        선택_1: "mcp__figma__whoami() 재호출 (최대 3회 반복 허용, 3회 실패 시 선택지 재제시)"
+        선택_2: "MCP_STATUS = 'disconnected' → 'HTML-only 완료' 섹션으로 이동"
+```
+
 ## 사전 체크리스트
 
 ```yaml
@@ -29,6 +64,8 @@
 ## 캡처 실행 절차
 
 ```yaml
+전제조건: "MCP_STATUS == 'connected' — disconnected이면 '## HTML-only 완료' 섹션으로 이동"
+
 Step_1_서버_확인:
   설명: "Phase 4에서 이미 인메모리 서버가 실행 중"
   확인: "curl -s -o /dev/null -w '%{http_code}' http://localhost:8765 → 200"
@@ -80,6 +117,8 @@ Step_3.5_헤드리스_캡처:
       await page.setViewport({ width: 1920, height: 1080 });
       const url = 'http://localhost:8765#figmacapture={{captureId}}&figmaendpoint={{endpoint}}&figmadelay={{FIGMA_DELAY}}&figmaselector=.layout';
       await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
+      // Google Fonts(Rajdhani, Teko, Noto Sans KR) 로드 완료 대기
+      await page.evaluateHandle('document.fonts.ready');
       // capture.js가 DOM 캡처 + 전송 완료할 때까지 대기
       await page.waitForFunction(() => window.__figmaCaptureComplete === true, { timeout: 20000 }).catch(() => {});
       // 폴백: capture.js가 플래그를 설정하지 않을 경우 figmadelay + 여유 시간 대기
@@ -151,11 +190,12 @@ Step_5_정리:
       3: "사용자에게 기존 파일에 수동 페이지 이동 안내"
 
   MCP_연결_끊김:
-    메시지: |
-      ⚠️ Figma MCP 연결이 끊어졌습니다.
-      1. /mcp 명령으로 상태 확인
-      2. Figma 앱이 열려 있는지 확인
-      3. MCP 서버 재시작 후 재시도
+    설명: "캡처 중 MCP 호출이 실패한 경우 (Phase 5 진입 시 재확인을 통과했으나 캡처 도중 끊김)"
+    진단: "에러 메시지로 원인 판별 (인증 만료 / 서버 미실행 / 기타)"
+    대응:
+      인증_만료: "/mcp 실행 → 브라우저 OAuth 재인증 → 캡처 재시도"
+      서버_미실행: "/mcp에서 figma 서버 상태 확인 및 재시작 → 캡처 재시도"
+      기타: "/mcp 서버 재시작 + 재인증 시도 → 실패 시 HTML-only 완료로 전환"
 ```
 
 ## 멀티 페이지 캡처
@@ -210,4 +250,36 @@ Phase 1 Q8에서 복수 컨셉이 선택된 경우, 각 컨셉별 HTML을 순차
     - 컨셉 B: Page 2 ({경쟁작명} 참조)
     - 컨셉 C: Page 3 (실험적)
     URL: {figma_file_url}
+```
+
+## HTML-only 완료 (MCP 미연결 시)
+
+MCP_STATUS가 `disconnected`인 경우, Figma 캡처를 건너뛰고 HTML 결과물만 전달한다.
+
+```yaml
+HTML_only_완료:
+  조건: "MCP_STATUS == 'disconnected'"
+
+  절차:
+    1_서버_유지:
+      설명: "인메모리 서버를 유지하여 사용자가 브라우저에서 확인 가능"
+      URL: "http://localhost:8765"
+
+    2_완료_메시지: |
+      ✅ HTML 시안 생성이 완료되었습니다.
+      🌐 브라우저에서 확인: http://localhost:8765
+
+      Figma 캡처는 MCP 연결 복구 후 별도로 실행할 수 있습니다:
+      1. Figma 앱 실행 + /mcp 명령으로 MCP 서버 연결
+      2. /figma 재실행 또는 아래 수동 캡처 안내 참고
+
+      서버를 종료하려면 알려주세요.
+
+    3_수동_캡처_안내:
+      설명: "사용자가 나중에 MCP 복구 후 캡처만 재시도할 수 있도록 안내"
+      방법: |
+        MCP 복구 후 아래 절차로 캡처만 실행할 수 있습니다:
+        1. 현재 서버가 실행 중이면 http://localhost:8765 에서 HTML 확인
+        2. capture.js 삽입 후 mcp__figma__generate_figma_design() 호출
+        (서버가 종료되었으면 /figma를 다시 실행해주세요)
 ```

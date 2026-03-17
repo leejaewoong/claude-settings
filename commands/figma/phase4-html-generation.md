@@ -49,7 +49,7 @@
         Concept_C:
           규칙: "commands/figma/concepts/concept-c-experimental.md 읽고 적용"
           적용: "frontend-design SKILL.md 원칙 적용, DS foundation만 유지"
-      공통: "폰트(PUBG Body/Headline), GNB/Footer 프리셋, 컴포넌트 크기 — 모든 컨셉 동일"
+      공통: "폰트(var(--font-body)/var(--font-headline)), GNB/Footer 프리셋, 컴포넌트 크기 — 모든 컨셉 동일"
 
   Step_4_검증_스킵:
     설명: "생성 중 검증하지 않음 — 사용자 리뷰에서 확인"
@@ -80,7 +80,41 @@ CSS_최적화:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{메뉴경로}} — BETTERGROUND 시안</title>
 
+  <!-- 폰트 폴백: PUBG 폰트 미설치 환경 대비 Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <style>
+    /* ===== PUBG 폰트 weight 매핑 ===== */
+    /* PUBG Body/Headline은 Regular(400)과 Bold(700)만 존재.
+       300/500/600 등 중간 weight 요청 시 faux bold 합성을 방지하기 위해
+       @font-face로 weight 범위를 명시적 매핑한다. */
+    @font-face {
+      font-family: 'PUBG Body';
+      src: local('PUBG Body'), local('PUBGBody-Regular'), local('PUBG Body Regular');
+      font-weight: 100 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PUBG Body';
+      src: local('PUBG Body Bold'), local('PUBGBody-Bold');
+      font-weight: 600 900;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PUBG Headline';
+      src: local('PUBG Headline'), local('PUBGHeadline-Regular'), local('PUBG Headline Regular');
+      font-weight: 100 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PUBG Headline';
+      src: local('PUBG Headline Bold'), local('PUBGHeadline-Bold');
+      font-weight: 600 900;
+      font-style: normal;
+    }
+
     /* ===== DS 토큰 (Phase 3에서 주입) ===== */
     :root {
       {{DS_TOKENS_CSS}}
@@ -94,7 +128,7 @@ CSS_최적화:
       height: 1080px;
       background: var(--bg-primary, #000000);
       color: var(--text-primary, #eaeaea);
-      font-family: 'PUBG Body', sans-serif;
+      font-family: var(--font-body, 'PUBG Body', 'Rajdhani', 'Noto Sans KR', 'Malgun Gothic', sans-serif);
       overflow: hidden;
       position: relative;
     }
@@ -172,6 +206,55 @@ CSS_최적화:
 ```
 
 > **참고**: `{{#if}}` 구문은 실제 HTML이 아닌 생성 지시자. Phase 4 실행 시 Q5 선택 결과에 따라 해당 섹션을 포함/제외하여 최종 HTML을 생성한다.
+
+## 폰트 폴백 전략
+
+```yaml
+폰트_폴백:
+  문제: "PUBG Body/Headline은 시스템 미설치 환경(Puppeteer headless 등)에서 로드 불가 → 국문 텍스트 깨짐"
+
+  체인_우선순위:
+    body: "'PUBG Body' → 'Rajdhani' → 'Noto Sans KR' → 'Malgun Gothic' → sans-serif"
+    headline: "'PUBG Headline' → 'Teko' → 'Noto Sans KR' → 'Malgun Gothic' → sans-serif"
+
+  역할별_폰트:
+    PUBG_Body_Headline: "프로덕트 전용 폰트 (로컬 설치 필요)"
+    Rajdhani_Teko: "Google Fonts — PUBG 폰트 대체 (영문 유사도 높음)"
+    Noto_Sans_KR: "Google Fonts — 한글 전용 폴백 (국문 텍스트 깨짐 방지)"
+    Malgun_Gothic: "Windows 시스템 폰트 — CDN 실패 시 최후 폴백 (한글 지원)"
+
+  weight_매핑:
+    문제: "PUBG Body/Headline은 Regular(400)과 Bold(700)만 존재. CSS에서 300/500/600 요청 시 faux bold 합성 → 국문 텍스트 깨짐"
+    해결: "@font-face weight range로 명시적 매핑 (CSS Fonts Level 4, Chromium 62+ 지원)"
+    매핑표:
+      "100-500 (Light~Medium)": "→ Regular 파일 사용"
+      "600-900 (SemiBold~Black)": "→ Bold 파일 사용"
+    위치: "HTML <style> 최상단, DS 토큰 앞에 선언"
+    적용_대상: "PUBG Body + PUBG Headline 모두"
+    주의: "이 @font-face는 로컬 설치된 PUBG 폰트에만 적용됨. 미설치 환경에서는 Google Fonts fallback이 자체 weight를 지원하므로 영향 없음"
+
+  CDN_로드:
+    위치: "HTML <head> 내 <style> 앞"
+    필수: true
+    코드: |
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  CSS_변수_사용:
+    필수: "모든 font-family 선언은 CSS 변수(var(--font-body), var(--font-headline))를 사용"
+    금지: "font-family: 'PUBG Body', sans-serif 처럼 CSS 변수 없이 직접 지정"
+    올바른_예시: "font-family: var(--font-body);"
+    폴백_예시: "font-family: var(--font-body, 'PUBG Body', 'Rajdhani', 'Noto Sans KR', 'Malgun Gothic', sans-serif);"
+
+  프리셋_HTML:
+    규칙: "gnb.html, lnb.html, footer.html의 font-family도 var(--font-body) 사용"
+    이유: "프리셋은 메인 HTML 내부에 삽입되므로 :root의 CSS 변수를 상속받음"
+
+  Puppeteer_대응:
+    설명: "headless 캡처 시 CDN 폰트 로드 완료를 보장"
+    방법: "page.goto() 후 document.fonts.ready 대기"
+```
 
 ## 레이아웃 패턴 분류
 
