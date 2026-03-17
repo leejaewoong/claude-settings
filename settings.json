@@ -91,6 +91,7 @@
       "Bash(gunzip:*)",
       "Bash(kill:*)",
       "Bash(source:*)",
+      "Bash(taskkill:*)",
       "WebFetch",
       "mcp__figma__get_screenshot",
       "mcp__figma__get_metadata",
@@ -113,7 +114,6 @@
       "mcp__figma-dev-mode-mcp-server__create_design_system_rules"
     ]
   },
-  "model": "opus",
   "enabledPlugins": {
     "figma@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
@@ -134,6 +134,6 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
   },
-  "autoUpdatesChannel": "latest",
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "autoUpdatesChannel": "latest"
 }
