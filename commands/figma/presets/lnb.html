@@ -29,18 +29,20 @@
     font-weight: 700;
     color: #eaeaea;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-align: center;
     margin: 0;
   }
 
-  /* 서브탭 영역 (~42px) */
+  /* 서브탭 영역 (~42px) — 중앙 absolute 배치 (gnb.html .lnb-center 동일 패턴) */
   .lnb-subtabs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px; /* 구분선(1px) 위 */
     height: 42px;
     display: flex;
     align-items: center;
     gap: 0;
-    margin-bottom: 0;
   }
   .lnb-only-key {
     width: 26px;
@@ -65,7 +67,6 @@
     font-weight: 500;
     color: #8b8b8b;
     letter-spacing: 0.3px;
-    text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
     font-family: 'PUBG Body', sans-serif;
@@ -95,11 +96,11 @@
   <nav class="lnb-subtabs" id="lnb-only-tabs">
     <div class="lnb-only-key">A</div>
     <!-- {{LNB_TABS}} 마커로 동적 생성 -->
-    <div class="lnb-only-tab" data-tab="LNB1">LNB</div>
-    <div class="lnb-only-tab" data-tab="LNB2">LNB</div>
-    <div class="lnb-only-tab" data-tab="LNB3">LNB</div>
-    <div class="lnb-only-tab" data-tab="LNB4">LNB</div>
-    <div class="lnb-only-tab" data-tab="LNB5">LNB</div>
+    <div class="lnb-only-tab" data-tab="LNB1">탭</div>
+    <div class="lnb-only-tab" data-tab="LNB2">탭</div>
+    <div class="lnb-only-tab" data-tab="LNB3">탭</div>
+    <div class="lnb-only-tab" data-tab="LNB4">탭</div>
+    <div class="lnb-only-tab" data-tab="LNB5">탭</div>
     <div class="lnb-only-key">D</div>
   </nav>
 

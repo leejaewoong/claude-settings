@@ -19,7 +19,7 @@ DS_토큰_사용: strict    # Phase 3 토큰 그대로 사용
 PUBG_시각_언어:
   1_전술적_미니멀리즘: "최대 정보를 최소 시각 노이즈로. 어두운 배경 + 전략적 색상"
   2_시네마틱_포커스: "프로급 3D 렌더/시네마틱 배경으로 콘텐츠를 쇼케이스"
-  3_골드_절제: "프리미엄 액센트(#f2a900)는 화면당 3-4곳. 남용하면 가치 하락"
+  3_골드_절제: "프리미엄 액센트(var(--accent-primary))는 화면당 3-4곳. 남용하면 가치 하락"
   4_플로팅_UI: "모든 패널은 반투명으로 배경 위에 떠 있다. 솔리드 블록 금지"
   5_기하학적_아이덴티티: "육각형/팔각형 뱃지, 코너 장식선 등 밀리터리/택티컬 조형"
 ```
@@ -48,11 +48,13 @@ PUBG_시각_언어:
 
 ## C. 색상 적용 규칙 (60/30/10 + 골드 절제)
 
+> **색상 참조**: config.md COLOR 섹션 — 모든 색상은 CSS 변수(var(--*))로 참조한다.
+
 ```yaml
 60_30_10_비율:
-  60%_주색: "bg-primary #1a1a22 (전체 배경, 어두운 톤)"
-  30%_보조색: "bg-secondary #1e1e24, bg-tertiary #222228 (패널, 카드, 구분)"
-  10%_액센트: "accent-primary #f2a900 + 상태 색상 (전체의 10% 미만)"
+  60%_주색: "var(--bg-primary) — 전체 배경, 어두운 톤"
+  30%_보조색: "var(--bg-secondary), var(--bg-tertiary) — 패널, 카드, 구분"
+  10%_액센트: "var(--accent-primary) + 상태 색상 (전체의 10% 미만)"
 
 골드_accent_규칙:
   최대: "화면당 3-4곳 (실제 프로덕트 기준)"
@@ -62,21 +64,21 @@ PUBG_시각_언어:
     3: "핵심 수치/뱃지 (레벨, 보유 화폐)"
     4: "진행률 바 fill (선택적)"
   금지: "카드 border + 텍스트 라벨 + 배경 gradient + 아이콘에 동시 사용"
-  체크: "CONTENT_HTML 완성 후 #f2a900 / accent-primary 검색 → 4회 초과 시 최하위부터 교체"
+  체크: "CONTENT_HTML 완성 후 var(--accent-primary) 사용 횟수 검색 → 4회 초과 시 최하위부터 교체"
 
 배경_깊이_4단계:
-  레이어_0: "bg-primary #1a1a22 — 전체 배경"
-  레이어_1: "bg-secondary #1e1e24 — 패널, 카드 (반투명 권장: rgba(30,30,36,0.85))"
-  레이어_2: "bg-tertiary #222228 — 헤더, 도구모음"
-  레이어_3: "bg-elevated #2a2a35 — 호버, 드롭다운, 툴팁"
+  레이어_0: "var(--bg-primary) — 전체 배경"
+  레이어_1: "var(--bg-secondary) — 패널, 카드 (반투명 권장)"
+  레이어_2: "var(--bg-tertiary) — 헤더, 도구모음"
+  레이어_3: "var(--bg-elevated) — 호버, 드롭다운, 툴팁"
   규칙: "인접 요소는 반드시 1단계 이상 차이"
 
 텍스트_색상:
-  주의: "순수 흰색(#ffffff) 대신 off-white(#eaeaea) 사용 — 눈부심 방지 + 대비 유지"
+  주의: "순수 흰색(#ffffff) 대신 var(--text-primary) 사용 — 눈부심 방지 + 대비 유지"
   opacity_위계:
-    최중요: "text-primary #eaeaea (100%)"
-    보조: "text-secondary #8b8b8b (~60%)"
-    비활성: "text-disabled #555555 (~35%)"
+    최중요: "var(--text-primary)"
+    보조: "var(--text-secondary)"
+    비활성: "var(--text-disabled)"
 ```
 
 ---
@@ -165,18 +167,18 @@ PUBG_시각_언어:
 
 ```yaml
 그라디언트_프리셋:
-  패널_배경: "linear-gradient(180deg, #1e1e24 0%, #1a1a22 100%)"
+  패널_배경: "linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%)"
   오버레이_페이드: "linear-gradient(180deg, transparent 0%, rgba(26,26,34,0.95) 30%, rgba(26,26,34,1) 100%)"
   카드_이미지: "linear-gradient(180deg, rgba(40,40,50,1) 0%, rgba(30,30,38,1) 100%)"
-  CTA_버튼: "linear-gradient(180deg, #f2a900 0%, #d4940a 100%)"
-  주변광_글로우: "radial-gradient(ellipse 600px 400px at 50% 60%, rgba(242,169,0,0.04) 0%, transparent 70%)"
+  CTA_버튼: "linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 100%)"
+  주변광_글로우: "radial-gradient(ellipse 600px 400px at 50% 60%, rgba(242,169,0,0.04) 0%, transparent 70%) /* accent 기반 */"
 
 그림자_프리셋:
   카드_기본: "없음 (border만으로 구분)"
   카드_호버: "0 4px 12px rgba(0,0,0,0.3)"
-  카드_선택: "0 0 16px rgba(242,169,0,0.25), inset 0 0 20px rgba(242,169,0,0.05)"
+  카드_선택: "0 0 16px rgba(242,169,0,0.25), inset 0 0 20px rgba(242,169,0,0.05) /* accent 기반 — config.md COLOR 참조 */"
   플로팅_패널: "0 8px 24px rgba(0,0,0,0.4)"
-  글로우_도트: "0 0 10px rgba(242,169,0,0.5)"
+  글로우_도트: "0 0 10px rgba(242,169,0,0.5) /* accent 기반 */"
 
 border_프리셋:
   기본: "1px solid var(--border-default)"
@@ -230,12 +232,12 @@ CONTENT_HTML 작성 완료 후 아래 항목을 점검한다:
 
 ```yaml
 셀프_체크:
-  - "[ ] #f2a900 / accent-primary 사용 횟수 ≤ 4"
-  - "[ ] 모든 패널 배경이 rgba() 반투명 (솔리드 #1e1e24 등 금지, GNB/Footer 제외)"
+  - "[ ] var(--accent-primary) 사용 횟수 ≤ 4"
+  - "[ ] 모든 패널 배경이 rgba() 반투명 (솔리드 배경 금지, GNB/Footer 제외)"
   - "[ ] L1/L2/L3 위계가 시각적으로 구분 가능"
   - "[ ] 그라디언트/그림자는 섹션 G 프리셋만 사용 (매직 넘버 없음)"
   - "[ ] 인접 배경색 1단계 이상 차이"
   - "[ ] 타이포그래피 역할별 스타일 준수 (섹션 F)"
   - "[ ] 모든 간격 값이 4px 배수"
-  - "[ ] 텍스트 색상 #ffffff 미사용 (#eaeaea 사용)"
+  - "[ ] 텍스트 색상 #ffffff 미사용 (var(--text-primary) 사용)"
 ```

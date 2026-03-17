@@ -33,7 +33,6 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
     border: 1px solid transparent;
@@ -140,13 +139,9 @@
   <div class="footer-left" id="footer-buttons">
     <div class="footer-btn footer-btn-esc">
       <span class="key-icon">ESC</span>
-      <span>CLOSE</span>
+      <span>닫기</span>
     </div>
-    <!-- {{FOOTER_BUTTONS}} 마커로 동적 생성 -->
-    <div class="footer-btn footer-btn-primary">PRIMARY</div>
-    <div class="footer-btn footer-btn-secondary">SECONDARY</div>
-    <div class="footer-btn footer-btn-secondary">SECONDARY</div>
-    <div class="footer-btn footer-btn-secondary">SECONDARY</div>
+    <!-- {{FOOTER_BUTTONS}} 마커로 동적 생성 — 오버라이드하지 않으면 표시하지 않음 -->
   </div>
 
   <!-- 우측: 소셜 그룹 -->
@@ -189,7 +184,7 @@
     <!-- 클랜 -->
     <div class="footer-clan-btn">
       <img src="{{ASSET_DIR}}/아이콘_FOOTER_클랜.png" alt="클랜">
-      <span>CLAN</span>
+      <span>클랜</span>
     </div>
   </div>
 </div>

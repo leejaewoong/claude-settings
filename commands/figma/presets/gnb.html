@@ -39,10 +39,12 @@
 
   /* GNB 탭 */
   .gnb-tabs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     gap: 0;
-    margin: 0 auto;
     height: 100%;
   }
   .gnb-tab-key {
@@ -174,7 +176,6 @@
     font-weight: 500;
     color: #8b8b8b;
     letter-spacing: 0.3px;
-    text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
   }
@@ -274,13 +275,13 @@
     <!-- GNB 탭 (중앙) -->
     <nav class="gnb-tabs">
       <div class="gnb-tab-key">Q</div>
-      <div class="gnb-tab" data-tab="PLAY">PLAY</div>
-      <div class="gnb-tab" data-tab="PASS">PASS</div>
-      <div class="gnb-tab" data-tab="CAREER">CAREER<span class="noti-dot"></span></div>
-      <div class="gnb-tab" data-tab="CUSTOMIZE">CUSTOMIZE<span class="noti-dot"></span></div>
-      <div class="gnb-tab" data-tab="HIDEOUT">HIDEOUT<span class="noti-dot"></span></div>
-      <div class="gnb-tab" data-tab="WORKSHOP">WORKSHOP</div>
-      <div class="gnb-tab" data-tab="STORE">STORE</div>
+      <div class="gnb-tab" data-tab="PLAY">플레이</div>
+      <div class="gnb-tab" data-tab="PASS">패스</div>
+      <div class="gnb-tab" data-tab="CAREER">전적<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="CUSTOMIZE">커스터마이즈<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="HIDEOUT">은신처<span class="noti-dot"></span></div>
+      <div class="gnb-tab" data-tab="WORKSHOP">제작소</div>
+      <div class="gnb-tab" data-tab="STORE">상점</div>
       <div class="gnb-tab gnb-tab-icon" data-tab="ESPORTS">
         <img src="{{ASSET_DIR}}/아이콘_GNB_이스포츠.png" alt="이스포츠">
       </div>
@@ -307,12 +308,12 @@
     <nav class="lnb-center" id="lnb-tabs">
       <div class="lnb-key">A</div>
       <!-- {{LNB_TABS}} 마커로 동적 생성 -->
-      <div class="lnb-tab" data-tab="NORMAL">NORMAL</div>
-      <div class="lnb-tab" data-tab="RANKED">RANKED</div>
-      <div class="lnb-tab" data-tab="ARCADE">ARCADE</div>
-      <div class="lnb-tab" data-tab="TRAINING">TRAINING</div>
-      <div class="lnb-tab" data-tab="CUSTOM">CUSTOM</div>
-      <div class="lnb-tab" data-tab="RUMBLE">RUMBLE</div>
+      <div class="lnb-tab" data-tab="NORMAL">일반</div>
+      <div class="lnb-tab" data-tab="RANKED">경쟁</div>
+      <div class="lnb-tab" data-tab="ARCADE">아케이드</div>
+      <div class="lnb-tab" data-tab="TRAINING">훈련</div>
+      <div class="lnb-tab" data-tab="CUSTOM">커스텀</div>
+      <div class="lnb-tab" data-tab="RUMBLE">럼블</div>
       <div class="lnb-key">D</div>
     </nav>
 
