@@ -83,6 +83,7 @@ N. 이 화면으로 확정
       예시: "https://xxx.atlassian.net/wiki/spaces/SPACE/pages/123456/제목 → pageId=123456"
 
     3_API_호출:
+      주의: "WebFetch 도구 사용 금지 — 인증 헤더 미지원으로 401 에러 발생. 반드시 curl -u 사용"
       명령: |
         source C:/Users/jaewoong/.claude/.env
         curl -s \

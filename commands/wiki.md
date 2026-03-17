@@ -42,6 +42,17 @@ Step_2_연결_테스트:
 
 ---
 
+## Confluence URL 접근 규칙
+
+```yaml
+금지: "WebFetch 도구로 Confluence URL(atlassian.net/wiki/, confluence 도메인)에 접근하지 않는다"
+사유: "WebFetch는 인증 헤더를 전달할 수 없어 401 Unauthorized 에러가 발생한다"
+필수: "Confluence 콘텐츠 조회 시 반드시 curl -u (Basic Auth)를 사용한다"
+적용: "위키 페이지 조회, 검색, 생성, 수정 등 모든 Confluence API 호출"
+```
+
+---
+
 ## API 호출 공통 패턴
 
 ```bash
