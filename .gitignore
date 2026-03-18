@@ -21,3 +21,5 @@ config.json
 mcp-needs-auth-cache.json
 wiki_cache/
 backups/
+commands/figma/
+commands/figma.md
