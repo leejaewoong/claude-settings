@@ -69,7 +69,7 @@ N. 이 화면으로 확정
   감지_패턴: "atlassian.net/wiki/ 또는 confluence 도메인이 포함된 URL"
   절차:
     1_env_로드:
-      파일: "C:\\Users\\jaewoong\\.claude\\.env"
+      파일: ".env"
       필수_변수:
         - CONFLUENCE_EMAIL
         - CONFLUENCE_API_TOKEN
@@ -85,7 +85,7 @@ N. 이 화면으로 확정
     3_API_호출:
       주의: "WebFetch 도구 사용 금지 — 인증 헤더 미지원으로 401 에러 발생. 반드시 curl -u 사용"
       명령: |
-        source C:/Users/jaewoong/.claude/.env
+        source .env
         curl -s \
           -u "${CONFLUENCE_EMAIL}:${CONFLUENCE_API_TOKEN}" \
           -H "Content-Type: application/json" \

@@ -29,7 +29,7 @@
       "{{ACTIVE_LNB_TAB}}": "Phase 1 Q3에서 선택한 3뎁스 (또는 2뎁스 첫 항목)"
       "{{FOOTER_BUTTONS}}": "화면별 좌측 액션 버튼 텍스트 (예: PRIMARY,SECONDARY)"
       "{{HEADER_TEXT}}": "LNB Only 사용 시 화면 타이틀 (Phase 1에서 확정된 메뉴명)"
-      "{{ASSET_DIR}}": "config.md의 ASSET_DIR 절대경로 (에셋 이미지 참조)"
+      "{{ASSET_DIR}}": "config.md의 ASSET_DIR을 현재 작업 디렉토리(pwd) 기준 절대 경로로 변환하여 삽입 (Puppeteer 파일 접근에 필요)"
     보조재화_자동_배치: "{{SUB_CURRENCY}} 수동 치환 불필요 — gnb.html 스크립트가 {{ACTIVE_TAB}} 기반으로 자동 처리 (매핑 메뉴: HIDEOUT/WORKSHOP/PASS → 전용 아이콘, 나머지 → 랜덤 2~3개)"
 
   Step_3_콘텐츠_집중:
