@@ -3,7 +3,7 @@
 ## 고정 설정값
 
 ```yaml
-SCREENSHOTS_DIR: "C:\Users\jaewoong\Desktop\PUBG 스크린샷"
+SCREENSHOTS_DIR: "commands/figma/screenshots"
 SERVE_PORT: 8765  # 인메모리 HTTP 서버 포트
 DS_FILE: "ORDO Design System"
 OUTPUT_WIDTH: "1920px"
@@ -12,7 +12,7 @@ THEME: "dark"
 FIGMA_DELAY: 3000
 FIGMA_PLAN_KEY: "organization::1460451802116636798"  # KRAFTON, Inc.
 FIGMA_PLAN_NAME: "KRAFTON, Inc."
-ASSET_DIR: "C:\\Users\\jaewoong\\Desktop\\PUBG 스크린샷\\에셋"  # SCREENSHOTS_DIR/에셋/ — 레이아웃 프리셋에서 참조
+ASSET_DIR: "commands/figma/assets"  # 레이아웃 프리셋에서 참조 — HTML 삽입 시 절대 경로로 변환 필요
 ```
 
 ## 색상 팔레트 (단일 소스)
@@ -176,5 +176,5 @@ DS_PAGES:
     node-id: "386:1059"
 ```
 
-> **팀 공유 전환 시**: SCREENSHOTS_DIR을 프로젝트 폴더 내 경로로 변경
-> 예: `./assets/screenshots` 또는 `../../design-references/screenshots`
+> **이식 완료**: 스크린샷/에셋이 리포에 포함되어 있으므로 git clone 후 별도 경로 설정 불필요.
+> ASSET_DIR은 HTML `<img src>` 삽입 시 현재 작업 디렉토리 기준 절대 경로로 변환하여 사용한다.
