@@ -113,7 +113,6 @@
       "mcp__figma-dev-mode-mcp-server__create_design_system_rules"
     ]
   },
-  "model": "opus",
   "enabledPlugins": {
     "figma@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
@@ -134,6 +133,15 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
   },
+  "effortLevel": "high",
   "autoUpdatesChannel": "latest",
-  "effortLevel": "high"
+  "mcpServers": {
+    "stitch": {
+      "command": "sh",
+      "args": [
+        "-c",
+        "STITCH_API_KEY=$(node -p \"require('./.mcp-credentials.json').STITCH_API_KEY\") npx -y @googlelabs/stitch-mcp"
+      ]
+    }
+  }
 }
