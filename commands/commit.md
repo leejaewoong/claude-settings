@@ -104,11 +104,61 @@ Combine when changes:
 
 ---
 
+## Nested 리포지토리 감지
+
+프로젝트 하위에 독립된 git 리포지토리가 존재할 수 있다 (서브모듈 아님, .gitignore로 제외됨).
+
+### 탐색 절차
+
+커밋 시작 시 다음 명령으로 nested repo를 자동 탐색한다:
+
+```bash
+# parent 레포에서 gitignore된 디렉토리 중 .git이 있는 것을 탐색
+for dir in $(git ls-files --others --ignored --exclude-standard --directory | grep '/$'); do
+  [ -d "$dir.git" ] && echo "$dir"
+done
+```
+
+탐색된 각 nested repo에 대해 `git -C {경로} status`로 변경사항을 확인한다.
+
+### 분기 처리
+
+* **parent만 변경** → parent만 커밋
+* **nested repo만 변경** → 해당 repo만 커밋
+* **여러 repo에 변경** → 각 repo별로 분리 커밋 제안
+* **모두 변경 없음** → "커밋할 변경사항이 없습니다"
+
+### nested repo git 명령어
+
+모든 git 명령에 `-C {경로}` 접두사를 붙인다:
+
+```bash
+git -C {경로} status
+git -C {경로} add <files>
+git -C {경로} commit -m "..."
+git -C {경로} push    # ⚠️ 각 repo의 기본 브랜치가 다를 수 있음 — 확인 후 push
+```
+
+> **주의:** nested repo마다 리모트·브랜치가 다를 수 있다. push 전 `git -C {경로} branch --show-current`로 브랜치명을 확인할 것.
+
+---
+
 ## Commit Process
 
-1. **Review** all changes in the project
-2. **Wait** for user confirmation
-3. **Execute** commit after approval
+1. **감지** — parent `git status` + nested repo 탐색으로 변경된 리포 전체 파악
+2. **리뷰** — 변경된 리포별 변경사항 분석, 각각 커밋 메시지 초안 작성
+3. **제안** — 리포별 커밋 메시지 제시 (복수 리포 변경 시 아래 형식으로 구분)
+4. **확인** — 사용자 승인 대기
+5. **실행** — 승인 후 각 리포에 커밋
+
+복수 리포 변경 시 제안 형식:
+````
+### [parent] {리모트명} ({브랜치})
+{커밋 메시지}
+
+### [{폴더명}] {리모트명} ({브랜치})
+{커밋 메시지}
+````
 
 ---
 
@@ -238,3 +288,4 @@ Before proposing commit, verify:
 - [ ] File/variable/function names in English?
 - [ ] Emoji + Commit Type included?
 - [ ] Correct file notation used?
+- [ ] Nested 리포: 하위 독립 리포지토리 변경사항도 점검했는가?
