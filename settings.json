@@ -134,14 +134,5 @@
     "example-skills@anthropic-agent-skills": true
   },
   "effortLevel": "high",
-  "autoUpdatesChannel": "latest",
-  "mcpServers": {
-    "stitch": {
-      "command": "sh",
-      "args": [
-        "-c",
-        "STITCH_API_KEY=$(node -p \"require('./.mcp-credentials.json').STITCH_API_KEY\") npx -y @googlelabs/stitch-mcp"
-      ]
-    }
-  }
+  "autoUpdatesChannel": "latest"
 }
