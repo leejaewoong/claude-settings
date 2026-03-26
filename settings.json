@@ -110,7 +110,10 @@
       "mcp__figma-dev-mode-mcp-server__get_design_context",
       "mcp__figma-dev-mode-mcp-server__get_variable_defs",
       "mcp__figma-dev-mode-mcp-server__get_code_connect_map",
-      "mcp__figma-dev-mode-mcp-server__create_design_system_rules"
+      "mcp__figma-dev-mode-mcp-server__create_design_system_rules",
+      "mcp__stitch__create_project",
+      "mcp__stitch__generate_screen_from_text",
+      "mcp__stitch__edit_screens"
     ]
   },
   "enabledPlugins": {
@@ -134,5 +137,6 @@
     "example-skills@anthropic-agent-skills": true
   },
   "effortLevel": "high",
-  "autoUpdatesChannel": "latest"
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true
 }
