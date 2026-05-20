@@ -30,3 +30,4 @@ stitch-wrapper.mjs
 tasks/
 vercel-plugin-device-id
 vercel-plugin-telemetry-preference
+settings.local.json
