@@ -111,9 +111,8 @@
       "mcp__figma-dev-mode-mcp-server__get_variable_defs",
       "mcp__figma-dev-mode-mcp-server__get_code_connect_map",
       "mcp__figma-dev-mode-mcp-server__create_design_system_rules",
-      "mcp__stitch__create_project",
-      "mcp__stitch__generate_screen_from_text",
-      "mcp__stitch__edit_screens"
+      "mcp__claude_ai_Figma__create_new_file",
+      "mcp__claude_ai_Figma__use_figma"
     ]
   },
   "enabledPlugins": {
@@ -134,9 +133,19 @@
     "vercel@claude-plugins-official": true,
     "firebase@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
-    "example-skills@anthropic-agent-skills": true
+    "example-skills@anthropic-agent-skills": true,
+    "krafton-order@pubg-claude-marketplace": true
   },
-  "effortLevel": "high",
+  "extraKnownMarketplaces": {
+    "pubg-claude-marketplace": {
+      "source": {
+        "source": "git",
+        "url": "https://api-key:cmp_w1VC9Gorrd_3uc5hL6a3NmHPw4B2a-y1maZKhMYEgkY@claude-marketplace.pubg.io/repo.git"
+      }
+    }
+  },
+  "effortLevel": "max",
   "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-daltonized"
 }
