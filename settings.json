@@ -91,6 +91,7 @@
       "Bash(gunzip:*)",
       "Bash(kill:*)",
       "Bash(source:*)",
+      "Bash(taskkill:*)",
       "WebFetch",
       "mcp__figma__get_screenshot",
       "mcp__figma__get_metadata",
