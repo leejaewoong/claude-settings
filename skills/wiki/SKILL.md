@@ -1,3 +1,8 @@
+---
+name: wiki
+description: Confluence 위키 페이지 검색·조회·생성·수정. .env의 CONFLUENCE_API_TOKEN/EMAIL/BASE_URL로 Basic Auth 호출. /wiki 대화형 모드 또는 /wiki 검색 <키워드> / /wiki 조회 <ID> / /wiki 스페이스 등 인자 모드 지원.
+---
+
 # /wiki — Confluence 위키 작업
 
 Confluence 위키 페이지를 검색, 조회, 생성, 수정하는 커맨드.
