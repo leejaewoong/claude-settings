@@ -21,3 +21,12 @@ config.json
 mcp-needs-auth-cache.json
 wiki_cache/
 backups/
+commands/figma/
+commands/figma.md
+.mcp.json
+session-env/
+sessions/
+stitch-wrapper.mjs
+tasks/
+vercel-plugin-device-id
+vercel-plugin-telemetry-preference

@@ -42,6 +42,17 @@ Step_2_연결_테스트:
 
 ---
 
+## Confluence URL 접근 규칙
+
+```yaml
+금지: "WebFetch 도구로 Confluence URL(atlassian.net/wiki/, confluence 도메인)에 접근하지 않는다"
+사유: "WebFetch는 인증 헤더를 전달할 수 없어 401 Unauthorized 에러가 발생한다"
+필수: "Confluence 콘텐츠 조회 시 반드시 curl -u (Basic Auth)를 사용한다"
+적용: "위키 페이지 조회, 검색, 생성, 수정 등 모든 Confluence API 호출"
+```
+
+---
+
 ## API 호출 공통 패턴
 
 ```bash
@@ -56,6 +67,55 @@ curl -s \
 ```
 
 > **검증 완료**: `curl -u` + `wiki/rest/api/` (v1) 경로가 KRAFTON Atlassian 인스턴스에서 정상 동작 확인됨. v2 API(`wiki/api/v2/`)는 이 인스턴스에서 404를 반환하므로 v1 REST API를 사용한다.
+
+## Windows 플랫폼 호환성
+
+Confluence API 응답을 Python으로 처리할 때 반드시 아래 규칙을 따른다.
+
+```yaml
+Python_실행:
+  명령어: "python (python3이 아님)"
+  사유: "Windows에는 python3 심볼릭 링크가 없어 Exit code 49 에러 발생"
+  예시:
+    올바름: 'python -c "print(1)"'
+    잘못됨: 'python3 -c "print(1)"'
+
+임시_파일_경로:
+  금지: "/tmp/ 경로"
+  대안: "$TEMP 환경변수 사용"
+  사유: "Windows에 /tmp/ 디렉토리가 존재하지 않아 FileNotFoundError 발생"
+  예시:
+    올바름: 'TMPFILE="$TEMP/confluence_$(date +%s).json"'
+    잘못됨: 'TMPFILE="/tmp/confluence_$(date +%s).json"'
+
+인코딩:
+  필수: "Python 스크립트 첫 줄에 sys.stdout.reconfigure(encoding='utf-8') 추가"
+  사유: "Windows 한국어 로케일 기본 인코딩이 cp949 → non-breaking space(\\xa0) 등 처리 불가"
+  예시: |
+    python -c "
+    import sys
+    sys.stdout.reconfigure(encoding='utf-8')
+    # ... 이후 로직
+    "
+
+대용량_JSON_처리:
+  금지: "curl | python 파이프 전달"
+  필수: "curl -o 파일 저장 → python에서 파일 읽기"
+  사유: "대용량 Confluence 응답을 파이프로 전달하면 버퍼 잘림으로 JSON parse error 발생"
+  예시:
+    올바름: |
+      curl -s -o "$TMPFILE" -u "${EMAIL}:${TOKEN}" "${URL}"
+      python -c "
+      import json
+      with open('$TMPFILE', encoding='utf-8') as f:
+          data = json.load(f)
+      "
+    잘못됨: |
+      curl -s -u "${EMAIL}:${TOKEN}" "${URL}" | python -c "
+      import sys, json
+      data = json.load(sys.stdin)
+      "
+```
 
 ---
 
