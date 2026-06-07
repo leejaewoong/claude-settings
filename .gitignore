@@ -18,3 +18,11 @@ plans/
 config.json
 mcp-needs-auth-cache.json
 backups/
+daemon/
+daemon.lock
+daemon.log
+daemon.status.json
+jobs/
+sessions/
+.last-cleanup
+.last-update-result.json
