@@ -123,5 +123,7 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true
   },
-  "autoUpdatesChannel": "latest"
+  "autoUpdatesChannel": "latest",
+  "theme": "dark-daltonized",
+  "agentPushNotifEnabled": true
 }
