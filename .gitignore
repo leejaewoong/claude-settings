@@ -1,6 +1,7 @@
 debug/
 file-history/
 projects/
+projects/
 shell-snapshots/
 statsig/
 todos/
@@ -31,3 +32,10 @@ tasks/
 vercel-plugin-device-id
 vercel-plugin-telemetry-preference
 settings.local.json
+daemon/
+daemon.lock
+daemon.log
+daemon.status.json
+jobs/
+.last-cleanup
+.last-update-result.json
