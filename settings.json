@@ -42,6 +42,7 @@
       "Bash(git tag:*)",
       "Bash(git config:*)",
       "Bash(git read-tree:*)",
+      "Bash(git ls-files:*)",
       "Bash(git worktree)",
       "Bash(git worktree:*)",
       "Bash(node:*)",
