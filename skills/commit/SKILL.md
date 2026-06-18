@@ -1,6 +1,6 @@
 ---
-name: commit-message
-description: Standardized Korean commit messages with emoji and detailed structure. Use when proposing commits after completing work.
+name: commit
+description: Standardized Korean commit messages with emoji, secret scanning, and nested repo detection. Use when proposing commits after completing work, or invoked explicitly via /commit.
 ---
 
 # Commit Message Skill
