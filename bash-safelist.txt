@@ -1,0 +1,105 @@
+# Bash safelist for ~/.claude/hooks/bash_safelist_check.py
+#
+# One bare executable per line. Lines starting with `#` are comments.
+# Multi-word entries like `git status` are matched after the hook resolves
+# git/sudo prefixes — see hooks/bash_safelist_check.py for the resolver.
+#
+# If every atomic executable in a bash invocation appears in this file,
+# the hook auto-approves and the user gets no permission prompt. If even
+# one atom is missing, the hook falls through silently and Claude Code's
+# normal permission flow runs (showing the prompt to the user).
+#
+# Pure shell-syntax helpers (`[`, `[[`, `:`, `true`, `false`, `test`) and
+# control keywords (`for`, `while`, `if`, etc.) are handled transparently
+# by the hook and do NOT need entries here.
+
+# ── File system ────────────────────────────────────────────────────────
+cat
+ls
+find
+mkdir
+cp
+mv
+rm
+touch
+file
+basename
+dirname
+realpath
+du
+stat
+
+# ── Text processing ───────────────────────────────────────────────────
+grep
+head
+tail
+wc
+sed
+awk
+sort
+uniq
+tr
+cut
+xargs
+tee
+diff
+echo
+xxd
+
+# ── Archive / compression ─────────────────────────────────────────────
+tar
+zip
+unzip
+gzip
+gunzip
+
+# ── Git (bare + common subcommands) ───────────────────────────────────
+git
+git status
+git log
+git show
+git diff
+git branch
+git clone
+git fetch
+git remote
+git add
+git commit
+git push
+git checkout
+git restore
+git stash
+git merge
+git tag
+git config
+git read-tree
+git ls-files
+git worktree
+
+# ── Node / Python ─────────────────────────────────────────────────────
+node
+npm
+npx
+python
+python3
+pip
+
+# ── GitHub CLI ────────────────────────────────────────────────────────
+gh
+
+# ── System / shell ────────────────────────────────────────────────────
+pwd
+which
+where
+cd
+start
+sleep
+netstat
+lsof
+clip
+kill
+taskkill
+source
+
+# ── Network ───────────────────────────────────────────────────────────
+curl

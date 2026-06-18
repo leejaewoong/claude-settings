@@ -150,6 +150,17 @@
   "theme": "dark-daltonized",
   "agentPushNotifEnabled": true,
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:/Users/jaewoong/.claude/hooks/bash_safelist_check.py"
+          }
+        ]
+      }
+    ],
     "SessionEnd": [
       {
         "matcher": "",

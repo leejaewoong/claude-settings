@@ -41,3 +41,5 @@ jobs/
 .last-update-result.json
 security/
 skills/gstack/
+__pycache__/
+*.pyc
