@@ -39,3 +39,5 @@ daemon.status.json
 jobs/
 .last-cleanup
 .last-update-result.json
+security/
+skills/gstack/

@@ -125,17 +125,16 @@
     "frontend-design@claude-plugins-official": true,
     "plugin-dev@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
     "supabase@claude-plugins-official": true,
     "atlassian@claude-plugins-official": true,
-    "Notion@claude-plugins-official": true,
     "gitlab@claude-plugins-official": true,
     "slack@claude-plugins-official": true,
     "vercel@claude-plugins-official": true,
     "firebase@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
-    "example-skills@anthropic-agent-skills": true,
-    "krafton-order@pubg-claude-marketplace": true
+    "krafton-order@pubg-claude-marketplace": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "pubg-claude-marketplace": {
@@ -145,8 +144,8 @@
       }
     }
   },
-  "effortLevel": "max",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark-daltonized"
+  "theme": "dark-daltonized",
+  "agentPushNotifEnabled": true
 }
