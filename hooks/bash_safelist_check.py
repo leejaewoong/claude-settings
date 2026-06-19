@@ -214,5 +214,41 @@ def main():
     return 0
 
 
+def explain(command_str):
+    """Inspection mode used by the /allow-cmd skill.
+
+    Returns a dict describing how this command would be resolved against the
+    current safelist. The hook auto-approves only when `missing` is empty
+    and `parse_ok` is true.
+    """
+    safelist = load_safelist()
+    atoms = extract_atoms(command_str)
+    parse_ok = atoms is not None
+    atoms = atoms or []
+    if safelist is None:
+        # No safelist file exists yet — every atom is "missing".
+        missing = sorted(set(atoms))
+        safelisted = []
+    else:
+        safelisted = sorted({a for a in atoms if a in safelist})
+        missing = sorted({a for a in atoms if a not in safelist})
+    return {
+        "command": command_str,
+        "parse_ok": parse_ok,
+        "atoms": atoms,
+        "safelisted": safelisted,
+        "missing": missing,
+        "safelist_path": str(SAFELIST_PATH),
+        "safelist_exists": safelist is not None,
+    }
+
+
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] == "--explain":
+        if len(sys.argv) >= 3:
+            cmd = sys.argv[2]
+        else:
+            cmd = sys.stdin.read()
+        print(json.dumps(explain(cmd), ensure_ascii=False, indent=2))
+        sys.exit(0)
     sys.exit(main())
