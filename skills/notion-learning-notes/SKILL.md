@@ -1,6 +1,5 @@
 ---
 name: notion-learning-notes
-description: Creates structured learning notes directly in Notion via the MCP connector. Asks the user for a target parent page or database, then calls notion-create-pages to write the note in place. Activates when user wants to save learning to Notion with phrases like '학습 내용 정리', '지금까지 배운 것 정리', '노트 정리', '노션으로 정리', '노션에 정리해줘', '노션에 페이지로 만들어줘', 'summarize what we learned to Notion', 'organize learning notes in Notion'.
 description: Organizes and summarizes learned content by writing directly to Notion pages via Notion MCP, with visual concepts rendered through the visualize skill and attached as images. Activates when user wants to organize or summarize learning with phrases like '학습 내용 정리', '지금까지 배운 것 정리', '노트 정리', 'summarize what we learned', 'organize learning notes', '노션으로 정리', '노션 페이지 생성', or when requesting structured documentation of learned concepts.
 ---
 
@@ -11,11 +10,6 @@ description: Organizes and summarizes learned content by writing directly to Not
 Transform learning conversations into well-structured Notion pages, written directly via Notion MCP. Concepts that need visualization are built with the `visualize` skill (HTML), captured as images, and attached to the page.
 
 ---
-
-## Content Formatting Rules
-
-> 💡 이 규칙은 Notion 페이지 본문(`content` 필드)에 그대로 적용된다.
-> Notion은 표준 마크다운 + Mermaid를 지원하므로 아래 규칙이 그대로 렌더링된다.
 
 ### 1. Heading Structure
 
