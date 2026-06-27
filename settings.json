@@ -148,15 +148,27 @@
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark-daltonized",
+  "tui": "fullscreen",
   "agentPushNotifEnabled": true,
   "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/hooks/session_sync_claude.sh'"
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Bash",
         "hooks": [
           {
             "type": "command",
-            "command": "python C:/Users/jaewoong/.claude/hooks/bash_safelist_check.py"
+            "command": "bash -c 'python ~/.claude/hooks/bash_safelist_check.py'"
           }
         ]
       }
@@ -167,7 +179,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash C:/Users/jaewoong/.claude/hooks/revise_claude_trigger.sh"
+            "command": "bash -c 'bash ~/.claude/hooks/revise_claude_trigger.sh'"
           }
         ]
       }
@@ -178,7 +190,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash C:/Users/jaewoong/.claude/hooks/revise_claude_trigger.sh"
+            "command": "bash -c 'bash ~/.claude/hooks/revise_claude_trigger.sh'"
           }
         ]
       }
