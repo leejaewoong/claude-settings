@@ -43,3 +43,4 @@ security/
 skills/gstack/
 __pycache__/
 *.pyc
+chrome/
