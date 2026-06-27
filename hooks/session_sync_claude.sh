@@ -1,9 +1,24 @@
 #!/usr/bin/env bash
-# SessionStart hook: keep the ~/.claude config repo in sync across machines.
-# Detects local working-tree changes and remote commits, then fast-forwards
-# ONLY when it is safe (clean tree, behind, not ahead). Never blocks, never
-# discards work. Output goes to stdout and is injected as session context.
+# SessionStart hook: bootstrap the ~/.claude config repo on each new session.
+#  1. Ensure the bash-safelist hook's parser dependency (bashlex) is installed.
+#  2. Keep the repo in sync: detect local/remote changes and fast-forward ONLY
+#     when it is safe (clean tree, behind, not ahead).
+# Never blocks, never discards work. Output goes to stdout and is injected as
+# session context.
 set -u
+
+# ── 1. Ensure bashlex (once per session) ──────────────────────────────────
+# The per-command bash-safelist hook needs bashlex to parse commands; without
+# it, auto-approval silently no-ops. Cheap import check here; pip install runs
+# at most once per machine (first session after a fresh clone), never per Bash
+# call. Same `python` the safelist hook resolves via `bash -c 'python ...'`.
+if ! python -c "import bashlex" >/dev/null 2>&1; then
+  if GIT_TERMINAL_PROMPT=0 timeout 60 python -m pip install --quiet --disable-pip-version-check bashlex >/dev/null 2>&1; then
+    echo "[.claude deps] bashlex 자동 설치 완료 — Bash 자동 승인(safelist) 활성화됨."
+  else
+    echo "[.claude deps] bashlex 미설치 & 자동 설치 실패(오프라인?). 복합 명령은 승인 프롬프트가 뜰 수 있음 — 수동: python -m pip install bashlex"
+  fi
+fi
 
 REPO="$HOME/.claude"
 
