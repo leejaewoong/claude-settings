@@ -62,14 +62,14 @@ Claude 응답 완료 (Stop Hook 트리거)
   │     소스코드 변경 있음 ↓
   │
   ├─ 2. browse 데몬 상태 확인
-  │     $B 바이너리 존재 여부 확인
-  │     데몬 미실행 → 에러 메시지 + exit 0 (사람에게 위임)
+  │     browse 바이너리 존재 여부 확인
+  │     데몬 미실행 → systemMessage + exit 0 (사람에게 위임)
   │
   ├─ 3. 서버 상태 확인
-  │     포트 점유 확인 (lsof)
-  │     ├─ 포트 사용 중 → 헬스체크
-  │     └─ 포트 미사용 → 서버 기동 → 헬스체크
-  │     헬스체크 실패 → exit 0 + 에러 메시지 (사람에게 위임)
+  │     헬스체크 URL 응답 확인 (curl)
+  │     ├─ 응답 있음 → 정상
+  │     └─ 응답 없음 → 서버 기동 → 헬스체크 폴링
+  │     헬스체크 실패 → systemMessage + exit 0 (사람에게 위임)
   │
   ├─ 4. /qa-only 실행 (리포트만)
   │     통과 → 결과 안내 + exit 0
@@ -80,21 +80,24 @@ Claude 응답 완료 (Stop Hook 트리거)
   │     핸드오프 아님 → Claude에게 수정 요청 ↓
   │
   ├─ 6. 재시도 루프 (최대 5회)
-  │     exit 2로 Claude에게 QA 리포트 + 수정 지시 전달
+  │     decision:block + reason으로 Claude에게 QA 리포트 + 수정 지시 전달
   │     → Claude가 수정 → Stop Hook 재트리거 → /qa-only 재실행
   │
   └─ 7. 5회 초과
-        실패 리포트 출력 + exit 0 (사람에게 위임)
+        마지막 1회 block으로 실패 요약 보고 지시 → 이후 침묵 (사람에게 위임)
 ```
 
 ---
 
 ## Stop Hook 동작 원리
 
-- **exit 0**: Claude가 정상 종료 (멈춤)
-- **exit 2**: Claude가 계속 작업 (additionalContext로 지시 전달)
+- **출력 없이 exit 0**: Claude가 정상 종료 (멈춤)
+- **`{"decision":"block","reason":"..."}` + exit 0**: Claude가 계속 작업 (reason이 지시로 전달됨)
+- **`{"systemMessage":"..."}` + exit 0**: 사용자에게만 알림 표시 (Claude는 멈춤)
 
 이를 활용해 QA 리포트 → 수정 → 재검증 루프를 자동화한다.
+재시도 카운터(.auto-qa-retries)는 MAX 초과 시 "보고 완료" 상태로 유지되고,
+소스 변경이 정리되어 check_diff가 실패하는 시점에 리셋된다.
 
 ---
 
@@ -142,7 +145,7 @@ Stop Hook 외에 수동으로도 실행 가능하다.
 🤚 Auto QA: 핸드오프 필요
 - 원인: CAPTCHA / MFA / 인증 벽 감지
 - 자동 루프를 중단합니다
-- $B handoff로 문제를 해결한 뒤 /auto-qa를 수동 실행하세요
+- browse handoff로 문제를 해결한 뒤 /auto-qa를 수동 실행하세요
 ```
 
 ### 실패 (재시도 소진)
@@ -157,7 +160,7 @@ Stop Hook 외에 수동으로도 실행 가능하다.
 ## 주의사항
 
 - gstack의 `/browse`와 `/qa-only`가 전역 설치되어 있어야 한다
-- browse 데몬($B)이 실행 중이어야 한다
+- browse 데몬이 실행 중이어야 한다
 - 서버 기동 명령은 백그라운드 실행 가능해야 한다 (포그라운드 블로킹 명령 사용 금지)
 - `.auto-qa-retries` 파일을 `.gitignore`에 추가하라
 - 인증 필요 페이지는 `/setup-browser-cookies`로 쿠키를 먼저 임포트하라
@@ -182,5 +185,5 @@ bun install && bun run build
 ## 의존성
 
 - gstack (`/browse`, `/qa-only`) — `~/.claude/skills/gstack/`
-- browse 데몬 ($B 바이너리)
-- git, curl, lsof
+- browse 데몬 (browse 바이너리)
+- git, curl
