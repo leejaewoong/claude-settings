@@ -1,327 +1,237 @@
-## Mandatory HTML Skeleton
+# CDN Library Reference
 
-**EVERY visualization MUST start from this skeleton.** Copy it, then add content. This gives you themes, print styles, Inter font, animations, menu, and hover effects — all working out of the box.
+Preferred CDN libraries and when to use them. Always use jsDelivr for consistent, fast loading.
 
-**Design philosophy: CSS-first, JS-minimal.** Animations use CSS `@keyframes` and `transition` (always reliable). JavaScript is only for: menu, theme toggle, scroll observer, number counters, and PNG download. No animation libraries required.
+## Table of Contents
+- [Motion](#motion) ⭐ (animations — included in skeleton)
+- [Chart.js](#chartjs)
+- [D3.js](#d3js)
+- [Three.js](#threejs)
+- [Mermaid](#mermaid)
+- [Reveal.js](#revealjs)
+- [Leaflet](#leaflet)
+
+---
+
+## Motion
+
+**Best for:** ALL animations. Spring physics, scroll-triggered reveals, staggered entrances, number counters, hover micro-interactions. Replaces raw CSS @keyframes and IntersectionObserver.
 
 ```html
-<!DOCTYPE html>
-<html lang="en" class="theme-dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YOUR TITLE HERE</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- ADD LANGUAGE FONTS IF NEEDED: e.g. Noto Sans KR for Korean, Noto Sans JP for Japanese -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
-  <!-- ADD CDN LIBRARIES HERE (Chart.js, Mermaid, etc.) -->
-  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { interpolate-size: allow-keywords; } /* Enable smooth height:auto transitions (Chrome 129+) */
-
-    /* ===== THEMES (class-based ONLY — no @media prefers-color-scheme) ===== */
-    html.theme-dark {
-      --bg: #0A0A0A; --surface: #141414; --surface-hover: #1C1C1C;
-      --border: rgba(255,255,255,0.04);
-      --text: #EDEDED; --text-secondary: #888;
-      --accent: #3b82f6; --accent-secondary: #8b5cf6;
-      --positive: #10b981; --negative: #f43f5e; --warning: #f59e0b;
-    }
-    html.theme-light {
-      --bg: #FAFAF9; --surface: #FFFFFF; --surface-hover: #F5F5F4;
-      --border: rgba(0,0,0,0.06);
-      --text: #0f172a; --text-secondary: #64748b;
-      --accent: #2563eb; --accent-secondary: #7c3aed;
-      --positive: #059669; --negative: #e11d48; --warning: #d97706;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg); color: var(--text);
-      line-height: 1.6; -webkit-font-smoothing: antialiased;
-      letter-spacing: -0.01em; font-feature-settings: 'cv11', 'ss01';
-      transition: background 0.3s, color 0.3s;
-      scrollbar-gutter: stable;
-    }
-    h1,h2,h3,h4,h5,h6 { 
-      color: var(--text); 
-      letter-spacing: -0.03em; 
-      line-height: 1.08;
-      text-wrap: balance;
-    }
-    h1 { font-weight: 700; }
-    h2 { font-weight: 600; }
-    body, p, li, td, th, span, label { font-weight: 400; }
-    p,li,td,th,span,label { color: var(--text); }
-    .text-secondary { color: var(--text-secondary); }
-
-    /* ===== CARD ===== */
-    .card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; padding: 24px;
-      transition: box-shadow 0.2s ease;
-    }
-    .card:hover {
-      box-shadow: 0 0 0 1px var(--border), 0 8px 16px rgba(0,0,0,0.08);
-    }
-
-    /* ===== ANIMATIONS (CSS-first — always reliable) ===== */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideInLeft {
-      from { opacity: 0; transform: translateX(-40px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes slideInRight {
-      from { opacity: 0; transform: translateX(40px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-    .animate { animation: fadeInUp 0.6s ease-out both; }
-    .animate.delay-1 { animation-delay: 0.1s; }
-    .animate.delay-2 { animation-delay: 0.2s; }
-    .animate.delay-3 { animation-delay: 0.3s; }
-    .animate.delay-4 { animation-delay: 0.4s; }
-    .animate.delay-5 { animation-delay: 0.5s; }
-    .animate.delay-6 { animation-delay: 0.6s; }
-
-    /* Scroll-triggered: JS adds .reveal, then .visible on scroll */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation: none !important; transition: none !important; }
-      .reveal { opacity: 1; transform: none; }
-    }
-
-    /* ===== PRINT ===== */
-    @media print {
-      body { background: white !important; color: black !important; }
-      .viz-menu, .reveal { display: revert; opacity: 1 !important; transform: none !important; }
-      .card { break-inside: avoid; border: 1px solid #ddd; box-shadow: none; }
-      * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-    }
-    @page { margin: 1in; @bottom-center { content: "Page " counter(page); font-size: 9pt; color: #666; } }
-
-    /* ===== MENU ===== */
-    .viz-menu { position: fixed; top: 16px; right: 16px; z-index: 9999; }
-    .viz-menu-toggle {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--surface); border: 1px solid var(--border);
-      color: var(--text); cursor: pointer; display: flex;
-      align-items: center; justify-content: center;
-      backdrop-filter: blur(12px); transition: all 0.2s;
-    }
-    .viz-menu-toggle:hover { background: var(--surface-hover); }
-    .viz-menu-dropdown {
-      position: absolute; top: 52px; right: 0; min-width: 200px;
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; padding: 8px;
-      opacity: 0; visibility: hidden; transform: translateY(-8px);
-      transition: all 0.2s; backdrop-filter: blur(16px);
-    }
-    .viz-menu-dropdown.open { opacity: 1; visibility: visible; transform: translateY(0); }
-    .viz-menu-dropdown button {
-      width: 100%; padding: 10px 14px; border: none; border-radius: 8px;
-      background: transparent; color: var(--text); font-size: 14px;
-      font-family: inherit; cursor: pointer; text-align: left;
-      display: flex; align-items: center; gap: 10px; transition: background 0.15s;
-    }
-    .viz-menu-dropdown button:hover { background: var(--surface-hover); }
-
-    /* ===== SKIP TO CONTENT (accessibility) ===== */
-    .skip-to-content {
-      position: absolute; top: -40px; left: 6px; background: var(--accent);
-      color: white; padding: 8px 12px; text-decoration: none;
-      border-radius: 4px; opacity: 0; pointer-events: none;
-      transition: all 0.2s; z-index: 10000;
-    }
-    .skip-to-content:focus { top: 6px; opacity: 1; pointer-events: auto; }
-
-    /* ===== DETAILS ACCORDION (Chrome 120+ exclusive, 131+ animated) ===== */
-    details { overflow: hidden; }
-    details summary { cursor: pointer; list-style: none; }
-    details summary::-webkit-details-marker { display: none; }
-    ::details-content {
-      transition: block-size 0.3s ease, opacity 0.3s ease;
-      block-size: 0; opacity: 0; overflow: hidden;
-    }
-    details[open]::details-content { block-size: auto; opacity: 1; }
-
-    /* ===== POPOVER (Chrome 114+, zero-JS tooltips/panels) ===== */
-    [popover] {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; padding: 16px; max-width: 320px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2); color: var(--text);
-    }
-    [popover]::backdrop { background: rgba(0,0,0,0.3); }
-
-    /* ===== ADD YOUR STYLES BELOW ===== */
-  </style>
-</head>
-<body>
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:10000;padding:8px 16px;background:var(--accent);color:white;text-decoration:none;border-radius:4px;" onfocus="this.style.cssText='position:fixed;left:16px;top:16px;z-index:10000;padding:8px 16px;background:var(--accent);color:white;text-decoration:none;border-radius:4px;'" onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to content</a>
-  <main id="main-content">
-
-  <!-- MENU -->
-  <div class="viz-menu">
-    <button class="viz-menu-toggle" onclick="toggleMenu()" aria-label="Menu">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="5" x2="17" y2="5"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="15" x2="17" y2="15"/>
-      </svg>
-    </button>
-    <div class="viz-menu-dropdown" id="vizMenuDropdown">
-      <button onclick="cycleTheme()"><span id="themeIcon">🌙</span><span id="themeLabel">Dark</span></button>
-      <button onclick="downloadImage()"><span>📥</span><span>Download PNG</span></button>
-      <button onclick="window.print()"><span>🖨️</span><span>Print / PDF</span></button>
-    </div>
-  </div>
-
-  <!-- SKIP TO CONTENT (accessibility) -->
-  <a href="#main-content" class="skip-to-content">Skip to content</a>
-
-  <main id="main-content" role="main">
-    <!-- YOUR CONTENT HERE (use <section>, <header>, <article> for semantics) -->
-  </main>
-
-  <!-- EXAMPLE: Exclusive accordion (only one open at a time, no JS needed) -->
-  <!--
-  <details name="faq" open>
-    <summary>Section 1</summary>
-    <div class="section-body"><p>Content</p></div>
-  </details>
-  <details name="faq">
-    <summary>Section 2</summary>
-    <div class="section-body"><p>Content</p></div>
-  </details>
-  -->
-
-  <!-- EXAMPLE: Popover (zero-JS tooltip/info panel) -->
-  <!--
-  <button popovertarget="info-panel">Details</button>
-  <div id="info-panel" popover>
-    <h3>More Information</h3>
-    <p>Content shown on click, no JS needed.</p>
-  </div>
-  -->
-
-  </main>
-  <script>
-    // === Menu ===
-    function toggleMenu() { 
-      var dropdown = document.getElementById('vizMenuDropdown') || document.getElementById('vizMenu');
-      if (dropdown) dropdown.classList.toggle('open'); 
-    }
-    document.addEventListener('click', e => { 
-      if (!e.target.closest('.viz-menu')) {
-        var dropdown = document.getElementById('vizMenuDropdown') || document.getElementById('vizMenu');
-        if (dropdown) dropdown.classList.remove('open');
-      }
-    });
-    document.addEventListener('keydown', e => { 
-      if (e.key === 'Escape') {
-        var dropdown = document.getElementById('vizMenuDropdown') || document.getElementById('vizMenu');
-        if (dropdown) dropdown.classList.remove('open');
-      }
-    });
-
-    // === Theme (class-based, OS detection on first visit) ===
-    var savedTheme = localStorage.getItem('viz-theme');
-    var currentTheme = savedTheme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    function applyTheme(t) {
-      document.documentElement.className = 'theme-' + t;
-      document.getElementById('themeIcon').textContent = t === 'dark' ? '🌙' : '☀️';
-      document.getElementById('themeLabel').textContent = t === 'dark' ? 'Dark' : 'Light';
-      localStorage.setItem('viz-theme', t);
-      currentTheme = t;
-      if (typeof onThemeChange === 'function') onThemeChange();
-    }
-    function cycleTheme() { applyTheme(currentTheme === 'dark' ? 'light' : 'dark'); }
-    applyTheme(currentTheme);
-
-    // === Scroll Reveal (adds .reveal then .visible — content visible without JS) ===
-    document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('reveal'));
-    var revealObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-    // === Number Counter (use data-count="77" data-suffix="%" on elements) ===
-    function animateCounters() {
-      document.querySelectorAll('[data-count]').forEach(function(el) {
-        if (el.dataset.counted) return;
-        el.dataset.counted = '1';
-        var target = parseFloat(el.dataset.count), prefix = el.dataset.prefix || '', suffix = el.dataset.suffix || '';
-        var start = performance.now(), duration = 1200;
-        (function tick(now) {
-          var p = Math.min((now - start) / duration, 1), eased = 1 - Math.pow(1 - p, 3);
-          el.textContent = prefix + Math.round(target * eased).toLocaleString() + suffix;
-          if (p < 1) requestAnimationFrame(tick);
-        })(start);
-      });
-    }
-    var counterEl = document.querySelector('[data-count]');
-    if (counterEl) {
-      var cObs = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) { if (e.isIntersecting) { animateCounters(); cObs.disconnect(); } });
-      }, { threshold: 0.3 });
-      cObs.observe(counterEl);
-    }
-
-    // === Download PNG ===
-    async function downloadImage() {
-      var menu = document.querySelector('.viz-menu');
-      menu.style.display = 'none';
-      try {
-        var url = await htmlToImage.toPng(document.body, { quality: 1, pixelRatio: 2, filter: function(n) { return !n.classList || !n.classList.contains('viz-menu'); } });
-        var a = document.createElement('a'); a.href = url;
-        a.download = document.title.replace(/\s+/g, '-').toLowerCase() + '.png'; a.click();
-      } catch(e) { console.error('Download failed:', e); }
-      menu.style.display = '';
-    }
-
-    // === Chart.js Pattern (use when file has Chart.js) ===
-    // var chartsBuilt = false;
-    // function buildCharts() {
-    //   if (chartsBuilt || typeof Chart === 'undefined') return;
-    //   var isDark = document.documentElement.classList.contains('theme-dark');
-    //   var textColor = isDark ? '#EDEDED' : '#0f172a';
-    //   var borderColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
-    //   // Create charts with theme-aware colors
-    //   chartsBuilt = true;
-    // }
-    // function onThemeChange() { chartsBuilt = false; buildCharts(); }
-    // window.addEventListener('load', buildCharts);
-
-    // === YOUR SCRIPTS BELOW (use var for top-level variables, define onThemeChange for chart re-renders) ===
-  </script>
-</body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/motion@12/dist/motion.js"></script>
 ```
 
-### Skeleton Rules
+**Included in the mandatory skeleton.** Exposes global `Motion` object.
 
-**Do:**
-- Use `var` for all top-level variables (avoids TDZ errors when functions are hoisted)
-- Use `data-reveal` attribute on sections/cards for scroll animation
-- Use `data-count="77" data-suffix="%"` for animated number counters
-- Use `.animate.delay-N` classes for page-load entrance animations
-- Use CSS `:hover` for hover effects (baked into `.card` already)
-- Define `function onThemeChange() {}` to re-render charts on theme toggle
-- Use `<main>`, `<section>`, `<header>`, `<article>` for semantic HTML
-- Keep all chart variables as `var` (not `let`/`const`) at script top level
+```javascript
+// Spring-animated card entrance
+Motion.animate('.card',
+  { opacity: [0, 1], y: [40, 0], scale: [0.95, 1] },
+  { delay: Motion.stagger(0.08), duration: 0.5, ease: Motion.spring({ stiffness: 200, damping: 22 }) }
+);
 
-**Don't:**
-- Don't include Motion.js unless you specifically need spring physics
-- Don't hide content via JS/CSS for animation — use `data-reveal` pattern instead
-- Don't use `let`/`const` for variables that might be referenced before declaration
-- Don't use `.finished` Promise chains for sequencing — use `setTimeout`
-- Don't put animation logic that could crash before nav/chart setup code
+// Scroll-triggered reveal
+Motion.inView('.section', (info) => {
+  Motion.animate(info.target, { opacity: 1, y: 0 }, { duration: 0.6 });
+});
+```
 
+See [animations.md](animations.md) for complete API reference and recipes (~15KB gzipped).
+
+---
+
+## Chart.js
+
+**Best for:** Standard charts with beautiful defaults. Bar, line, pie, doughnut, radar, polar area, scatter, bubble.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+```
+
+### When to Use
+- Quick data visualization with minimal config
+- Standard chart types (bar, line, pie, doughnut, radar)
+- When you want great defaults without deep customization
+- Responsive, animated charts out of the box
+
+### Pattern
+```html
+<canvas id="myChart"></canvas>
+<script>
+new Chart(document.getElementById('myChart'), {
+  type: 'bar', // line, pie, doughnut, radar, polarArea, scatter, bubble
+  data: {
+    labels: ['Jan', 'Feb', 'Mar'],
+    datasets: [{
+      label: 'Revenue',
+      data: [12, 19, 3],
+      backgroundColor: 'hsla(220, 80%, 55%, 0.7)',
+      borderColor: 'hsl(220, 80%, 55%)',
+      borderWidth: 2,
+      borderRadius: 6,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom' },
+      title: { display: true, text: 'Monthly Revenue' }
+    },
+    scales: { y: { beginAtZero: true } }
+  }
+});
+</script>
+```
+
+### Tips
+- Use `borderRadius` for rounded bar charts
+- `tension: 0.4` on line datasets for smooth curves
+- Combine chart types: `{ type: 'bar', datasets: [{ type: 'line', ... }, { ... }] }`
+
+---
+
+## D3.js
+
+**Best for:** Custom, complex, or unconventional data visualizations. Force-directed graphs, geographic maps, treemaps, sunbursts.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+```
+
+### When to Use
+- Custom visualizations Chart.js can't handle
+- Force-directed network graphs
+- Geographic/map visualizations (with topojson)
+- Treemaps, sunbursts, chord diagrams
+- When you need full SVG control
+
+### Pattern
+```html
+<div id="viz"></div>
+<script>
+const data = [30, 86, 168, 281, 303, 365];
+const width = 600, height = 400, margin = { top: 20, right: 20, bottom: 30, left: 40 };
+
+const svg = d3.select('#viz').append('svg')
+  .attr('viewBox', `0 0 ${width} ${height}`);
+
+const x = d3.scaleBand()
+  .domain(data.map((_, i) => i))
+  .range([margin.left, width - margin.right])
+  .padding(0.2);
+
+const y = d3.scaleLinear()
+  .domain([0, d3.max(data)])
+  .range([height - margin.bottom, margin.top]);
+
+svg.selectAll('rect').data(data).join('rect')
+  .attr('x', (_, i) => x(i))
+  .attr('y', d => y(d))
+  .attr('width', x.bandwidth())
+  .attr('height', d => y(0) - y(d))
+  .attr('rx', 4)
+  .attr('fill', 'hsl(220, 80%, 55%)');
+</script>
+```
+
+---
+
+## Three.js
+
+**Best for:** 3D visualizations, immersive data displays, architectural/spatial representations.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/three@0.170/build/three.module.min.js" type="module"></script>
+```
+
+### When to Use
+- 3D data visualization (3D scatter, terrain)
+- Product/architectural visualization
+- Immersive, impressive hero visuals
+- When 2D isn't enough to convey the concept
+
+---
+
+## Mermaid
+
+**Best for:** Diagrams from text definitions. Flowcharts, sequence diagrams, Gantt charts, ER diagrams, class diagrams.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+```
+
+### When to Use
+- Quick flowcharts and process diagrams
+- Sequence diagrams for API/system interactions
+- Gantt charts for project timelines
+- When diagram accuracy matters more than custom styling
+
+### Pattern
+```html
+<pre class="mermaid">
+graph TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Action 1]
+    B -->|No| D[Action 2]
+    C --> E[End]
+    D --> E
+</pre>
+```
+
+### Tips
+- Use `%%` for comments in Mermaid syntax
+- Themes: `default`, `neutral`, `dark`, `forest`
+- Custom styles: `style A fill:#f9f,stroke:#333`
+
+---
+
+## Reveal.js
+
+**Best for:** Full-featured slide decks when you need more than the basic template.
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css">
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+```
+
+### When to Use
+- Complex presentations with nested slides (vertical + horizontal)
+- Markdown-based slide content
+- Built-in speaker notes, PDF export, overview mode
+- When the basic slide template isn't enough
+
+### Tips
+- Themes: `white`, `black`, `league`, `beige`, `moon`, `night`, `serif`, `simple`, `solarized`
+- Fragments for step-by-step reveals
+- Code highlighting with highlight.js plugin
+
+---
+
+## Leaflet
+
+**Best for:** Interactive maps with markers, polygons, heatmaps.
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1/dist/leaflet.js"></script>
+```
+
+### When to Use
+- Location data visualization
+- Geographic comparisons
+- Travel/route visualization
+- Any data with lat/lng coordinates
+
+### Pattern
+```html
+<div id="map" style="height: 500px; border-radius: 12px;"></div>
+<script>
+const map = L.map('map').setView([37.5, -122.3], 10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap'
+}).addTo(map);
+L.marker([37.5, -122.3]).addTo(map).bindPopup('Location');
+</script>
+```

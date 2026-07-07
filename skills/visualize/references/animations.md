@@ -1,303 +1,166 @@
-# Visualization Type Patterns
+# Animation Reference — CSS-First, JS-Enhanced
 
-Detailed patterns for each visualization type. Load only the section relevant to the current task.
+## Philosophy
 
-## Table of Contents
-- [Slide Deck](#slide-deck)
-- [Infographic](#infographic)
-- [Dashboard](#dashboard)
-- [Flowchart / Diagram](#flowchart--diagram)
-- [Timeline](#timeline)
-- [Comparison](#comparison)
-- [Data Visualization](#data-visualization)
-- [One-Pager](#one-pager)
-- [Mind Map](#mind-map)
-- [Kanban Board](#kanban-board)
+**CSS animations are the primary animation system.** They're reliable, performant, and don't break when JS has scoping issues. JavaScript is used only for scroll-triggered reveals and number counters.
 
----
+**Rule: Content must ALWAYS be visible in CSS.** JavaScript adds `.visible` class for entrance animations. If JS fails, everything still shows.
 
-## Slide Deck
+## CDN (Optional — only include when needed)
 
-### Structure
+Motion.js is available for advanced spring physics but is NOT required:
 ```html
-<div class="deck">
-  <section class="slide" data-notes="Speaker notes here">
-    <!-- slide content -->
-  </section>
-</div>
+<!-- OPTIONAL: only include for spring physics or complex orchestration -->
+<script src="https://cdn.jsdelivr.net/npm/motion@12/dist/motion.js"></script>
 ```
 
-### Navigation Pattern
+## CSS Animations (Primary)
+
+### Entrance Animations
+```css
+/* Base: content is visible by default */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Apply with staggered delays */
+.animate { animation: fadeInUp 0.6s ease-out both; }
+.animate.delay-1 { animation-delay: 0.1s; }
+.animate.delay-2 { animation-delay: 0.2s; }
+.animate.delay-3 { animation-delay: 0.3s; }
+.animate.delay-4 { animation-delay: 0.4s; }
+.animate.delay-5 { animation-delay: 0.5s; }
+.animate.delay-6 { animation-delay: 0.6s; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate, [class*="animate"] { animation: none !important; }
+}
+```
+
+### Hover Effects (Pure CSS)
+```css
+/* Shadow-only hover — no translateY or scale transforms */
+.card {
+  transition: box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 0 0 1px var(--border), 0 8px 16px rgba(0,0,0,0.08);
+}
+```
+
+### Scroll-Triggered Reveals (CSS + minimal JS)
+```css
+/* Elements start visible. JS adds .reveal class to opt-in to scroll animation. */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.reveal.visible .stagger:nth-child(1) { transition-delay: 0.05s; }
+.reveal.visible .stagger:nth-child(2) { transition-delay: 0.1s; }
+.reveal.visible .stagger:nth-child(3) { transition-delay: 0.15s; }
+.reveal.visible .stagger:nth-child(4) { transition-delay: 0.2s; }
+.reveal.visible .stagger:nth-child(5) { transition-delay: 0.25s; }
+.reveal.visible .stagger:nth-child(6) { transition-delay: 0.3s; }
+```
+
+## JavaScript (Minimal — scroll observer + counters only)
+
+### Scroll Observer (10 lines)
 ```javascript
-// Keyboard: ← → arrows, Space, Enter
-// Click: left third = prev, right two-thirds = next
-// Touch: swipe left/right
-// URL hash: #slide-3 for direct linking
+// Add .reveal class via JS (not CSS) so content is visible without JS
+document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('reveal'));
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 ```
 
-### Slide Types
-1. **Title Slide** — big title, subtitle, optional author/date. Centered. Impactful.
-2. **Content Slide** — heading + bullets or heading + visual. Never both walls of text AND a visual.
-3. **Section Divider** — full-bleed color/gradient with section title. Breaks up the flow.
-4. **Image/Visual Slide** — full-bleed image or large SVG diagram with minimal text.
-5. **Two-Column** — split layout for comparisons, text+image, or code+explanation.
-6. **Quote Slide** — large pull quote with attribution. Elegant typography.
-7. **Data Slide** — chart/graph with one key insight called out.
-8. **Closing Slide** — CTA, contact info, or summary. Memorable.
+**Key:** The `data-reveal` attribute marks elements for scroll animation. JS adds the `.reveal` class (which sets opacity:0). When scrolled into view, `.visible` is added (which sets opacity:1). If JS fails, elements never get `.reveal`, so they stay visible.
 
-### Best Practices
-- First slide hooks attention — bold statement or question
-- One idea per slide
-- Use progressive reveal within slides (CSS animation delays) for builds
-- Consistent positioning: titles always same spot, content always same region
-- Slide transitions: `transform: translateX()` with `transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)`
-
----
-
-## Infographic
-
-### Structure
-- Single long-scroll page
-- Clear visual hierarchy with sections
-- Use icons (inline SVG) to break up text
-- Number callouts for statistics
-- Color-coded sections
-
-### Layout Pattern
-```
-┌─────────────────────────┐
-│      HERO / TITLE       │
-├─────────────────────────┤
-│   Key Stat  │  Key Stat │
-├─────────────────────────┤
-│     Section 1           │
-│  ┌────┐ ┌────┐ ┌────┐  │
-│  │Icon│ │Icon│ │Icon│  │
-│  │Text│ │Text│ │Text│  │
-│  └────┘ └────┘ └────┘  │
-├─────────────────────────┤
-│     Chart / Visual      │
-├─────────────────────────┤
-│     Section 2           │
-│     Timeline/Flow       │
-├─────────────────────────┤
-│     CTA / Source        │
-└─────────────────────────┘
+### Number Counter (15 lines)
+```javascript
+function animateCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseFloat(el.dataset.count);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      el.textContent = prefix + Math.round(target * eased).toLocaleString() + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+// Trigger on scroll into view
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCounters(); counterObserver.disconnect(); } });
+}, { threshold: 0.3 });
+const firstCounter = document.querySelector('[data-count]');
+if (firstCounter) counterObserver.observe(firstCounter);
 ```
 
-### Best Practices
-- Max width 800px, centered
-- Use scroll-triggered animations (IntersectionObserver)
-- Big numbers: 48px+ font size, bold, accent color
-- Source citations at bottom
-- Shareable: looks good when screenshotted
-
----
-
-## Dashboard
-
-### Structure
-- CSS Grid layout with cards
-- Header with title + date/time
-- KPI cards at top (3-5 key metrics)
-- Charts/tables below in grid
-- Optional sidebar for filters
-
-### KPI Card Pattern
-```html
-<div class="kpi-card">
-  <span class="kpi-label">Revenue</span>
-  <span class="kpi-value">$1.2M</span>
-  <span class="kpi-change positive">↑ 12.3%</span>
-</div>
+### Slide Transitions (CSS-based)
+```css
+.slide { display: none; opacity: 0; transition: opacity 0.3s ease; }
+.slide.active { display: flex; opacity: 1; }
+```
+```javascript
+// Simple slide nav — no animation libraries needed
+var current = 0;
+var transitioning = false;
+function goToSlide(n) {
+  if (n === current || n < 0 || n >= slides.length || transitioning) return;
+  transitioning = true;
+  slides[current].classList.remove('active');
+  slides[n].classList.add('active');
+  current = n;
+  updateUI();
+  setTimeout(() => { transitioning = false; }, 350);
+}
 ```
 
-### Chart Patterns (SVG)
-- **Bar chart**: `<rect>` elements with CSS transitions on height
-- **Line chart**: `<polyline>` or `<path>` with stroke-dasharray animation
-- **Donut chart**: `<circle>` with stroke-dasharray/stroke-dashoffset
-- **Sparkline**: tiny `<polyline>` in KPI cards
+## When to Use Motion.js (Optional)
 
-### Best Practices
-- Use CSS Grid with `auto-fit` and `minmax()` for responsive cards
-- Subtle card shadows, no borders
-- Color-code positive (green) and negative (red) changes
-- Tooltips on hover for data points
-- Auto-refresh indicator (even if static — sells the "live" feel)
+Only include Motion.js when you specifically need:
+- **Spring physics** — bouncy, organic-feeling animations
+- **Complex orchestration** — multiple elements with precise timing relationships
+- **Scroll-linked animations** — parallax, progress bars linked to scroll position
 
----
+For everything else, CSS is simpler and more reliable.
 
-## Flowchart / Diagram
+## Anti-Patterns
 
-### Approach
-Use SVG for the diagram. Position nodes with CSS Grid or absolute positioning within an SVG viewBox.
-
-### Node Types
-```svg
-<!-- Rounded rectangle (process) -->
-<rect rx="8" />
-<!-- Diamond (decision) -->
-<polygon points="50,0 100,50 50,100 0,50" />
-<!-- Circle (start/end) -->
-<circle />
-<!-- Parallelogram (input/output) -->
-<polygon points="20,0 100,0 80,50 0,50" />
-```
-
-### Connection Lines
-- Use `<path>` with cubic bezier curves for smooth connections
-- Arrow markers: `<marker>` element with `<polygon>` arrowhead
-- Elbow connectors for orthogonal layouts
-
-### Best Practices
-- Left-to-right or top-to-bottom flow
-- Consistent node sizes
-- Labels centered in nodes
-- Color-code different paths (success=green, error=red)
-- Keep it simple: max 15-20 nodes before splitting into sub-diagrams
-
----
-
-## Timeline
-
-### Layout Options
-1. **Vertical** — line down the center, events alternate left/right
-2. **Horizontal** — scrollable timeline for fewer events
-3. **Compact** — single column with dots and lines
-
-### Vertical Timeline Pattern
-```
-     ┌──────────┐
-     │ Event 1  │──── ●
-     └──────────┘     │
-                      │
-          ● ────┌──────────┐
-                │ Event 2  │
-                └──────────┘
-                      │
-     ┌──────────┐     │
-     │ Event 3  │──── ●
-     └──────────┘
-```
-
-### Best Practices
-- Alternating sides for visual balance
-- Dates prominently displayed
-- Color/icon differentiation for event types
-- Scroll-triggered entrance animations
-- "Now" marker for roadmaps
-
----
-
-## Comparison
-
-### Layout Options
-1. **Side-by-side cards** — 2-3 options in columns
-2. **Feature matrix** — rows = features, columns = options, checkmarks/values
-3. **Before/After** — split screen
-
-### Feature Matrix Pattern
-- Sticky header row
-- Alternating row backgrounds
-- ✓ / ✗ icons (SVG) instead of text
-- Highlight recommended option with accent border/badge
-
-### Best Practices
-- Max 4 comparison columns (more = overwhelming)
-- Highlight key differentiators
-- Use icons for quick scanning
-- Color-code to guide toward recommended option (subtle, not pushy)
-
----
-
-## Data Visualization
-
-### Chart Types (all SVG-based)
-- **Bar**: vertical or horizontal, grouped or stacked
-- **Line**: single or multi-series, area fills
-- **Pie/Donut**: max 6 segments, label percentages
-- **Scatter**: for correlations, size for third dimension
-- **Heatmap**: grid of colored cells
-
-### SVG Chart Essentials
-- Always include axes with labels
-- Grid lines: subtle (`stroke: #eee`, `stroke-dasharray: 4`)
-- Legend: positioned consistently (top-right or bottom)
-- Responsive viewBox: `viewBox="0 0 600 400"` with `preserveAspectRatio`
-- Animate on load: stroke-dasharray for lines, scaleY for bars
-
-### Best Practices
-- Lead with the insight, not the data
-- Annotate key data points directly on the chart
-- Don't use 3D effects
-- Start y-axis at 0 for bar charts (line charts can break this rule)
-- Max 5-7 data series per chart
-
----
-
-## One-Pager
-
-### Structure
-- Hero section with headline + subtext
-- 3-4 content sections
-- Clear CTA or conclusion
-- Max viewport: feels complete without scrolling (or minimal scroll)
-
-### Best Practices
-- Large hero text (48px+)
-- Icon + text pairs for features
-- Centered layout, max-width 960px
-- Professional but not boring — one bold design choice
-- Works as a screenshot/PDF
-
----
-
-## Mind Map
-
-### Approach
-- Central node with radiating branches
-- SVG with `<path>` curved connections
-- Color-code branches by category
-- Nodes expand on click (optional interactivity)
-
-### Layout Algorithm (simplified)
-- Center node at viewBox center
-- First-level nodes in a circle around center
-- Second-level nodes branch outward from their parent
-- Use polar coordinates for positioning
-
-### Best Practices
-- Max 2-3 levels deep for readability
-- Curved, organic-looking connections (bezier)
-- Node size reflects importance
-- Hover to highlight a branch and dim others
-
----
-
-## Kanban Board
-
-### Structure
-```html
-<div class="board">
-  <div class="column">
-    <h3>To Do</h3>
-    <div class="card">Task</div>
-  </div>
-  <div class="column">
-    <h3>In Progress</h3>
-    <div class="card">Task</div>
-  </div>
-  <div class="column">
-    <h3>Done</h3>
-    <div class="card">Task</div>
-  </div>
-</div>
-```
-
-### Best Practices
-- 3-5 columns (horizontal scroll if needed)
-- Cards with title, optional tags/labels (color-coded chips), optional assignee avatar
-- Column headers with item count
-- Subtle drag-handle visual (even if not functional)
-- WIP limits indicator
-- Column background colors (very subtle) to differentiate stages
+- ❌ `Motion.animate().finished.then()` — Promise chain breaks silently if Motion API changes
+- ❌ `Motion.inView()` with `opacity: 0` in CSS — content invisible if JS fails
+- ❌ `let` declarations for chart variables called before initialization — use `var` for variables referenced across function hoisting boundaries
+- ❌ Complex stagger calculations in JS — use CSS `nth-child` delays instead
+- ❌ Hiding content by default and revealing via JS — content must be visible without JS
