@@ -37,6 +37,7 @@ daemon.status.json
 jobs/
 .last-cleanup
 .last-update-result.json
+.update.lock
 security/
 skills/gstack/
 __pycache__/
