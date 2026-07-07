@@ -1,7 +1,6 @@
 debug/
 file-history/
 projects/
-projects/
 shell-snapshots/
 statsig/
 todos/
@@ -27,7 +26,6 @@ commands/figma.md
 .mcp.json
 session-env/
 sessions/
-stitch-wrapper.mjs
 tasks/
 vercel-plugin-device-id
 vercel-plugin-telemetry-preference
