@@ -10,10 +10,10 @@ description: 사용자가 /allow-cmd 뒤에 인자로 넘긴 명령어 문자열
 ## 동작 모델
 
 - **분해의 진실 공급원**: 훅 스크립트 (`hooks/bash_safelist_check.py`)
-- **허용 목록**: `bash-safelist.txt` (한 줄당 한 atom, `#` 코멘트 가능)
-- **legacy `Bash(...:*)` 패턴 (settings.json)**: 손대지 않음. 백업으로 그대로 유지
+- **허용 목록**: `bash-safelist.txt` (한 줄당 한 atom, `#` 코멘트 가능) — Bash 자동 승인의 **단일 소스**
+- settings.json permissions.allow의 `Bash(...:*)` 패턴은 2026-07 safelist로 일원화하며 제거됨
 
-스킬은 settings.json/settings-reference.md를 건드리지 않습니다. 안 그래도 됩니다 — 훅이 safelist 매칭으로 승인하니까요.
+스킬은 settings.json/settings-reference.md를 건드리지 않습니다. Bash 승인은 훅의 safelist 매칭이 전담합니다.
 
 ## 입력
 
@@ -155,6 +155,6 @@ CMDEOF
 
 - **atom 표기는 훅 출력 그대로 사용**. `git -C`를 `git`으로 줄이거나, `sudo cat`을 `sudo`로 줄이면 매칭 안 됨
 - **safelist는 prefix 매칭이 아닌 exact 매칭**. `git` 한 줄로 `git status`, `git log` 전부를 허용할 수 없음. 각 서브커맨드를 별도 줄로 추가
-- **legacy settings.json 패턴은 건드리지 않음**. 사용자가 별도로 정리하길 원하면 그때 진행
+- **settings.json에 Bash 규칙을 다시 추가하지 않음**. 허용 목록은 bash-safelist.txt 한 곳에서만 관리
 - **위험 atom은 권장하지 않음**. `eval`, `bash`, `sh`는 임의 명령 실행 게이트라서 safelist 의미를 무력화. 사용자가 명시적으로 요청해도 한 번 더 확인
 - **시크릿 위험**: safelist 파일 자체에 시크릿은 없지만, atom 이름이 길어지면(`sudo systemctl` 같은 multi-word) 오타로 매칭 안 될 수 있음. 추가 후 5단계 검증 필수
