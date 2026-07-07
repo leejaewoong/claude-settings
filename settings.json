@@ -135,13 +135,20 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "krafton-order@pubg-claude-marketplace": true,
     "superpowers@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true
+    "claude-md-management@claude-plugins-official": true,
+    "comfy-cloud@comfy-skills": true
   },
   "extraKnownMarketplaces": {
     "pubg-claude-marketplace": {
       "source": {
         "source": "git",
         "url": "https://claude-marketplace.pubg.io/repo.git"
+      }
+    },
+    "comfy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "Comfy-Org/comfy-skills"
       }
     }
   },
@@ -150,6 +157,7 @@
   "theme": "dark-daltonized",
   "tui": "fullscreen",
   "agentPushNotifEnabled": true,
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "SessionStart": [
       {
