@@ -141,7 +141,7 @@
     "pubg-claude-marketplace": {
       "source": {
         "source": "git",
-        "url": "https://api-key:cmp_w1VC9Gorrd_3uc5hL6a3NmHPw4B2a-y1maZKhMYEgkY@claude-marketplace.pubg.io/repo.git"
+        "url": "https://claude-marketplace.pubg.io/repo.git"
       }
     }
   },
@@ -158,6 +158,10 @@
           {
             "type": "command",
             "command": "bash -c 'bash ~/.claude/hooks/session_sync_claude.sh'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/hooks/register_pubg_credential.sh'"
           }
         ]
       }
