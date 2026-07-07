@@ -61,7 +61,7 @@ Step_2_연결_테스트:
 ## API 호출 공통 패턴
 
 ```bash
-# .env에서 변수 로드 (프로젝트 루트: C:\Users\jaewoong\.claude\.env)
+# .env에서 변수 로드 (~/.claude/.env)
 source .env
 
 # API 호출 공통 — curl -u 방식 사용 (base64 헤더보다 안정적)
