@@ -99,17 +99,6 @@
         ]
       }
     ],
-    "SessionEnd": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash -c 'bash ~/.claude/hooks/revise_claude_trigger.sh'"
-          }
-        ]
-      }
-    ],
     "PreCompact": [
       {
         "matcher": "",
