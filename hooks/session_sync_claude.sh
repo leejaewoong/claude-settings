@@ -35,8 +35,9 @@ FETCH_RC=$?
 DIRTY=""
 [ -n "$(git -C "$REPO" status --porcelain 2>/dev/null)" ] && DIRTY=1
 
-# Commits behind / ahead of upstream.
-read -r BEHIND AHEAD < <(git -C "$REPO" rev-list --left-right --count "HEAD...$UPSTREAM" 2>/dev/null)
+# Commits ahead / behind of upstream. --left-right on HEAD...UPSTREAM prints
+# "<only-in-HEAD> <only-in-upstream>", i.e. ahead first, behind second.
+read -r AHEAD BEHIND < <(git -C "$REPO" rev-list --left-right --count "HEAD...$UPSTREAM" 2>/dev/null)
 BEHIND=${BEHIND:-0}; AHEAD=${AHEAD:-0}
 
 prefix="[.claude sync]"
