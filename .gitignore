@@ -38,6 +38,7 @@ jobs/
 .last-cleanup
 .last-update-result.json
 .update.lock
+.codex-sync-state.json
 security/
 skills/gstack/
 __pycache__/

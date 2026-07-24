@@ -49,6 +49,10 @@
           {
             "type": "command",
             "command": "bash -c 'bash ~/.claude/hooks/register_pubg_credential.sh'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/scripts/sync_codex.sh'"
           }
         ]
       }

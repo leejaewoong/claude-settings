@@ -67,6 +67,10 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you work independently. Weak criteria such as "make it work" require clarification.
 
+## Skill Authoring
+
+Write skills platform-neutral so one copy serves every agent (Claude Code, Codex, etc.): avoid tool-specific feature names and hardcoded `~/.claude`/`~/.codex` paths unless the skill is inherently tool-specific. Secrets stay in `~/.claude/.env` (the canonical location both tools read).
+
 ## Completion Standard
 
 Before saying the task is done:

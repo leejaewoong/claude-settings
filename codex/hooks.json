@@ -1,0 +1,45 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'python ~/.claude/hooks/bash_safelist_check.py'"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/hooks/revise_claude_trigger.sh'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/hooks/session_sync_claude.sh'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/hooks/register_pubg_credential.sh'"
+          },
+          {
+            "type": "command",
+            "command": "bash -c 'bash ~/.claude/scripts/sync_codex.sh'"
+          }
+        ]
+      }
+    ]
+  }
+}

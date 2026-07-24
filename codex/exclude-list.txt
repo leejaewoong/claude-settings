@@ -1,0 +1,4 @@
+# 스킬 정션 공유 제외 목록 (한 줄에 하나, #으로 주석)
+# 여기 있는 스킬은 ~/.agents/skills에 정션이 생성되지 않는다 (Claude 전용).
+allow-cmd
+gstack
