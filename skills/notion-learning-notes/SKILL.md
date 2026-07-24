@@ -67,7 +67,7 @@ Use Notion callout blocks (not plain blockquotes):
 Notion blocks and Mermaid are limited for rich information visualization. For concepts where structure, flow, or comparison would be poorly served by text/tables:
 
 1. **Identify** visual concepts: architectures, request/data flows, anatomy breakdowns (e.g. URL 구조 분해), layered comparisons
-2. **Build** the visual as an HTML artifact using the `visualize` skill (invoke it via the Skill tool first)
+2. **Build** the visual as an HTML artifact using the `visualize` skill (visualize 스킬 호출)
 3. **Capture** each visual region as PNG via Playwright:
    - Element-level screenshots by CSS selector / XPath
    - `device_scale_factor=2` for high resolution
@@ -153,7 +153,7 @@ Replace with semantic placeholders that preserve learning value:
 - Use the `visualize` skill to build HTML, capture regions to PNG (see Visualization Workflow)
 
 ### Step 3: Create Notion Page
-- Write directly via Notion MCP (`notion-create-pages` / `notion-update-page`)
+- Write directly via the Notion MCP page create/update tools (e.g. `notion-create-pages` / `notion-update-page`)
 - Apply all format, table, callout, toggle, and content rules above
 - Insert image placeholder callouts where PNGs belong
 

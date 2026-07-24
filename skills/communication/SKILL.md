@@ -118,7 +118,7 @@ function 사용자인증(자격증명: Credentials): AuthResult {
 ````
 User: 로그인 기능을 만들어줘
 
-Claude:
+Assistant:
 로그인 기능을 구현하겠습니다.
 
 먼저 몇 가지 확인하고 싶은 사항이 있습니다:
@@ -135,7 +135,7 @@ Claude:
 ````
 User: 로그인 기능을 만들어줘
 
-Claude:
+Assistant:
 I'll implement the login feature.
 
 First, I need to confirm a few things:

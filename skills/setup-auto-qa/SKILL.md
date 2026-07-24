@@ -3,7 +3,7 @@ name: setup-auto-qa
 description: |
   프로젝트에 auto-qa 스킬을 설치하고 설정하는 스킬. 프로젝트의 기술 스택을 감지하여
   서버 기동 명령, 포트, 헬스체크 URL, 소스코드 경로 등을 자동 세팅하고,
-  Stop Hook을 .claude/settings.json에 등록한다.
+  Stop Hook을 .claude/settings.json(Claude Code)과 .codex/hooks.json(Codex)에 등록한다.
   'auto-qa 설치', 'auto-qa 설정', 'QA 자동화 설정', 'setup auto qa' 등의 요청에서 사용하라.
 ---
 
@@ -71,6 +71,7 @@ description: |
 소스 경로:  src/, app/, pages/, components/, lib/
 무시 패턴:  *.test.*, *.spec.*, *.md, *.json
 최대 재시도: 5회
+등록 대상:  Claude Code(항상), Codex(~/.codex 감지 시)
 
 이 설정으로 진행할까요? 수정이 필요하면 말씀해 주세요.
 ```
@@ -82,19 +83,22 @@ description: |
 확인 완료 후 아래를 순서대로 실행한다.
 
 **3-1. auto-qa 스킬 복사**
+
+프로젝트 사본은 도구 중립 표준 경로 `.agents/skills/`에 둔다 (Claude Code와 Codex 모두 읽음).
+
 ```bash
-mkdir -p .claude/skills
-cp -r ~/.claude/skills/auto-qa .claude/skills/auto-qa
-chmod +x .claude/skills/auto-qa/scripts/*.sh
+mkdir -p .agents/skills
+cp -r ~/.claude/skills/auto-qa .agents/skills/auto-qa
+chmod +x .agents/skills/auto-qa/scripts/*.sh
 ```
 
 **3-2. SKILL.md 설정값 업데이트**
 
-복사된 `.claude/skills/auto-qa/SKILL.md`의 프로젝트 설정 섹션을 감지된 값으로 교체한다.
+복사된 `.agents/skills/auto-qa/SKILL.md`의 프로젝트 설정 섹션을 감지된 값으로 교체한다.
 
 **3-3. Stop Hook 등록**
 
-`.claude/settings.json`에 Stop Hook을 추가한다.
+`.claude/settings.json`(Claude Code)에 Stop Hook을 추가한다.
 파일이 없으면 새로 생성, 이미 있으면 기존 설정을 보존하며 hooks만 병합한다.
 
 ```json
@@ -106,7 +110,7 @@ chmod +x .claude/skills/auto-qa/scripts/*.sh
         "hooks": [
           {
             "type": "command",
-            "command": ".claude/skills/auto-qa/scripts/auto_qa_trigger.sh"
+            "command": ".agents/skills/auto-qa/scripts/auto_qa_trigger.sh"
           }
         ]
       }
@@ -116,6 +120,12 @@ chmod +x .claude/skills/auto-qa/scripts/*.sh
 ```
 
 > 기존 Stop Hook이 있으면 배열에 추가. 덮어쓰지 않는다.
+
+**3-3b. Codex Stop Hook 등록 (~/.codex 감지 시)**
+
+Codex가 설치된 머신이면 프로젝트 `.codex/hooks.json`에도 **같은 내용의 Stop Hook**을 추가한다
+(Codex 훅은 Claude와 동일한 스키마·프로토콜을 사용하므로 스크립트를 그대로 공유한다).
+파일이 없으면 위 JSON과 동일한 내용으로 새로 생성, 있으면 hooks만 병합한다.
 
 **3-4. .gitignore 업데이트**
 
@@ -131,22 +141,23 @@ chmod +x .claude/skills/auto-qa/scripts/*.sh
 
 설치 완료 후 아래를 확인한다:
 
-1. `.claude/skills/auto-qa/SKILL.md` 존재
-2. `.claude/skills/auto-qa/scripts/*.sh` 실행 권한
-3. `.claude/settings.json`에 Stop Hook 등록
+1. `.agents/skills/auto-qa/SKILL.md` 존재
+2. `.agents/skills/auto-qa/scripts/*.sh` 실행 권한
+3. `.claude/settings.json`에 Stop Hook 등록 (Codex 사용 시 `.codex/hooks.json`에도)
 4. `.gitignore`에 `.auto-qa-retries` 포함
 
 ```
 ✅ Auto QA 설치 완료
 
 설치된 파일:
-  .claude/skills/auto-qa/SKILL.md
-  .claude/skills/auto-qa/scripts/auto_qa_trigger.sh
-  .claude/skills/auto-qa/scripts/check_diff.sh
-  .claude/skills/auto-qa/scripts/health_check.sh
+  .agents/skills/auto-qa/SKILL.md
+  .agents/skills/auto-qa/scripts/auto_qa_trigger.sh
+  .agents/skills/auto-qa/scripts/check_diff.sh
+  .agents/skills/auto-qa/scripts/health_check.sh
 
 Hook 등록:
   .claude/settings.json → Stop Hook 등록됨
+  .codex/hooks.json    → Stop Hook 등록됨 (Codex 감지 시)
 
 설정:
   서버: {SERVER_CMD} (포트 {PORT})
@@ -154,7 +165,7 @@ Hook 등록:
   최대 재시도: 5회
 
 사용법:
-  - 자동: 코드 변경 후 Claude 응답 완료 시 자동 실행
+  - 자동: 코드 변경 후 에이전트 응답 완료 시 자동 실행
   - 수동: /auto-qa 입력
 ```
 
@@ -166,8 +177,8 @@ Hook 등록:
 |------|------|
 | gstack 미설치 | 설치 가이드 안내 후 중단 |
 | auto-qa 원본 없음 | 전역 설치 가이드 안내 |
-| .claude/ 디렉토리 없음 | `mkdir -p .claude/skills` 후 진행 |
-| settings.json 파싱 실패 | 백업 생성 후 새로 작성 |
+| .agents/ 디렉토리 없음 | `mkdir -p .agents/skills` 후 진행 |
+| settings.json / hooks.json 파싱 실패 | 백업 생성 후 새로 작성 |
 | 프레임워크 감지 실패 | 수동 설정 모드로 전환 |
 
 ---

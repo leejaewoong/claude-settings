@@ -70,7 +70,7 @@ target/
 
 ---
 
-## 2단계: .worktreeinclude 생성
+## 2단계: .worktreeinclude 생성 (Claude Code 전용 — Codex에는 워크트리 기능 없음, 이 단계 건너뜀)
 
 프로젝트 루트에 `.worktreeinclude`를 생성한다 (`.gitignore` 문법).
 **1단계에서 gitignore에 넣은 로컬 설정 파일 중**, 워크트리에서도 필요한 것만 나열한다.
