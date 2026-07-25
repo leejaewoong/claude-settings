@@ -169,15 +169,17 @@ Stop Hook 외에 수동으로도 실행 가능하다.
 
 ---
 
-## gstack 부분 설치 (필요한 스킬만)
+## gstack 설치 (새 머신)
 
-전체 gstack을 설치하지 않고 필요한 스킬만 받으려면 sparse-checkout을 사용한다:
+사전 요구: bun (`npm install -g bun`으로 설치 가능).
+sparse-checkout은 쓰지 않는다 — v1.60 기준 빌드가 `hosts/` 등 추가 디렉터리를 요구해
+부분 체크아웃이 깨진다 (2026-07-26 확인). `--filter=blob:none`으로 이력 없이 가볍게 받는다.
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
+git clone --filter=blob:none https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
 cd ~/.claude/skills/gstack
-git sparse-checkout set browse qa qa-only setup-browser-cookies bin lib scripts
 bun install && bun run build
+ls browse/dist/browse   # 이 파일이 생기면 설치 완료 (health_check가 검사하는 경로)
 ```
 
 ---
