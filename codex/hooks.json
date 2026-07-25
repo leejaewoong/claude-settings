@@ -1,16 +1,5 @@
 {
   "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "cmd /c \"%USERPROFILE%\\.claude\\scripts\\codex_hook.cmd hooks/bash_safelist_check.py\""
-          }
-        ]
-      }
-    ],
     "PreCompact": [
       {
         "matcher": "",
