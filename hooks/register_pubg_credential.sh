@@ -10,6 +10,6 @@ CRED_VAL='!bash ~/.claude/hooks/git-credential-pubg.sh'
 if [ "$(git config --global --get-all "$CRED_KEY" 2>/dev/null | tail -n 1)" != "$CRED_VAL" ]; then
   git config --global --replace-all "$CRED_KEY" '' &&
     git config --global --add "$CRED_KEY" "$CRED_VAL" &&
-    echo "[.claude cred] pubg 마켓플레이스 git credential helper 등록 완료."
+    echo "(.claude cred) pubg 마켓플레이스 git credential helper 등록 완료."
 fi
 exit 0

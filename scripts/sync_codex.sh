@@ -12,7 +12,8 @@ set -u
 REPO="$HOME/.claude"
 CODEX_HOME="$HOME/.codex"
 STATE="$REPO/.codex-sync-state.json"
-prefix="[codex sync]"
+# Codex는 SessionStart 출력이 [ 또는 { 로 시작하면 JSON으로 해석하므로 ( ) 사용
+prefix="(codex sync)"
 
 # ── ⓪ Codex 미설치 → 조용히 생략 ─────────────────────────────────────────
 if ! command -v codex >/dev/null 2>&1 && [ ! -d "$CODEX_HOME" ]; then

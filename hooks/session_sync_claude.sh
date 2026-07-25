@@ -14,9 +14,9 @@ set -u
 # call. Same `python` the safelist hook resolves via `bash -c 'python ...'`.
 if ! python -c "import bashlex" >/dev/null 2>&1; then
   if GIT_TERMINAL_PROMPT=0 timeout 60 python -m pip install --quiet --disable-pip-version-check bashlex >/dev/null 2>&1; then
-    echo "[.claude deps] bashlex 자동 설치 완료 — Bash 자동 승인(safelist) 활성화됨."
+    echo "(.claude deps) bashlex 자동 설치 완료 — Bash 자동 승인(safelist) 활성화됨."
   else
-    echo "[.claude deps] bashlex 미설치 & 자동 설치 실패(오프라인?). 복합 명령은 승인 프롬프트가 뜰 수 있음 — 수동: python -m pip install bashlex"
+    echo "(.claude deps) bashlex 미설치 & 자동 설치 실패(오프라인?). 복합 명령은 승인 프롬프트가 뜰 수 있음 — 수동: python -m pip install bashlex"
   fi
 fi
 
@@ -40,7 +40,8 @@ DIRTY=""
 read -r AHEAD BEHIND < <(git -C "$REPO" rev-list --left-right --count "HEAD...$UPSTREAM" 2>/dev/null)
 BEHIND=${BEHIND:-0}; AHEAD=${AHEAD:-0}
 
-prefix="[.claude sync]"
+# Codex는 SessionStart 출력이 [ 또는 { 로 시작하면 JSON으로 해석하므로 ( ) 사용
+prefix="(.claude sync)"
 
 # Remote unreachable -> report cached state only.
 if [ "$FETCH_RC" -ne 0 ]; then
